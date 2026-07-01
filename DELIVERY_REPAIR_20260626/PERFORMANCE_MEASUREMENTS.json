@@ -1,0 +1,26 @@
+{
+  "environment": {
+    "python": "3.13.5",
+    "platform": "linux"
+  },
+  "same_workload": {
+    "before": {
+      "loops": 20,
+      "rows_per_loop": 5000,
+      "elapsed_seconds": 0.212425,
+      "warnings": 1920,
+      "warning_messages": [
+        "All-NaN slice encountered",
+        "Mean of empty slice"
+      ]
+    },
+    "after": {
+      "loops": 20,
+      "rows_per_loop": 5000,
+      "elapsed_seconds": 0.242043,
+      "warnings": 0,
+      "warning_messages": []
+    }
+  },
+  "claim_note": "Timing is reported as observed only; no percentage improvement claim is made."
+}

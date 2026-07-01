@@ -1,0 +1,17 @@
+Deployment/runtime verification date: 2026-07-02
+
+1. python -m compileall -q core ui tabs tests app.py adx_dashpoard.py
+   RESULT: PASS
+
+2. PYTHONPATH=. pytest -q
+   RESULT: 200 passed in 18.67s
+
+3. streamlit run app.py --server.headless true --server.port 8511
+   Health check: GET /_stcore/health
+   RESULT: ok
+
+4. Static dependency audit
+   - cloudpickle explicitly listed in requirements.txt: PASS
+   - deployment-critical modules use serializer compatibility layer: PASS
+   - three calculation mode labels exist in primary and fallback UI: PASS
+   - raw "Multi-symbol selector skipped safely: No module named 'cloudpickle'" path removed: PASS

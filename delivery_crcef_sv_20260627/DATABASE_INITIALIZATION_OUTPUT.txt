@@ -1,0 +1,14 @@
+Initialized CRCEF-SV database: delivery_crcef_sv_20260627/crcef_sv_schema_verification.sqlite3
+tables 12
+calibration_models
+canonical_snapshots
+drift_events
+event_memory
+event_responses
+prediction_intervals
+prediction_outcomes
+promotion_decisions
+research_audit
+research_model_registry
+research_results
+research_validation_runs

@@ -1,0 +1,19 @@
+ADX Quant Pro five-surface upgrade validation
+Date: 2026-06-26
+Entry point: app.py
+
+PASS — Existing focused and requested acceptance tests: 24/24
+PASS — New five-surface acceptance tests: 5/5
+PASS — Total focused pytest result: 29/29
+PASS — compileall for app.py, adx_dashpoard.py, core, lunch, tabs, ui, pages, services and tests
+PASS — Streamlit startup with app.py
+PASS — Streamlit health endpoint /_stcore/health returned ok
+PASS — Lunch static contract remains exactly Fields 1–3
+PASS — Field 456 and Field 789 independent page routing exists
+PASS — Field 1 has explicit Table 1/3, Table 2/3 and Table 3/3 labels
+PASS — Field 1 Decision Name column exists
+PASS — Field 2 operational prediction path remains green
+PASS — Copy Short and Copy Full controls remain present
+
+Protection note:
+No protected trading threshold, BUY/SELL/WAIT/HOLD/NO-TRADE rule, Power BI formula, regime formula or production calculation was intentionally modified. HOLD/NO-TRADE reduction is documented as shadow research only pending out-of-sample validation.

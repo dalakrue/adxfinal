@@ -1,0 +1,7 @@
+package_compile_exit=0
+package_pytest_exit=0
+........................................................................ [ 65%]
+......................................                                   [100%]
+110 passed in 7.80s
+app.py health='ok' ok=True returncode=0
+adx_dashpoard.py health='ok' ok=True returncode=0

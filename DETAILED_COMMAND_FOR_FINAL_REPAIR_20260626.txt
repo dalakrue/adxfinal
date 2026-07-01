@@ -1,0 +1,33 @@
+Inspect, repair, optimize, test, and package the supplied ADX Quant Pro project as one deployable ZIP.
+
+NON-NEGOTIABLE PROTECTION
+1. Keep app.py as the only deployment entry point. Do not replace it.
+2. Do not change, simplify, rename, delete, average, retrain, or alter any protected trading logic, calculation, threshold, BUY/SELL/WAIT rule, Field 1 source-of-truth value, Power BI production central path, regime formula, historical truth, canonical field, or protected hash.
+3. Changes may affect only UI, orchestration, caching, serialization, publication identity, API refresh wiring, data availability, duplicate rendering, session-state retention, imports, packaging, and mobile responsiveness.
+
+PERFORMANCE
+4. Make “Quick Run Fields 1–3 + Open Lunch” refresh EURUSD H1 once, normalize once, calculate only Fields 1–3 and their strict dependencies, publish one immutable canonical generation, stop all Fields 4–9/AI/NLP/research work, and open Lunch Field 1.
+5. Reuse a generation only when latest completed H1 candle, symbol, timeframe, source signature, canonical identity, and all Field 1–3 caches exactly match.
+6. Lazy-load all nonselected Lunch fields. Keep fields closed by default. Never calculate on field open/close, tab switch, copy, export, or search.
+7. Keep large DataFrames out of Streamlit session state after publication. Store complete history on disk/database and retain only current facts, compact summaries, and one display page.
+8. Cache API data by symbol/timeframe/latest completed candle. Deduplicate repeated connector calls and repeated frame normalization.
+9. Remove runtime __pycache__, .pyc, obsolete generated artifacts, and unreachable duplicate render calls, but do not delete versioned source-contract modules unless a call-graph and import scan proves they are unreachable.
+
+SYNC AND DATA AVAILABILITY
+10. Every Lunch field must read the same canonical run_id, generation_id, broker candle time, symbol, timeframe, decision, regime, and source freshness.
+11. Never silently mix prior-generation values with current-generation values. Mark a field unavailable only when its required source is genuinely missing.
+12. Add one Lunch refresh button: refresh API data once, run QUICK Fields 1–3, republish canonical state, invalidate Copy Short/Full caches, and rerun Lunch.
+13. Do not use datetime.now(), datetime.utcnow(), browser time, or local PC time for market tables. Use the shared broker-time provider.
+
+COPY BUTTONS
+14. Render exactly two Lunch controls: Copy Short and Copy Full.
+15. Both must include only available, necessary, deduplicated, current-generation Fields 1–3 facts. Exclude history tables, DataFrames, unavailable/null placeholders, stale values, duplicate labels, internal cache keys, diagnostics, and failed outputs.
+16. Copy Full may contain more detail than Copy Short, but must remain current-only and bounded. Show character/line/token estimates.
+17. Make clipboard controls work on desktop and iPhone: stacked rows, 50px+ touch target, pointer-events enabled, high z-index, click/touch/keyboard handlers, secure-context clipboard API, execCommand fallback, selectable text fallback, and download fallback.
+18. Build and cache payloads once per canonical generation. Rebuild only when canonical identity changes or Refresh succeeds.
+
+MOBILE AND DEPLOYMENT
+19. Optimize for iPhone 11 Pro: one selected field at a time, compact tables, horizontal table scrolling, no sidebar on login/phone, no duplicate floating controls, and no side-by-side clipboard iframes.
+20. Pin Python 3.12 and compatible dependencies. Validate Streamlit Cloud startup with `streamlit run app.py`.
+21. Run compileall, import smoke tests, architecture validation, quick-run call-graph checks, canonical identity checks, copy payload tests, refresh invalidation tests, and mobile CSS/static checks.
+22. Produce: deployable ZIP, modified-files list, fresh test report, performance audit, known limitations, and protected-logic confirmation.

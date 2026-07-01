@@ -1,0 +1,11 @@
+{
+  "scope": "offline deterministic microbenchmarks; not a claim about live full calculation",
+  "warm_runs": 3,
+  "cold_runs": 3,
+  "ai_direct_lookup_latency_ms": 0.006571818333327428,
+  "ai_deterministic_analysis_latency_ms": 0.008913223333327855,
+  "ai_grounded_template_latency_ms": 0.0068061689999960135,
+  "evidence_package_size_bytes": 1948,
+  "target_30_50_percent_verified": false,
+  "claim": "No unsupported 30\u201350% claim; live full-app baseline unavailable offline."
+}

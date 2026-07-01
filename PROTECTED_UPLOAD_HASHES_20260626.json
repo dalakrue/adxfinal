@@ -1,0 +1,42 @@
+[
+  {
+    "file": "core/canonical_runtime_20260617.py",
+    "uploaded_zip_sha256": "4cc6f40de479f245a21b293bac0c3a7a7bd8d0d0e27d5f30ae69078372f5bd12"
+  },
+  {
+    "file": "core/canonical_sync_v9.py",
+    "uploaded_zip_sha256": "e470b7292af31d359afb879d0372665b157b37ccfa88769ea285ef42260fda95"
+  },
+  {
+    "file": "core/decision_product_engine_20260617.py",
+    "uploaded_zip_sha256": "e6577fa0fe8d8bbcc9a388bbd61f2e56b9db0bd83d9b419b3ab1f35a0d2630a7"
+  },
+  {
+    "file": "core/full_metric_canonical_adapter_20260618.py",
+    "uploaded_zip_sha256": "b596a04ff0a1265bf1b64c95e665597e3b0eccc9a22c5b75b7be50fde82e506b"
+  },
+  {
+    "file": "lunch/field_01/__init__.py",
+    "uploaded_zip_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "lunch/field_01/contract.py",
+    "uploaded_zip_sha256": "60cb2e3346f610394007a38bf72bd2ebfd842c95b11b41207fd7c0beab4ddfb4"
+  },
+  {
+    "file": "lunch/field_01/renderer.py",
+    "uploaded_zip_sha256": "b8b2878ab03329cbbafb69212d3fe2f7c0c8defe008d147fba9580c2b8b3b7de"
+  },
+  {
+    "file": "lunch/field_01/tables.py",
+    "uploaded_zip_sha256": "34655607e2ffc9fd6740a8931665f78d59971eba021e557916917625e9043b51"
+  },
+  {
+    "file": "lunch/field_01/tests.py",
+    "uploaded_zip_sha256": "d5eb4690e7e54d331840cbe890f0f030b1dd47dc614fb8d42dc51808b12d4054"
+  },
+  {
+    "file": "lunch/field_01/view_model.py",
+    "uploaded_zip_sha256": "49da8155f680bdf1a06f376f9a47da4a60ee1c93e985a64d2bf60a38331e8abd"
+  }
+]

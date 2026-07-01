@@ -1,0 +1,6 @@
+Streamlit startup smoke test
+============================
+Command: streamlit run app.py --server.headless true --server.port 8767
+Result: HTTP 200 from local server
+Observed log: Uvicorn server started and Streamlit displayed the local/network URL.
+Scope: local startup only; not a Streamlit Community Cloud deployment test.

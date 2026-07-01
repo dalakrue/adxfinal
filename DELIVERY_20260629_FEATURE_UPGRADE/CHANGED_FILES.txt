@@ -1,0 +1,27 @@
+CHANGED EXISTING FILES
+core/app/refresh.py
+core/config/defaults.py
+core/settings_run_orchestrator_v9_parts/part_001.py
+tabs/antd_page_router_20260615.py
+tabs/antd_page_router_20260615_v9_parts/part_002.py
+tabs/field456789_page_20260626.py
+tabs/lunch_unified_sync_run_gate_20260612.py
+ui/antd_navigation_20260615.py
+ui/lunch_field1_ai_summary_20260628.py
+ui/lunch_four_core_fields_20260619.py
+ui/sidebar_fallback_panel.py
+
+NEW FILES
+DELIVERY_20260629_FEATURE_UPGRADE/IMPLEMENTATION_REPORT.md
+DELIVERY_20260629_FEATURE_UPGRADE/TEST_REPORT.md
+core/buy_sell_frequency_20260629.py
+core/field2_quant_upgrade_20260629.py
+core/symbol_universe_20260629.py
+tests/test_feature_upgrade_20260629.py
+ui/dinner_research_history_upgrade_20260629.py
+ui/global_symbol_selector_20260629.py
+ui/lunch_decision_table_bfd_wrapper_20260629.py
+ui/lunch_field2_quant_upgrade_20260629.py
+
+MISSING ORIGINAL FILES
+NONE

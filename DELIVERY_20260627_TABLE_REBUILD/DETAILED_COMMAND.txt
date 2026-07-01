@@ -1,0 +1,31 @@
+Inspect and repair the ADX Quant Pro Streamlit project without changing protected Field 1 production calculations, thresholds, BUY/SELL/WAIT/HOLD/NO-TRADE rules, Power BI central path, regime formulas, TP/SL, broker-time rules, model weights, settled outcomes, or historical database records.
+
+1. FIELD 1 TABLE 1
+Delete/replace the old Field 1 Lunch Table 1 renderer. Build one read-only “Decision History — Last 25 Days” table by outer-joining every available Table 3 factor history on the completed broker H1 candle: Entry Strength, SELL Pressure, BUY Pressure, Net Pressure, Pullback Readiness, M1 Confirmation, Master Decision, Hold Safety, TP Quality, and Direction Confirmation. Include all score and decision columns. Use newest completed broker candle first and retain partial rows. Never create historical rows. Missing scores must display N/A, never 0.0. Diagnostic BUY Evidence, SELL Evidence, Conflict, Coverage and Consensus must display N/A when there is no valid evidence.
+
+2. CANONICAL IDENTITY
+After Quick Run or Full Run succeeds, guarantee that Lunch receives run_id, generation_id, symbol, timeframe, completed broker candle, source snapshot hash and source signature. If legacy calculations succeeded but aliases were not bound, rebind a deterministic identity from the real calculated Field 1 result and actual completed candle. Do not rerun calculations and do not fabricate market data.
+
+3. FIELD 1 TABLE 3
+Keep all ten factor tables visible. Repair Net Pressure and Direction Confirmation discovery so their published histories are included even when publisher keys or column names differ. Do not convert missing evidence to zero.
+
+4. FIELD 1 TABLE 4
+Replace the old Table 4 with “Next-Hour Technical + Sentiment + Session + Regime + Data Mining Bias — Last 25 Days”.
+- Technical Bias: Entry Strength decision history from Field 1 Table 3.
+- Regime Bias: Lower-standard Less Risky Bias from Field 3 three-standard summary.
+- Session Bias: published session history; when absent, use completed H1 close-return session evidence only as a display fallback.
+- Data Mining Bias: Historical Next 1 Hour Dir and/or Prescriptive Label from Research → Data Mining → Random Forest + KNN Priority.
+- Sentiment Bias: Regime Direction from Research → NLP → 25-Day Regime Prediction History + NLP hourly rows.
+Outer-join on completed broker H1 time, keep partial rows, show source coverage, directional agreement, and a combined next-hour direction. Never make the whole table blank because one source is missing. Missing values remain MISSING. Use a research-only, documented reliability order to break exact ties and reduce constant WAIT results; do not change the production decision engine.
+
+5. TABLE 5 FALLBACK
+When Table 4 has no real timestamped source, show Table 5 “Combined Available Decision/Bias Evidence — Last 25 Days”, collecting all real timestamped decision, bias, direction, label, action and priority columns available in Fields 4–9 and Research. Never fabricate rows.
+
+6. FIELDS 4–9 NAVIGATION
+The floating-menu “Field 4 to 9” button must navigate to a combined page, never Settings. At the top show a 25-day collection history of all available Fields 4–9 decision/bias columns, then render Fields 4, 5, 6, 7, 8 and 9 together using their existing independent engines and caches.
+
+7. AI ASSISTANT AIRLLM
+Add an AirLLM Closed/Open control in the independent AI Assistant tab. Closed mode uses the lightweight canonical assistant. Open mode lazy-loads AirLLM only after a question is submitted and only when the optional package/model environment is configured. On any failure, use the deterministic canonical fallback and report the backend status. Do not include AirLLM in base requirements.
+
+8. TESTING
+Run compileall, publication-bridge tests, factor-history merge tests, navigation tests, and combined-display consistency tests. Package app.py as the Streamlit entry point in one deployable ZIP.

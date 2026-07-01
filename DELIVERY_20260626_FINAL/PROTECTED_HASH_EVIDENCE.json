@@ -1,0 +1,62 @@
+[
+  {
+    "file": "core/canonical_runtime_20260617.py",
+    "uploaded_zip_hash": "4cc6f40de479f245a21b293bac0c3a7a7bd8d0d0e27d5f30ae69078372f5bd12",
+    "delivered_hash": "4cc6f40de479f245a21b293bac0c3a7a7bd8d0d0e27d5f30ae69078372f5bd12",
+    "unchanged_from_uploaded_project": true
+  },
+  {
+    "file": "core/canonical_sync_v9.py",
+    "uploaded_zip_hash": "e470b7292af31d359afb879d0372665b157b37ccfa88769ea285ef42260fda95",
+    "delivered_hash": "e470b7292af31d359afb879d0372665b157b37ccfa88769ea285ef42260fda95",
+    "unchanged_from_uploaded_project": true
+  },
+  {
+    "file": "core/decision_product_engine_20260617.py",
+    "uploaded_zip_hash": "e6577fa0fe8d8bbcc9a388bbd61f2e56b9db0bd83d9b419b3ab1f35a0d2630a7",
+    "delivered_hash": "e6577fa0fe8d8bbcc9a388bbd61f2e56b9db0bd83d9b419b3ab1f35a0d2630a7",
+    "unchanged_from_uploaded_project": true
+  },
+  {
+    "file": "core/full_metric_canonical_adapter_20260618.py",
+    "uploaded_zip_hash": "b596a04ff0a1265bf1b64c95e665597e3b0eccc9a22c5b75b7be50fde82e506b",
+    "delivered_hash": "b596a04ff0a1265bf1b64c95e665597e3b0eccc9a22c5b75b7be50fde82e506b",
+    "unchanged_from_uploaded_project": true
+  },
+  {
+    "file": "lunch/field_01/__init__.py",
+    "uploaded_zip_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "delivered_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "unchanged_from_uploaded_project": true
+  },
+  {
+    "file": "lunch/field_01/contract.py",
+    "uploaded_zip_hash": "60cb2e3346f610394007a38bf72bd2ebfd842c95b11b41207fd7c0beab4ddfb4",
+    "delivered_hash": "60cb2e3346f610394007a38bf72bd2ebfd842c95b11b41207fd7c0beab4ddfb4",
+    "unchanged_from_uploaded_project": true
+  },
+  {
+    "file": "lunch/field_01/renderer.py",
+    "uploaded_zip_hash": "d72cd38ff7f9cefbc9a1ad5c738875cbb2b886143c381e810286d0f276802094",
+    "delivered_hash": "0bceab82f863f88dea7d1f839e0ba795fdb618b4e58b5eeccdce07a549a6bdbc",
+    "unchanged_from_uploaded_project": false
+  },
+  {
+    "file": "lunch/field_01/tables.py",
+    "uploaded_zip_hash": "34655607e2ffc9fd6740a8931665f78d59971eba021e557916917625e9043b51",
+    "delivered_hash": "34655607e2ffc9fd6740a8931665f78d59971eba021e557916917625e9043b51",
+    "unchanged_from_uploaded_project": true
+  },
+  {
+    "file": "lunch/field_01/tests.py",
+    "uploaded_zip_hash": "d5eb4690e7e54d331840cbe890f0f030b1dd47dc614fb8d42dc51808b12d4054",
+    "delivered_hash": "d5eb4690e7e54d331840cbe890f0f030b1dd47dc614fb8d42dc51808b12d4054",
+    "unchanged_from_uploaded_project": true
+  },
+  {
+    "file": "lunch/field_01/view_model.py",
+    "uploaded_zip_hash": "49da8155f680bdf1a06f376f9a47da4a60ee1c93e985a64d2bf60a38331e8abd",
+    "delivered_hash": "49da8155f680bdf1a06f376f9a47da4a60ee1c93e985a64d2bf60a38331e8abd",
+    "unchanged_from_uploaded_project": true
+  }
+]

@@ -1,0 +1,2 @@
+Credential literal scan: PASS
+Files containing supplied key literals: 0

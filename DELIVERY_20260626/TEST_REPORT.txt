@@ -1,0 +1,3 @@
+Targeted regression tests: 6 passed
+Python compileall: PASS
+Main entry point: app.py

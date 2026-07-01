@@ -1,0 +1,42 @@
+[
+  {
+    "file": "core/decision_contract_20260617.py",
+    "sha256": "1b104297a22c99de0170cbdbcbec92830c02b31f782e9030c322c801dc578195"
+  },
+  {
+    "file": "core/decision_policy_20260617.py",
+    "sha256": "eab139958c687022bc8ae5fc938ba5f56a11cfe3effa0736278d038006c72739"
+  },
+  {
+    "file": "core/decision_product_engine_20260617.py",
+    "sha256": "e6577fa0fe8d8bbcc9a388bbd61f2e56b9db0bd83d9b419b3ab1f35a0d2630a7"
+  },
+  {
+    "file": "core/full_metric_canonical_adapter_20260618.py",
+    "sha256": "b596a04ff0a1265bf1b64c95e665597e3b0eccc9a22c5b75b7be50fde82e506b"
+  },
+  {
+    "file": "lunch/field_01/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "file": "lunch/field_01/contract.py",
+    "sha256": "60cb2e3346f610394007a38bf72bd2ebfd842c95b11b41207fd7c0beab4ddfb4"
+  },
+  {
+    "file": "lunch/field_01/renderer.py",
+    "sha256": "2e26b5af209178860060296b822d39da6627fd7801f9410249dc243e63fd8e25"
+  },
+  {
+    "file": "lunch/field_01/tables.py",
+    "sha256": "34655607e2ffc9fd6740a8931665f78d59971eba021e557916917625e9043b51"
+  },
+  {
+    "file": "lunch/field_01/tests.py",
+    "sha256": "d5eb4690e7e54d331840cbe890f0f030b1dd47dc614fb8d42dc51808b12d4054"
+  },
+  {
+    "file": "lunch/field_01/view_model.py",
+    "sha256": "49da8155f680bdf1a06f376f9a47da4a60ee1c93e985a64d2bf60a38331e8abd"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "canonical_identity": {
+    "run_id": "calc-7",
+    "generation_id": "7",
+    "symbol": "EURUSD",
+    "timeframe": "H1",
+    "completed_broker_candle": "2026-06-22 07:00:00 (Broker UTC+3)",
+    "source_snapshot_hash": "98115b8a944ff3472a37",
+    "source_signature": "eca9a2fe48f116af6375de7ba45a14d0624da8f1e4e9880d368c994911fa1113"
+  },
+  "table3_joined_source_rows": 0,
+  "table1_rows": 1,
+  "table1_final_blank_count": 0,
+  "net_pressure_all_match": null,
+  "direction_confirmation_all_match": null,
+  "master_all_match": null,
+  "table1_labels": [
+    "N/A",
+    "WAIT"
+  ],
+  "table5_rows": 1,
+  "table5_columns": [
+    "Date",
+    "Weekday",
+    "Hour",
+    "Broker Candle Time",
+    "Net Pressure Decision",
+    "Pressure Decision",
+    "Pullback Readiness Decision",
+    "Hold Safety Decision",
+    "TP Quality Decision",
+    "Direction Confirmation Decision",
+    "Decision Reliability",
+    "Canonical run_id",
+    "Canonical generation_id",
+    "Source Snapshot Hash",
+    "Source Signature",
+    "Production Master Decision",
+    "Master Decision",
+    "Production Decision Raw",
+    "Action Display Label",
+    "Final Decision",
+    "Master Action",
+    "Research Shadow Action",
+    "Research-Calibrated Probability",
+    "Actionability Probability",
+    "Expected Utility",
+    "Uncertainty",
+    "Research Reliability",
+    "Promotion Status"
+  ],
+  "table5_master_action_position": 20,
+  "table5_research_columns_after_master": [
+    "Research Shadow Action",
+    "Research-Calibrated Probability",
+    "Actionability Probability",
+    "Expected Utility",
+    "Uncertainty",
+    "Research Reliability",
+    "Promotion Status"
+  ],
+  "app_exceptions": 0
+}

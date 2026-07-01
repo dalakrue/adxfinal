@@ -1,0 +1,17 @@
+{
+  "benchmark": "same completed candle, same snapshot, all 20 ARERT modules",
+  "fixture": "deterministic synthetic 900-row EURUSD-like H1 series; no live-performance claim",
+  "first_run_seconds": 5.140249,
+  "cached_run_seconds": 0.418171,
+  "wall_time_reduction_pct": 91.86,
+  "outer_tracemalloc_note": "The runner uses per-module tracemalloc, so module peaks are the valid comparable measurement.",
+  "first_run_max_module_peak_memory_mb": 44.5946,
+  "cached_run_max_module_peak_memory_mb": 0.0,
+  "module_calculation_peak_memory_reduction_pct": 100.0,
+  "first_run_cache_hits": 0,
+  "cached_run_cache_hits": 20,
+  "module_count": 20,
+  "database_persisted": true,
+  "production_values_modified": false,
+  "interpretation": "Measures repeated same-candle research calculation only. It does not prove device-wide mobile CPU/RAM reduction."
+}

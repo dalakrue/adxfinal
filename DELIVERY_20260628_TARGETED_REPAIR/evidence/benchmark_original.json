@@ -1,0 +1,56 @@
+{
+  "root": "/mnt/data/adx_original/ADX_QUANT_PRO_REPAIRED_20260628_FINAL",
+  "python": "3.13.5",
+  "arert_na_label_60000": {
+    "status": "FAIL",
+    "error": "TypeError: boolean value of NA is ambiguous",
+    "samples_ms": [],
+    "median_ms": null,
+    "rss_delta_mb": 0.0
+  },
+  "mixed_timestamp_history_600": {
+    "status": "PASS",
+    "error": null,
+    "samples_ms": [
+      32.836,
+      18.097,
+      15.742,
+      15.842,
+      18.203
+    ],
+    "median_ms": 18.097,
+    "rss_delta_mb": 1.262
+  },
+  "dinner_history_cold_600x5": {
+    "status": "PASS",
+    "error": null,
+    "samples_ms": [
+      547.859
+    ],
+    "median_ms": 547.859,
+    "rss_delta_mb": 4.211
+  },
+  "dinner_history_warm_cache_600x5": {
+    "status": "PASS",
+    "error": null,
+    "samples_ms": [
+      0.06,
+      0.029,
+      0.021,
+      0.019,
+      0.018
+    ],
+    "median_ms": 0.021,
+    "rss_delta_mb": 0.0
+  },
+  "dinner_output": {
+    "rows": 600,
+    "columns": 80,
+    "protective_labels": []
+  },
+  "finder_new_functions": {
+    "status": "NOT_PRESENT",
+    "error": "ImportError: cannot import name '_filter_by_finder_time' from 'ui.finder_canonical_view_20260619' (/mnt/data/adx_original/ADX_QUANT_PRO_REPAIRED_20260628_FINAL/ui/finder_canonical_view_20260619.py)"
+  },
+  "peak_rss_mb": 388.562
+}

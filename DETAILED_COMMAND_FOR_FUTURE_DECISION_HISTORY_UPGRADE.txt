@@ -1,0 +1,31 @@
+Inspect, repair, test and package the attached ADX Quant Pro project as one deployable ZIP.
+
+NON-NEGOTIABLE PROTECTION
+Preserve every protected production calculation, Field 1 source-of-truth value, BUY/SELL/WAIT/HOLD/NO-TRADE rule, existing threshold, Power BI central path, regime formula, canonical snapshot identity, historical outcome and database record. Do not merge calculation logic because fields are displayed together. Do not fabricate missing history, accuracy, reliability, uncertainty or outcome data.
+
+LUNCH MUST CONTAIN EXACTLY FIVE SELECTABLE DISPLAY FIELDS
+1. Field 1 — Full Metric History and Decision History
+2. Field 2 — Power BI Price Prediction Path
+3. Field 3 — Regime History
+4. Field 456 — combined display of original Fields 4+5+6
+5. Field 789 — combined display of original Fields 7+8+9
+
+Combine 4+5+6 and 7+8+9 only in the UI. Keep every original engine, cache, function, table, persistence store and calculation independent. Render only the selected field to reduce phone RAM/CPU use.
+
+FIELD 1 TOP TABLE
+At the top of Field 1 add `Decision History — Last 25 Days`. Use completed EURUSD H1 broker candles only, newest first, from the same canonical generation as all other Lunch fields. Include these columns in this order:
+Date; Weekday; Hour; Entry Strength Score; Entry Strength Decision; SELL Pressure Score; SELL Pressure Decision; BUY Pressure Score; BUY Pressure Decision; Net Pressure Score; Pressure Decision; Pullback Readiness Score; Pullback Readiness Decision; M1 Confirmation Score; M1 Confirmation Decision; Master Decision Score; Master Decision; Hold Safety Score; Hold Safety Decision; TP Quality Score; TP Quality Decision; Direction Confirmation Score; Direction Confirmation Decision; Final Decision; Decision Confidence; Decision Reliability; Uncertainty Percentage; Error Percentage; Outcome Status; Decision Correct.
+
+Normalize presentation scores to 0–10 only when the source scale is known. Preserve unavailable values as N/A. Never convert unavailable data to zero. Only mark Decision Correct after the outcome is settled. Rebuild Date, Weekday and Hour from the shared broker-time provider, not local PC time or datetime.now().
+
+CROSS-FIELD SYNCHRONIZATION
+Publish an immutable decision snapshot keyed by run_id, generation_id, source snapshot hash, symbol, timeframe and completed broker candle. Fields 2, 3, 456 and 789 must read this identity and show a red out-of-sync status if their calculation identity or completed candle differs. Field 1 remains the authority; other fields may consume but never overwrite it.
+
+HOLD/NO-TRADE RESEARCH GATE
+Do not blindly reduce HOLD/NO-TRADE by 50%. Build a shadow-only candidate gate using Field 1 history. Evaluate candidate thresholds with anchored or rolling walk-forward validation, purging/embargo, session and regime stratification, minimum effective sample size, Brier score/log loss calibration, coverage, precision for BUY/SELL, expectancy after spread/slippage, drawdown and turnover. Promote a lower abstention threshold only when out-of-sample expectancy and calibration improve without violating drawdown and false-direction limits. Keep instant rollback to the protected threshold. Report achieved reduction instead of forcing 50%.
+
+DIRECTION CONFIRMATION RESEARCH LAYER
+Create a shadow consensus score from Entry Strength, BUY pressure, SELL pressure, Net Pressure, M1 Confirmation, Pullback Readiness, Hold Safety, TP Quality, regime state and recent calibrated outcome reliability. Use conflict, coverage and effective sample size. The research layer may recommend BUY/SELL/HOLD, but it must not rewrite the production decision until promotion gates pass.
+
+TESTS
+Run AST/compile checks, imports in the declared runtime, a synthetic 25-day table test, newest-first and completed-candle tests, broker-time tests, missing-data tests, canonical identity mismatch tests, UI selector test for exactly five fields, protected-hash comparison, database migration test, Streamlit startup smoke test and mobile-width render smoke test. Package source, test evidence, changed-files list, rollback instructions and limitations into one deployable ZIP.

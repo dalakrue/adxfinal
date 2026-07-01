@@ -1,0 +1,4 @@
+2026-06-27 16:39:28.793 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-06-27 16:39:35.445 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+app.py initial_exceptions 0 guest_exceptions 0 menu ['⚙️ Settings ✓', '🍱 Lunch', '🌙 Dinner', '🤖 AI Assistant', '🌅 Morning', '🎓 Research', '📂 Other'] active Settings
+adx_dashpoard.py initial_exceptions 0 guest_exceptions 0 menu ['⚙️ Settings ✓', '🍱 Lunch', '🌙 Dinner', '🤖 AI Assistant', '🌅 Morning', '🎓 Research', '📂 Other'] active Settings

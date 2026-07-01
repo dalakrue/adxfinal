@@ -1,0 +1,36 @@
+{
+  "date": "2026-06-28",
+  "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+  "platform": "Linux-4.4.0-x86_64-with-glibc2.41",
+  "compileall": "PASS",
+  "tests": {
+    "collected": 147,
+    "passed": 147,
+    "failed": 0,
+    "post_final_affected_subset_passed": 37
+  },
+  "streamlit_health": {
+    "app.py": "PASS",
+    "adx_dashpoard.py": "PASS"
+  },
+  "streamlit_apptest": {
+    "app.py": {
+      "exceptions": 0
+    },
+    "adx_dashpoard.py": {
+      "exceptions": 0
+    },
+    "guest_settings": {
+      "exceptions": 0,
+      "errors": 0
+    },
+    "guest_dinner": {
+      "exceptions": 0,
+      "errors": 0
+    }
+  },
+  "hard_coded_key_scan_matches": 0,
+  "protected_hashes_unchanged": true,
+  "full_master_command_complete": false,
+  "completion_boundary": "Targeted defects and requested UI/data-history integrations repaired; broad incomplete items listed explicitly."
+}

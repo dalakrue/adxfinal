@@ -1,0 +1,24 @@
+{
+  "environment": "container synthetic benchmark; 540 matured horizon rows; not a production workload claim",
+  "evaluate_seconds": {
+    "runs": [
+      1.6401827029999367,
+      1.9056472739998753,
+      2.005420415000117,
+      1.946658836999859,
+      1.7110105650001515
+    ],
+    "median": 1.9056472739998753,
+    "mean": 1.8417839587999878,
+    "max": 2.005420415000117
+  },
+  "tracemalloc_peak_bytes": 884865,
+  "first_publish_seconds": 0.33433719000004203,
+  "idempotent_cached_publish_seconds": 0.0029896549999648414,
+  "measured_repeated_work_reduction_percent": 99.10579645657593,
+  "first_publish_cache_hit": false,
+  "second_publish_cache_hit": true,
+  "bounded_history_rows": 600,
+  "ordinary_rerun_heavy_work": false,
+  "claim_scope": "Only repeated publication of the same run_id in this test environment. No claim is made for end-to-end production speed."
+}

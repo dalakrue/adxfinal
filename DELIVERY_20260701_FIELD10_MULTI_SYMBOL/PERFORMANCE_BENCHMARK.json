@@ -1,0 +1,41 @@
+[
+  {
+    "selected_symbols": 1,
+    "completed_symbols": 1,
+    "failed_symbols": 0,
+    "wall_seconds": 0.1553,
+    "cpu_seconds": 0.14,
+    "rss_delta_mb": 2.0312,
+    "compressed_cache_mb": 0.0147,
+    "hourly_rows": 600,
+    "runner_calls": 1,
+    "heat_proxy": "LOW",
+    "test_type": "synthetic Field 10 orchestration/persistence; excludes live API and protected model runtime"
+  },
+  {
+    "selected_symbols": 5,
+    "completed_symbols": 5,
+    "failed_symbols": 0,
+    "wall_seconds": 0.6322,
+    "cpu_seconds": 0.59,
+    "rss_delta_mb": 2.2031,
+    "compressed_cache_mb": 0.0734,
+    "hourly_rows": 3000,
+    "runner_calls": 5,
+    "heat_proxy": "LOW",
+    "test_type": "synthetic Field 10 orchestration/persistence; excludes live API and protected model runtime"
+  },
+  {
+    "selected_symbols": 10,
+    "completed_symbols": 10,
+    "failed_symbols": 0,
+    "wall_seconds": 1.2708,
+    "cpu_seconds": 1.18,
+    "rss_delta_mb": 2.9727,
+    "compressed_cache_mb": 0.1469,
+    "hourly_rows": 6000,
+    "runner_calls": 10,
+    "heat_proxy": "LOW",
+    "test_type": "synthetic Field 10 orchestration/persistence; excludes live API and protected model runtime"
+  }
+]

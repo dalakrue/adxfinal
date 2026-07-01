@@ -1,0 +1,4 @@
+PASS: core.research_grade_system_v17_20260624
+PASS: core.services.research_grade_system_v17_service
+PASS: ui.lunch_research_grade_system_v17_20260624
+PASS: app

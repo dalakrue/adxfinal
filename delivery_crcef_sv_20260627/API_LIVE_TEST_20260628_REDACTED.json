@@ -1,0 +1,23 @@
+{
+  "tested_at_utc": "2026-06-27T19:21:25Z",
+  "credentials_redacted": true,
+  "twelve_data": {
+    "ok": false,
+    "error": "Network/DNS unavailable in the test sandbox; provider response was not reached."
+  },
+  "finnhub": {
+    "ok": false,
+    "attempts": [
+      {
+        "symbol": "OANDA:EUR_USD",
+        "ok": false,
+        "error": "Network/DNS unavailable in the test sandbox; provider response was not reached."
+      },
+      {
+        "symbol": "FX:EURUSD",
+        "ok": false,
+        "error": "Network/DNS unavailable in the test sandbox; provider response was not reached."
+      }
+    ]
+  }
+}

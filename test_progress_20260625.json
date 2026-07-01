@@ -1,0 +1,26 @@
+{
+  "done": [
+    "tests/test_20260618_projection_and_regime_upgrade.py",
+    "tests/test_20260624_morning_quant_upgrade.py",
+    "tests/test_advanced_causal_forecast_20260624.py",
+    "tests/test_advanced_reliability_shift_20260620.py",
+    "tests/test_breakout_regime_shadow_20260624.py",
+    "tests/test_broker_time.py",
+    "tests/test_canonical_broker_ai_field6_upgrade_20260622.py",
+    "tests/test_canonical_runtime_20260617.py",
+    "tests/test_canonical_sync.py",
+    "tests/test_causal_accuracy_upgrade_20260624.py",
+    "tests/test_causal_quant_end_to_end_20260618.py",
+    "tests/test_decision_product_20260617.py",
+    "tests/test_delivery_contract_20260621.py",
+    "tests/test_end_to_end_sync_regressions_20260618.py",
+    "tests/test_external_architecture_20260619.py",
+    "tests/test_field8_20260624.py",
+    "tests/test_field8_alpha_beta_delta_20260624.py",
+    "tests/test_less_risky_projection_20260625.py",
+    "tests/test_field9_eurusd_h1_20260624.py",
+    "tests/test_unified_shadow_pipeline_v19_20260624.py",
+    "tests/test_navigation_ai_and_quick_decision_20260625.py",
+    "tests/test_streamlit_cloud_preflight_20260619.py"
+  ]
+}

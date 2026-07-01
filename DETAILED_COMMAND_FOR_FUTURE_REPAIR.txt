@@ -1,0 +1,60 @@
+Inspect, repair, optimize, test, and package the supplied ADX Quant Pro Streamlit project as one deployable ZIP.
+
+NON-NEGOTIABLE PROTECTION
+- Keep app.py as the deployment entry point.
+- Do not delete, rename, weaken, simplify, replace, or numerically alter protected Field 1 production truth, BUY/SELL/WAIT logic, thresholds, regime formula, Power BI central path, KNN/Greedy/NLP logic, historical tables, canonical fields, or protected hashes.
+- Session adaptation must be a leakage-safe shadow/evidence layer unless equivalence tests prove an exact refactor.
+
+CRITICAL STREAMLIT FIX
+- Repair every StreamlitAPIException caused by changing st.session_state after a widget with the same key is instantiated.
+- Give each visible widget its own widget key.
+- Store canonical values under separate non-widget keys through on_change callbacks or apply pending values before widget creation.
+- Never assign a widget-backed key after st.selectbox, st.radio, st.toggle, st.text_input, or st.number_input is created in the same rerun.
+
+SHARED SESSION ARCHITECTURE
+- Put one shared session metric and selector at the top of Lunch before the principal-field selector.
+- Options: Auto, Sydney, Tokyo, Tokyo+Sydney overlap, Tokyo+London overlap, London, London+New York overlap, New York, Global fallback.
+- Auto must derive the session from the immutable latest completed canonical EURUSD H1 candle with DST-aware IANA time zones.
+- Fields 1–4, the green less-risky line, session evidence, and session-filtered 25-day views must read the same session contract.
+- Manual selection must never rewrite protected production truth. Apply only an empirically shrunk, ATR-capped, interval-clipped shadow correction.
+- Use session-specific evidence only when settled sample size is adequate. Otherwise shrink toward global evidence and show SESSION_CALIBRATED, SESSION_SHRUNK, GLOBAL_DOMINANT, INTRADAY_PRIOR, or GLOBAL_FALLBACK.
+
+POWER BI AND GREEN LINE
+- Preserve the exact published central path.
+- Always render the green less-risky path when a valid central path and current price exist.
+- Normalize scalar/list/Series/DataFrame values before formatting.
+- If explicit probabilities are absent, derive display probabilities only from the saved forecast distribution or settled empirical outcomes. Never count deterministic path points as independent probability samples.
+- Never show fabricated 0%, 100%, +0.0%, or Unavailable when a valid evidence source exists.
+- Bound finite-sample displayed probabilities away from exact 0 and 1 and label the source and sample size.
+- For truly missing evidence, display “Insufficient settled evidence” rather than a fake numeric value.
+
+METRIC REPAIR
+- Repair Causal Actionable Accuracy, Median Absolute Error, CRPS skill, Probability Above/Below Current, Current Regime Reliability, Balanced Direction Accuracy, 80% Band Coverage, Forecast Age, Actionable Forecast Coverage, Skill vs Rolling Mean, and Skill vs Previous Close.
+- Resolve each metric from the canonical generation first, then settled prediction outcomes, then a mathematically valid display fallback.
+- Include numerator, denominator/sample count, calculation generation, and last settlement time in an optional evidence expander.
+- Accuracy must use forecast-origin direction versus realized target direction and must exclude WAIT from actionable accuracy while separately reporting coverage.
+- CRPS skill must be 1 - CRPS_model / CRPS_baseline and must not report zero when the baseline or settled outcomes are absent.
+- Forecast age must use forecast creation time, not local browser time.
+
+25-DAY HISTORY
+- All history tables must use only completed broker H1 candles and display newest first.
+- Session selection must filter or annotate the view without deleting the unfiltered canonical history.
+- Keep export full-history data disk-backed and render only a bounded mobile page.
+
+QUICK RUN AND MOBILE PERFORMANCE
+- Quick Run Fields 1–3 + Open Lunch must normalize EURUSD H1 once, calculate only Fields 1–3 and strict dependencies, publish one immutable generation, stop, and open Lunch.
+- Do not import or run Fields 4–9, AI, NLP, Similar-Day, or Full-only research in QUICK mode unless a strict dependency is proven.
+- Reuse the immutable generation when completed candle and source signature are unchanged.
+- Keep one Lunch field rendered at a time.
+- Lazy-import charts, AI, research, exports, and large tables only after their field/gate is opened.
+- Bound Streamlit session_state: store large DataFrames on disk and keep references plus compact summaries in memory.
+- Use float32 where equivalence tests permit, categorical session/regime columns, bounded caches, and no duplicate DataFrame copies.
+- Disable Plotly scroll zoom and animations on phone mode; limit initial chart points and table rows.
+- Measure cold start, quick-run wall time, repeated-run wall time, peak RSS, session-state serialized size, and ZIP size before and after. Do not claim a percentage reduction without measurements.
+
+TESTING
+- Compile all Python files.
+- Run targeted session-selector, publication-identity, Field 1 protection, Field 2 renderer, green-path, history-order, Quick-vs-Full scope, copy payload, and mobile lazy-load tests.
+- Add a regression test that instantiates the shared selector twice in one rerun and proves no widget-key mutation exception.
+- Add probability tests proving no exact 0% or 100% is displayed from finite evidence and no fake 0.0% is displayed when evidence is missing.
+- Return one deployable ZIP, test report, changed-file manifest, and limitations report.

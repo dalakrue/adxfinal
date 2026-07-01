@@ -1,0 +1,38 @@
+[
+  {
+    "file": "core/decision_table_20260626.py",
+    "sha256": "ce1ad69e36230d00e79d0ebc89d0e2ce27fdd14b3b6b74617cb537787fb70ef5"
+  },
+  {
+    "file": "core/field1_publication_bridge_20260626.py",
+    "sha256": "eefc6cbd18b7c08be5582d18ee11466feee3bda3069a5f26eb8cc1a0743e87bc"
+  },
+  {
+    "file": "ui/lunch_four_core_fields_20260619.py",
+    "sha256": "164013a6864b9a462f360962297bc504b9c3f29d38fa33bc78faf2e3d19e533f"
+  },
+  {
+    "file": "ui/lunch_next_hour_bias_history_20260626.py",
+    "sha256": "da60317084c9f831b29a36bbd318760da665de1d4014c22a1cd3bd5472f13f26"
+  },
+  {
+    "file": "ui/field4to9_collection_history_20260627.py",
+    "sha256": "17fdfc02c15cdcc25c41393caad3523a91fb7cf27c1f76865e8ea0f1e68cad05"
+  },
+  {
+    "file": "tabs/field456789_page_20260626.py",
+    "sha256": "381ea0b9499533be3a82908fe17ef959caaa82d106287d21d0d66a6187efc33b"
+  },
+  {
+    "file": "pages/ai_assistant.py",
+    "sha256": "a8cf60a4ddba9c602f45194a50f81f3fda24a8b9ea9f324f8aafcdf0d9d78ea1"
+  },
+  {
+    "file": "ui/airllm_mobile_assistant_20260626.py",
+    "sha256": "75930005190dc5b26bad664d669d935cbf758e399d504a84c5fb5715683316bd"
+  },
+  {
+    "file": "services/airllm_backend_20260626.py",
+    "sha256": "edc40a9158919b0c54fed8d73ef66528a419f3251f3101f0bac0711a7438a4b1"
+  }
+]

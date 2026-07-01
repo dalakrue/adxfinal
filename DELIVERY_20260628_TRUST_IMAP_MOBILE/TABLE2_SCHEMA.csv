@@ -1,0 +1,127 @@
+column,group,dtype,non_null_sample,description
+Completed Broker Candle,Identity / quality,"datetime64[ns, UTC]",600,Stored/computed completed-candle research history field.
+Broker Day,Identity / quality,object,600,Stored/computed completed-candle research history field.
+Broker Hour,Identity / quality,object,600,Stored/computed completed-candle research history field.
+Symbol,Identity / quality,object,600,Stored/computed completed-candle research history field.
+Timeframe,Identity / quality,object,600,Stored/computed completed-candle research history field.
+Session,Identity / quality,object,600,Stored/computed completed-candle research history field.
+Source,Identity / quality,object,600,Stored/computed completed-candle research history field.
+Run ID,Identity / quality,object,600,Stored/computed completed-candle research history field.
+Generation ID,Identity / quality,object,600,Stored/computed completed-candle research history field.
+Source Version,Identity / quality,object,600,Stored/computed completed-candle research history field.
+Data Coverage %,Identity / quality,float64,600,Stored/computed completed-candle research history field.
+Data-Quality Status,Identity / quality,object,600,Stored/computed completed-candle research history field.
+Missingness Reason,Identity / quality,object,600,Stored/computed completed-candle research history field.
+Validation Status,Identity / quality,object,600,Stored/computed completed-candle research history field.
+Blue Path Direction,Prediction path,object,600,Stored/computed completed-candle research history field.
+Blue Path Value,Prediction path,float64,600,Stored/computed completed-candle research history field.
+Blue Path Trust /10,Prediction path,Float64,582,Stored/computed completed-candle research history field.
+Blue Path Rank,Prediction path,object,600,Stored/computed completed-candle research history field.
+Red Path Direction,Prediction path,object,600,Stored/computed completed-candle research history field.
+Red Path Value,Prediction path,float64,596,Stored/computed completed-candle research history field.
+Red Path Trust /10,Prediction path,Float64,582,Stored/computed completed-candle research history field.
+Red Path Rank,Prediction path,object,600,Stored/computed completed-candle research history field.
+H+1 Predicted Price,Prediction path,float64,600,Stored/computed completed-candle research history field.
+H+1 Actual Matured Price,Prediction path,float64,599,Stored/computed completed-candle research history field.
+H+1 Error,Prediction path,float64,599,Stored/computed completed-candle research history field.
+H+1 Trust /10,Prediction path,Float64,584,Stored/computed completed-candle research history field.
+H+1 Rank,Prediction path,object,600,Stored/computed completed-candle research history field.
+H+2 Predicted Price,Prediction path,float64,600,Stored/computed completed-candle research history field.
+H+2 Actual Matured Price,Prediction path,float64,598,Stored/computed completed-candle research history field.
+H+2 Error,Prediction path,float64,598,Stored/computed completed-candle research history field.
+H+2 Trust /10,Prediction path,Float64,583,Stored/computed completed-candle research history field.
+H+2 Rank,Prediction path,object,600,Stored/computed completed-candle research history field.
+H+3 Predicted Price,Prediction path,float64,600,Stored/computed completed-candle research history field.
+H+3 Actual Matured Price,Prediction path,float64,597,Stored/computed completed-candle research history field.
+H+3 Error,Prediction path,float64,597,Stored/computed completed-candle research history field.
+H+3 Trust /10,Prediction path,Float64,582,Stored/computed completed-candle research history field.
+H+3 Rank,Prediction path,object,600,Stored/computed completed-candle research history field.
+H+6 Predicted Price,Prediction path,float64,600,Stored/computed completed-candle research history field.
+H+6 Actual Matured Price,Prediction path,float64,594,Stored/computed completed-candle research history field.
+H+6 Error,Prediction path,float64,594,Stored/computed completed-candle research history field.
+H+6 Trust /10,Prediction path,Float64,579,Stored/computed completed-candle research history field.
+H+6 Rank,Prediction path,object,600,Stored/computed completed-candle research history field.
+Next-H1 Lower Bound,Prediction path,float64,600,Stored/computed completed-candle research history field.
+Next-H1 Upper Bound,Prediction path,float64,596,Stored/computed completed-candle research history field.
+Interval Coverage,Prediction path,Float64,599,Stored/computed completed-candle research history field.
+Interval Width,Prediction path,float64,596,Stored/computed completed-candle research history field.
+Interval Trust /10,Prediction path,Float64,584,Stored/computed completed-candle research history field.
+Path Stability /10,Prediction path,float64,592,Stored/computed completed-candle research history field.
+Direction Agreement /10,Prediction path,float64,600,Stored/computed completed-candle research history field.
+Uncertainty %,Prediction path,Float64,584,Stored/computed completed-candle research history field.
+Changepoint Warning,Prediction path,object,600,Stored/computed completed-candle research history field.
+Lower Regime,Regime standards,object,592,Stored/computed completed-candle research history field.
+Lower Alpha,Regime standards,float64,592,Stored/computed completed-candle research history field.
+Lower Beta,Regime standards,float64,585,Stored/computed completed-candle research history field.
+Lower Delta,Regime standards,float64,591,Stored/computed completed-candle research history field.
+Lower Regime Age,Regime standards,Int64,600,Stored/computed completed-candle research history field.
+Lower Expected Duration,Regime standards,float64,600,Stored/computed completed-candle research history field.
+Lower Expected Remaining Duration,Regime standards,float64,600,Stored/computed completed-candle research history field.
+Lower Transition Probability,Regime standards,float64,600,Stored/computed completed-candle research history field.
+Lower Hierarchy Agreement,Regime standards,float64,592,Stored/computed completed-candle research history field.
+Lower Uncertainty,Prediction path,Float64,592,Stored/computed completed-candle research history field.
+Lower Reliability,Regime standards,Float64,592,Stored/computed completed-candle research history field.
+Lower Trust /10,Regime standards,Float64,592,Stored/computed completed-candle research history field.
+Lower Rank,Regime standards,object,600,Stored/computed completed-candle research history field.
+Lower Data-Quality Status,Regime standards,object,600,Stored/computed completed-candle research history field.
+Middle Regime,Regime standards,object,570,Stored/computed completed-candle research history field.
+Middle Alpha,Regime standards,float64,570,Stored/computed completed-candle research history field.
+Middle Beta,Regime standards,float64,541,Stored/computed completed-candle research history field.
+Middle Delta,Regime standards,float64,569,Stored/computed completed-candle research history field.
+Middle Regime Age,Regime standards,Int64,600,Stored/computed completed-candle research history field.
+Middle Expected Duration,Regime standards,float64,600,Stored/computed completed-candle research history field.
+Middle Expected Remaining Duration,Regime standards,float64,600,Stored/computed completed-candle research history field.
+Middle Transition Probability,Regime standards,float64,600,Stored/computed completed-candle research history field.
+Middle Hierarchy Agreement,Regime standards,float64,592,Stored/computed completed-candle research history field.
+Middle Uncertainty,Prediction path,Float64,580,Stored/computed completed-candle research history field.
+Middle Reliability,Regime standards,Float64,580,Stored/computed completed-candle research history field.
+Middle Trust /10,Regime standards,Float64,580,Stored/computed completed-candle research history field.
+Middle Rank,Regime standards,object,600,Stored/computed completed-candle research history field.
+Middle Data-Quality Status,Regime standards,object,600,Stored/computed completed-candle research history field.
+Higher Regime,Regime standards,object,560,Stored/computed completed-candle research history field.
+Higher Alpha,Regime standards,float64,560,Stored/computed completed-candle research history field.
+Higher Beta,Regime standards,float64,521,Stored/computed completed-candle research history field.
+Higher Delta,Regime standards,float64,559,Stored/computed completed-candle research history field.
+Higher Regime Age,Regime standards,Int64,600,Stored/computed completed-candle research history field.
+Higher Expected Duration,Regime standards,float64,600,Stored/computed completed-candle research history field.
+Higher Expected Remaining Duration,Regime standards,float64,600,Stored/computed completed-candle research history field.
+Higher Transition Probability,Regime standards,float64,600,Stored/computed completed-candle research history field.
+Higher Hierarchy Agreement,Regime standards,float64,592,Stored/computed completed-candle research history field.
+Higher Uncertainty,Prediction path,Float64,580,Stored/computed completed-candle research history field.
+Higher Reliability,Regime standards,Float64,580,Stored/computed completed-candle research history field.
+Higher Trust /10,Regime standards,Float64,580,Stored/computed completed-candle research history field.
+Higher Rank,Regime standards,object,600,Stored/computed completed-candle research history field.
+Higher Data-Quality Status,Regime standards,object,600,Stored/computed completed-candle research history field.
+Entry Decision,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Entry Trust /10,Decision / protection,Float64,587,Stored/computed completed-candle research history field.
+Entry Rank,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Buy Pressure,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Buy Pressure Trust /10,Decision / protection,Float64,587,Stored/computed completed-candle research history field.
+Buy Pressure Rank,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Sell Pressure,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Sell Pressure Trust /10,Decision / protection,Float64,587,Stored/computed completed-candle research history field.
+Sell Pressure Rank,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Net Pressure,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Net Pressure Trust /10,Decision / protection,Float64,587,Stored/computed completed-candle research history field.
+Net Pressure Rank,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Pullback Readiness,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Pullback Trust /10,Decision / protection,Float64,587,Stored/computed completed-candle research history field.
+Pullback Rank,Decision / protection,object,600,Stored/computed completed-candle research history field.
+M1 Confirmation,Decision / protection,object,0,Stored/computed completed-candle research history field.
+M1 Trust /10,Decision / protection,Float64,587,Stored/computed completed-candle research history field.
+M1 Rank,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Master Decision,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Master Decision Trust /10,Decision / protection,Float64,587,Stored/computed completed-candle research history field.
+Master Decision Rank,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Hold Safety,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Hold Safety Trust /10,Decision / protection,Float64,587,Stored/computed completed-candle research history field.
+Hold Safety Rank,Decision / protection,object,600,Stored/computed completed-candle research history field.
+TP Quality,Decision / protection,object,600,Stored/computed completed-candle research history field.
+TP Quality Trust /10,Decision / protection,Float64,587,Stored/computed completed-candle research history field.
+TP Quality Rank,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Direction Confirmation,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Direction Confirmation Trust /10,Decision / protection,Float64,587,Stored/computed completed-candle research history field.
+Direction Confirmation Rank,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Original Production Direction,Decision / protection,object,0,Stored/computed completed-candle research history field.
+Protective Action,Decision / protection,object,600,Stored/computed completed-candle research history field.
+Protective Reason,Decision / protection,object,600,Stored/computed completed-candle research history field.

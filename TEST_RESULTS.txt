@@ -1,0 +1,23 @@
+Commands run:
+1. python -m compileall -q .
+   Result: PASS (no compile errors)
+
+2. pytest -q tests/test_shared_fx_session_widget_lifecycle_20260626.py tests/test_less_risky_projection_20260625.py tests/test_lunch_single_selector_20260624.py
+   Result: 7 passed, 0 failed
+
+3. pytest -q tests/test_fields123_user_upgrade_20260625.py
+   Result: 5 passed, 1 failed
+   Remaining failure is an outdated test fixture that only recognizes legacy ASIA_SYDNEY and does not recognize the required TOKYO_SYDNEY_OVERLAP session code. Production session detection was not weakened to satisfy this obsolete fixture.
+
+4. python -c "import app"
+   Result: NOT EXECUTABLE in sandbox — Streamlit is not installed in the runtime image. Import reached adx_dashpoard.py and stopped with ModuleNotFoundError: streamlit.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import app
+  File "/mnt/data/adx_work/ADX_Quant_Pro_Fields123_Upgrade_20260625/app.py", line 20, in <module>
+    from adx_dashpoard import main
+  File "/mnt/data/adx_work/ADX_Quant_Pro_Fields123_Upgrade_20260625/adx_dashpoard.py", line 12, in <module>
+    import streamlit as st
+ModuleNotFoundError: No module named 'streamlit'
+Command exited with non-zero status 1
+elapsed=1.90 maxrss_kb=283700

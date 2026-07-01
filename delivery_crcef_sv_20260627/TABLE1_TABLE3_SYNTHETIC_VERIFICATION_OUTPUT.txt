@@ -1,0 +1,26 @@
+{
+  "rows": 3,
+  "net_pressure_all_match": true,
+  "direction_confirmation_all_match": true,
+  "master_all_match": true,
+  "final_blank_count": 0,
+  "labels_preserved": [
+    "HOLD",
+    "SELL",
+    "WAIT PULLBACK"
+  ],
+  "display_labels": [
+    {
+      "Production Decision Raw": "SELL",
+      "Action Display Label": "SELL"
+    },
+    {
+      "Production Decision Raw": "HOLD",
+      "Action Display Label": "HOLD & PROTECT"
+    },
+    {
+      "Production Decision Raw": "WAIT PULLBACK",
+      "Action Display Label": "WAIT PULLBACK"
+    }
+  ]
+}

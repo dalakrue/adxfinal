@@ -1,0 +1,11 @@
+initial_guest_exceptions 0
+dinner_active_first_load Dinner
+dinner_exceptions_first_load 0
+dinner_history_heading_first_load Dinner Combined History — Last 25 Broker Days
+dinner_fields_first_load Field 4, Field 6, Field 7, Field 8, Field 9
+after_run_active Lunch
+after_run_exceptions 0
+lunch_selector_default All Lunch fields closed
+dinner_active_after_run Dinner
+dinner_exceptions_after_run 0
+dinner_history_heading_after_run Dinner Combined History — Last 25 Broker Days

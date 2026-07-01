@@ -1,0 +1,171 @@
+{
+  "project": "ADX Quant Pro Trust + IMAP-RV + Mobile Lite 20260628",
+  "recommended_main_entry": "app.py",
+  "compileall": "PASS",
+  "pytest": {
+    "status": "PASS",
+    "passed": 155,
+    "failed": 0
+  },
+  "streamlit_smoke": {
+    "app.py": {
+      "health": "ok",
+      "root_http": 200
+    },
+    "adx_dashpoard.py": {
+      "health": "ok",
+      "root_http": 200
+    }
+  },
+  "apptest": {
+    "app.py": {
+      "login_exceptions": [],
+      "settings_exceptions": [],
+      "pages": {
+        "\ud83c\udf71 Lunch": {
+          "exceptions": [],
+          "dataframe_count": 0
+        },
+        "\ud83c\udf19 Dinner": {
+          "exceptions": [],
+          "dataframe_count": 1
+        },
+        "\ud83e\udd16 AI Assistant": {
+          "exceptions": [],
+          "dataframe_count": 1
+        }
+      }
+    },
+    "adx_dashpoard.py": {
+      "login_exceptions": [],
+      "settings_exceptions": [],
+      "pages": {
+        "\ud83c\udf71 Lunch": {
+          "exceptions": [],
+          "dataframe_count": 0
+        },
+        "\ud83c\udf19 Dinner": {
+          "exceptions": [],
+          "dataframe_count": 1
+        },
+        "\ud83e\udd16 AI Assistant": {
+          "exceptions": [],
+          "dataframe_count": 1
+        }
+      }
+    },
+    "full_settings_run": {
+      "exceptions": [],
+      "success": [
+        "Calculation completed once. Lunch opened with the saved canonical generation."
+      ],
+      "expected_no_key_errors": [
+        "FAILURE: Missing Twelve Data API key | Safe Demo fallback is OFF, so no fake candles were loaded",
+        "History Sync: RED \u2014 Out of Sync"
+      ],
+      "unified_table_heading_found": true,
+      "dataframe_shapes": [
+        [
+          1,
+          30
+        ],
+        [
+          0,
+          126
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          23
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ]
+    },
+    "protected_table3_hashes": {
+      "ui/lunch_decision_table_20260626.py": "d9f68a82e19c73efe2714a40781d9475cf826f9ce4c42007605336ebb5de89f2",
+      "core/decision_table_20260626.py": "2c808100d6836689aa7f288c0fbd69cca21ce60b3e4d48b8ada81b06f3aa4b89"
+    }
+  },
+  "table2": {
+    "rows": 600,
+    "columns": 126,
+    "broker_days": 25,
+    "newest_first": true,
+    "protective_actions": [
+      "NO TRADE",
+      "WAIT FOR PULLBACK"
+    ]
+  },
+  "protected_table3_hashes": {
+    "ui/lunch_decision_table_20260626.py": "d9f68a82e19c73efe2714a40781d9475cf826f9ce4c42007605336ebb5de89f2",
+    "core/decision_table_20260626.py": "2c808100d6836689aa7f288c0fbd69cca21ce60b3e4d48b8ada81b06f3aa4b89"
+  },
+  "imap_rv": {
+    "separate_research_layer": true,
+    "production_values_modified": false,
+    "four_action_vocabulary": true,
+    "same_candle_cache_tested": true
+  },
+  "mobile": {
+    "calculation_parity_tested": true,
+    "default_rows": 10,
+    "payload_reduction_percent": 99.83591582128763,
+    "frame_memory_reduction_percent": 99.84801816513323,
+    "table2_same_candle_time_reduction_percent": 64.27440078751559
+  },
+  "security": {
+    "hard_coded_key_scan": "PASS"
+  },
+  "removed_files": [],
+  "incomplete_items_file": "INCOMPLETE_ITEMS.md"
+}

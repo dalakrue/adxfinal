@@ -1,0 +1,11 @@
+Inspect, repair, test, optimize, and package ADX Quant Pro with app.py as the deployment entry point.
+
+PRIORITY REQUIREMENTS
+1. Quick Run must publish the immutable canonical identity and all dependencies needed by Lunch Fields 1–3.
+2. Field 1 Table 1 must first read one_hour_direction_confirmation history/current; if unavailable, join the existing Table 3 ten-factor history_by_factor frames by completed broker candle. Never fabricate prior candles or outcomes.
+3. Field 1 Table 4 must use published NLP when available. If NLP is absent, calculate a clearly labeled LOCAL_TECHNICAL display-only history from completed loaded EURUSD H1 OHLC using bounded momentum, moving-average alignment, realized volatility, session bias, regime bias, and protected technical bias. It must work after Quick Run and must not alter production weights.
+4. Copy Short and Copy Full must be clickable at startup. Before a canonical run, copy a truthful system-status payload. After Quick Run, replace it with the immutable current canonical payload cached by generation identity.
+5. Expose one visible menu route named Field 4 to 9. Route legacy Field 456 and Field 789 names to it. Combine display and publication reads, but preserve independent protected calculation engines and persistence stores.
+6. Render only requested/active surfaces, cap history to 25 broker days, use vectorized joins, cache serialized copy payloads, avoid deep copies, and never calculate on expander open.
+7. Run compileall, focused unit tests, navigation tests, canonical identity tests, and Streamlit startup smoke tests under Python 3.12.
+8. Report measured performance honestly; do not claim 30–50% unless benchmark evidence demonstrates it.

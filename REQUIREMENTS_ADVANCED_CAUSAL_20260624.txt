@@ -1,0 +1,488 @@
+PROJECT QUANT — ADVANCED CAUSAL FORECAST, REGIME, AND RELIABILITY UPGRADE
+
+Use the supplied ZIP as the only project source. Return one complete, runnable, tested ZIP.
+
+PRIMARY OBJECTIVE
+
+Upgrade Lunch Fields 2–8 with advanced quantitative research methods that improve probabilistic prediction-path accuracy, regime accuracy, calibration, reliability, historical evidence quality, and computational efficiency.
+
+Lunch Field 1 is protected. It remains the canonical historical source of truth. Do not change, bypass, simplify, replace, rename, move, delete, reduce, or independently recalculate any existing protected Field 1 production formula, prediction result, decision rule, model weight, history table, database table, copy function, UI component, expected hash, or canonical snapshot field.
+
+MANDATORY SAFETY AND CAUSALITY RULES
+
+1. Use only information available at the forecast origin.
+2. Validate only against independently matured H1, H3, and H6 actuals.
+3. Never allow a future H3 or H6 actual to enter an earlier-origin feature, calibration window, training set, or reliability score.
+4. Apply chronological walk-forward validation, purging, and overlapping-horizon embargo.
+5. All new research methods must start shadow-only.
+6. New methods must not alter protected production BUY, SELL, WAIT, existing model weights, or protected hashes.
+7. Lunch rendering must read one immutable canonical saved snapshot and perform no heavy recalculation.
+8. Heavy calculation may run only from Settings → Run Calculation + Open Lunch.
+9. Preserve Python 3.12 and Streamlit Cloud compatibility.
+10. Do not add a new top-level tab, page, sidebar item, or menu item.
+11. Use deterministic seeds and bounded CPU/RAM.
+12. Gracefully degrade when there is insufficient matured history. Never fabricate evidence.
+13. Preserve backward-compatible database migrations and existing data.
+14. Do not treat in-sample accuracy as production evidence.
+15. Do not claim guaranteed accuracy or profitability.
+
+IMPLEMENT THESE TEN RESEARCH LAYERS
+
+A. MULTI-SCALE MARKOV-SWITCHING VOLATILITY AND REGIME LAYER
+
+Implement a lightweight shadow-only multi-scale regime layer for H1, H4, and D1 using existing project data.
+
+Required outputs:
+
+* regime probability by scale;
+* volatility state by scale;
+* cross-scale regime agreement;
+* cross-scale conflict;
+* transition probabilities for H1, H3, H6;
+* regime-conditioned forecast variance;
+* model reliability and sufficient-history status.
+
+Use time-varying transition covariates only when causally available:
+
+* lagged volatility;
+* lagged trend strength;
+* spread;
+* session;
+* prior regime probabilities;
+* existing protected indicators.
+
+Do not allow current or future completed-bar information to leak into an earlier origin.
+
+B. HIDDEN SEMI-MARKOV REGIME DURATION LAYER
+
+Add explicit duration modelling for completed historical regime episodes.
+
+Required outputs:
+
+* current regime age;
+* expected total duration;
+* expected remaining duration;
+* H1/H3/H6 exit hazard;
+* duration percentile;
+* overdue-regime flag;
+* duration reliability;
+* sample count.
+
+Use a bounded candidate set of duration distributions and select only through chronological validation. Fall back to an empirical duration distribution when parametric fitting is unstable.
+
+C. MULTI-HORIZON ADAPTIVE CONFORMAL CALIBRATION
+
+Create separate calibration states for H1, H3, and H6.
+
+At forecast origin, persist immutable:
+
+* origin_lower_h1/h3/h6;
+* origin_upper_h1/h3/h6;
+* origin_target_alpha_h1/h3/h6;
+* origin_interval_method_h1/h3/h6;
+* origin_interval_width_h1/h3/h6;
+* origin_model_version;
+* origin_run_id;
+* origin_candle_time.
+
+After each horizon matures, persist:
+
+* actual_h1/h3/h6;
+* covered_h1/h3/h6;
+* absolute_error_h1/h3/h6;
+* interval_score_h1/h3/h6;
+* maturity timestamp;
+* settlement status.
+
+Never overwrite historical origin intervals with current-run intervals.
+
+Use separate residual/calibration windows by horizon. Compute rolling coverage from many matured observations, not one row.
+
+D. SEQUENTIAL CONDITIONAL RESIDUAL CALIBRATION
+
+When sufficient history exists, condition interval calibration on lagged residuals and causal state variables.
+
+Required behaviour:
+
+* model lower-tail and upper-tail errors separately;
+* produce asymmetric lower and upper intervals;
+* use chronological fitting only;
+* fall back to adaptive conformal calibration when insufficient;
+* expose residual autocorrelation and interval-asymmetry diagnostics.
+
+E. PROBABILISTIC QUANTILE DISTRIBUTION
+
+Using existing prediction engines as inputs, generate a lightweight monotone quantile forecast for H1, H3, and H6.
+
+Required quantiles:
+0.05, 0.10, 0.25, 0.50, 0.75, 0.90, 0.95.
+
+Requirements:
+
+* no quantile crossing;
+* deterministic training;
+* bounded model size;
+* no heavy neural network dependency;
+* report pinball loss for every quantile and horizon;
+* calculate upside probability, downside probability, expected favourable excursion, expected adverse excursion, and tail width.
+
+F. DYNAMIC QUANTILE FORECAST COMBINATION
+
+Combine existing base-model quantiles using non-negative, normalized weights.
+
+Weights must be:
+
+* horizon-specific;
+* quantile-specific;
+* regime-aware only when enough matured regime samples exist;
+* based only on past matured quantile losses;
+* exponentially decayed;
+* bounded by weight floors and ceilings;
+* stable when one model has missing values.
+
+Persist all origin-time model weights so historical forecasts remain reproducible.
+
+G. TRUE PROBABILISTIC SCORING
+
+Keep MAE separate from CRPS.
+
+Implement:
+
+1. Gaussian analytic CRPS when valid mean and standard deviation exist.
+2. Sample CRPS when forecast samples exist.
+3. Quantile-based CRPS approximation only as fallback.
+4. Unavailable status when no valid predictive distribution exists.
+
+Also calculate:
+
+* MAE;
+* RMSE;
+* median absolute error;
+* direction hit;
+* direction Brier score;
+* pinball loss;
+* interval score;
+* empirical coverage;
+* mean interval width;
+* calibration error;
+* sharpness;
+* probability integral transform value where valid.
+
+Add unit tests proving that CRPS is not implemented as absolute error.
+
+H. META-LABEL ACTIONABILITY LAYER
+
+The protected production decision remains the primary side.
+
+The meta-label layer may output only:
+
+* actionable;
+* weak evidence;
+* abstain;
+* conflict;
+* insufficient matured evidence.
+
+It must not create or reverse BUY/SELL direction.
+
+Use causal origin features such as:
+
+* calibrated path probability;
+* interval width;
+* H1/H3/H6 agreement;
+* regime probability;
+* regime exit hazard;
+* cross-scale regime agreement;
+* model disagreement;
+* spread;
+* session;
+* drift state;
+* prior matured calibration.
+
+The target must include a realistic minimum move or existing cost proxy. Do not train on overlapping future outcomes without embargo.
+
+I. CONCEPT-DRIFT AND ADAPTIVE-MEMORY LAYER
+
+Monitor:
+
+* residual distribution;
+* CRPS;
+* coverage;
+* direction Brier score;
+* regime confusion;
+* transition errors;
+* model disagreement;
+* causal feature distribution.
+
+Required states:
+
+* STABLE;
+* WARNING;
+* CONFIRMED_DRIFT;
+* RECOVERING;
+* INSUFFICIENT_HISTORY.
+
+On drift:
+
+* do not modify protected production logic;
+* reduce shadow reliability;
+* shorten calibration memory within safe bounds;
+* widen shadow uncertainty;
+* increase shadow abstention;
+* create an immutable drift event;
+* retain long-term history for recurring-regime comparison.
+
+J. MODEL CONFIDENCE SET AND RESEARCH PROMOTION GATE
+
+Compare candidate research methods using block-bootstrap-aware loss differences.
+
+Run separately by:
+
+* H1/H3/H6;
+* CRPS;
+* MAE;
+* direction Brier score;
+* interval score;
+* regime;
+* session;
+* volatility bucket.
+
+A method is not promotion-eligible unless:
+
+* all leakage tests pass;
+* minimum matured sample requirements pass;
+* calibration is acceptable;
+* it is not statistically inferior under the model-confidence procedure;
+* it improves more than one evaluation dimension;
+* tail risk does not materially deteriorate;
+* results are reproducible;
+* no protected output changes occurred during shadow testing.
+
+FIELD INTEGRATION
+
+FIELD 1
+
+* Preserve all existing behaviour.
+* Add only backward-compatible audit references when required.
+* Keep it the source of truth for forecast origins and matured outcomes.
+
+FIELD 2
+Display:
+
+* median H1/H3/H6 path;
+* 50%, 80%, and 90% calibrated bands;
+* origin-time historical bands;
+* calibrated upside/downside probability;
+* CRPS;
+* pinball loss;
+* coverage;
+* sharpness;
+* coverage debt;
+* model disagreement;
+* quantile-combination weights;
+* calibration method;
+* sufficient-history status.
+
+FIELD 3
+Display:
+
+* H1/H4/D1 regime probabilities;
+* major regime;
+* cross-scale agreement;
+* regime age;
+* expected remaining duration;
+* H1/H3/H6 exit hazard;
+* transition Brier score;
+* regime confusion matrix;
+* regime reliability;
+* drift state;
+* historical regime lifecycle records.
+
+FIELD 4
+Add a compact decision-evidence table combining:
+
+* protected production decision;
+* path evidence;
+* regime evidence;
+* uncertainty;
+* actionability;
+* conflict reason;
+* reliability;
+* data freshness.
+
+Do not overwrite the protected decision.
+
+FIELD 5
+Update the grounded assistant so it answers only from the saved canonical snapshot, settled history, definitions, and available evidence.
+
+Every answer must identify:
+
+* run ID;
+* candle/broker time;
+* evidence source;
+* maturity status;
+* limitations or insufficient data.
+
+FIELD 6
+Add validation tables:
+
+* rolling walk-forward scores;
+* session-specific scores;
+* regime-specific scores;
+* drift events;
+* calibration history;
+* similar-state outcomes;
+* data-quality failures;
+* H1/H3/H6 settlement status;
+* model disagreement history.
+
+FIELD 7
+Add compact Research Lab status:
+
+* each shadow method;
+* enabled/disabled state;
+* sample count;
+* leakage status;
+* calibration status;
+* Model Confidence Set membership;
+* promotion blockers;
+* last tested run;
+* runtime and memory usage.
+
+FIELD 8
+Integrate the alpha/beta/delta research layer:
+
+Alpha:
+calibrated expected directional return and probability.
+
+Beta:
+conditional sensitivity to volatility, regime, and cross-scale market state.
+
+Delta:
+first difference of calibrated alpha and regime probability.
+
+Delta acceleration:
+second difference of alpha or delta.
+
+Add:
+
+* actionability probability;
+* uncertainty;
+* regime exit hazard;
+* drift penalty;
+* reliability;
+* evidence count;
+* H1/H3/H6 independent settlement;
+* shadow-only status.
+
+SETTLEMENT REQUIREMENTS
+
+Handle H1, H3, and H6 independently.
+
+Required statuses:
+
+* PENDING;
+* PARTIALLY_SETTLED;
+* FULLY_SETTLED;
+* INVALID_ORIGIN;
+* MISSING_ACTUAL;
+* DATA_QUALITY_REJECTED.
+
+FULLY_SETTLED is allowed only when every required horizon has a valid matured actual.
+
+PARTIALLY_SETTLED applies when at least one but not all required horizons have matured.
+
+No future actual may be attached to an earlier forecast origin.
+
+DATABASE REQUIREMENTS
+
+Use additive, idempotent migrations.
+
+Create or upgrade tables for:
+
+* forecast-origin distributions;
+* horizon settlements;
+* conformal calibration state;
+* quantile forecasts;
+* model-origin weights;
+* probabilistic scores;
+* regime probabilities;
+* regime durations;
+* drift events;
+* meta-label outcomes;
+* confidence-set results;
+* promotion-gate results;
+* runtime metrics.
+
+Use indexes on:
+
+* run_id;
+* origin candle time;
+* horizon;
+* maturity time;
+* model version;
+* regime;
+* settlement status.
+
+PERFORMANCE REQUIREMENTS
+
+* Cache immutable reads using correct keys.
+* Do not cache mutable database connections.
+* Calculate each feature matrix once per run.
+* Reuse aligned H1/H4/D1 data.
+* Use vectorized NumPy/Pandas operations.
+* Bound bootstrap repetitions and candidate models.
+* Lazy-render large UI tables.
+* Limit default displayed history to the latest relevant records.
+* Avoid importing optional heavy packages during app startup.
+* Record runtime and peak-memory estimates by research module.
+* Target a measurable reduction in duplicated calculations without changing protected logic.
+
+REQUIRED TESTS
+
+1. Full Python compile test.
+2. Import smoke test.
+3. Streamlit startup smoke test.
+4. Existing protected tests.
+5. Database migration idempotency.
+6. No-look-ahead tests.
+7. H1/H3/H6 independent settlement tests.
+8. Future-actual rejection test.
+9. Origin-interval immutability test.
+10. True Gaussian CRPS numerical test.
+11. Sample CRPS numerical test.
+12. CRPS-not-equal-to-MAE test.
+13. Quantile monotonicity test.
+14. Weight normalization test.
+15. Missing-model forecast test.
+16. Regime-duration causality test.
+17. Drift-state transition test.
+18. Meta-label cannot reverse side test.
+19. Canonical run-ID consistency test.
+20. Lunch performs no heavy calculation test.
+21. Field 1 protected-hash regression test.
+22. Deterministic repeated-run test.
+23. Python 3.12 compatibility test.
+24. Streamlit Cloud dependency test.
+25. Resource benchmark.
+
+DELIVERABLES
+
+Return one complete tested ZIP containing:
+
+* all source code;
+* migrations;
+* tests;
+* requirements;
+* runtime configuration;
+* implementation report;
+* changed-files manifest;
+* research-method mapping;
+* formulas and assumptions;
+* leakage and causality report;
+* database migration report;
+* performance report;
+* complete test results;
+* known limitations;
+* rollback instructions.
+
+Do not return patch fragments only. Do not omit existing project files. Do not declare success unless the included test evidence supports it.

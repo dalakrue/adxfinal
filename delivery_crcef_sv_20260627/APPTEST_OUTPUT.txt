@@ -1,0 +1,8 @@
+ENTRY app.py
+exceptions 0
+titles []
+buttons ['🔐 Login', '✅ Create Account', '💾 Save SMTP settings', '🚀 Continue as Guest']
+ENTRY adx_dashpoard.py
+exceptions 0
+titles []
+buttons ['🔐 Login', '✅ Create Account', '💾 Save SMTP settings', '🚀 Continue as Guest']

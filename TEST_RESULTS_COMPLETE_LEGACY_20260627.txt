@@ -1,0 +1,125 @@
+...........F......F....F...................F......FF...................  [100%]
+=================================== FAILURES ===================================
+____________ test_all_active_field_consumers_resolve_same_identity _____________
+
+>   ???
+
+/mnt/data/project_work/adx_fix/tests/test_delivery_acceptance_20260626.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Authoritative eight-principal-field Lunch layout.
+    
+    Every principal field is a true read-only load gate over the already-published
+    canonical generation. No renderer here can start or replace the protected
+    calculation transaction.
+    """
+    from __future__ import annotations
+    
+    from typing import Any, Mapping, MutableMapping
+    
+    import pandas as pd
+>   import streamlit as st
+E   ModuleNotFoundError: No module named 'streamlit'
+
+ui/lunch_four_core_fields_20260619.py:12: ModuleNotFoundError
+_________________ test_exactly_two_active_lunch_copy_controls __________________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7ea076a3af90>
+
+>   ???
+
+/mnt/data/project_work/adx_fix/tests/test_delivery_acceptance_20260626.py:209: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """On-demand controls for the single canonical copy/export service."""
+    from __future__ import annotations
+    
+    from typing import Any, Mapping, MutableMapping
+    
+>   import streamlit as st
+E   ModuleNotFoundError: No module named 'streamlit'
+
+ui/canonical_copy_export_20260619.py:6: ModuleNotFoundError
+__________________ test_table4_empty_news_and_populated_news ___________________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7ea0767ca750>
+
+>   ???
+E   AttributeError: <module 'ui.lunch_next_hour_bias_history_20260626' from '/mnt/data/inspect_b/adx_fix/ui/lunch_next_hour_bias_history_20260626.py'> has no attribute 'st'
+
+/mnt/data/project_work/adx_fix/tests/test_delivery_acceptance_20260626.py:308: AttributeError
+_____________________ test_02_declared_runtime_and_imports _____________________
+
+    def test_02_declared_runtime_and_imports():
+        assert (ROOT/'.python-version').read_text().strip()=='3.12'
+        assert (ROOT/'runtime.txt').read_text().strip()=='python-3.12'
+        for m in ['app','adx_dashpoard','core.decision_table_20260626','ui.lunch_four_core_fields_20260619']:
+>           __import__(m)
+
+tests/test_requested_acceptance_20260626.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+app.py:20: in <module>
+    from adx_dashpoard import main
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Main entry point for M1 ADX Quant Pro.
+    
+    Run with:
+        streamlit run adx_dashpoard.py
+    
+    This file intentionally does not call st.set_page_config(); core.app_shell.run_app()
+    handles that once. Calling it twice can crash Streamlit on some versions.
+    """
+    
+    import warnings
+    
+>   import streamlit as st
+E   ModuleNotFoundError: No module named 'streamlit'
+
+adx_dashpoard.py:12: ModuleNotFoundError
+__________________________ test_09_identity_mismatch ___________________________
+
+    def test_09_identity_mismatch():
+>       from ui.lunch_identity_strip_20260626 import identity_mismatches
+
+tests/test_requested_acceptance_20260626.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Read-only canonical identity strip shared by all five decision displays."""
+    from __future__ import annotations
+    from typing import Any, Mapping
+>   import streamlit as st
+E   ModuleNotFoundError: No module named 'streamlit'
+
+ui/lunch_identity_strip_20260626.py:4: ModuleNotFoundError
+__________ test_10_exactly_three_lunch_fields_and_five_total_surfaces __________
+
+    def test_10_exactly_three_lunch_fields_and_five_total_surfaces():
+>       from ui.lunch_four_core_fields_20260619 import FIELD_LABELS
+
+tests/test_requested_acceptance_20260626.py:62: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    """Authoritative eight-principal-field Lunch layout.
+    
+    Every principal field is a true read-only load gate over the already-published
+    canonical generation. No renderer here can start or replace the protected
+    calculation transaction.
+    """
+    from __future__ import annotations
+    
+    from typing import Any, Mapping, MutableMapping
+    
+    import pandas as pd
+>   import streamlit as st
+E   ModuleNotFoundError: No module named 'streamlit'
+
+ui/lunch_four_core_fields_20260619.py:12: ModuleNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_delivery_acceptance_20260626.py::test_all_active_field_consumers_resolve_same_identity - ModuleNotFoundError: No module named 'streamlit'
+FAILED tests/test_delivery_acceptance_20260626.py::test_exactly_two_active_lunch_copy_controls - ModuleNotFoundError: No module named 'streamlit'
+FAILED tests/test_delivery_acceptance_20260626.py::test_table4_empty_news_and_populated_news - AttributeError: <module 'ui.lunch_next_hour_bias_history_20260626' from '/mnt/data/inspect_b/adx_fix/ui/lunch_next_hour_bias_history_20260626.py'> has no attribute 'st'
+FAILED tests/test_requested_acceptance_20260626.py::test_02_declared_runtime_and_imports - ModuleNotFoundError: No module named 'streamlit'
+FAILED tests/test_requested_acceptance_20260626.py::test_09_identity_mismatch - ModuleNotFoundError: No module named 'streamlit'
+FAILED tests/test_requested_acceptance_20260626.py::test_10_exactly_three_lunch_fields_and_five_total_surfaces - ModuleNotFoundError: No module named 'streamlit'
+6 failed, 65 passed in 2.88s

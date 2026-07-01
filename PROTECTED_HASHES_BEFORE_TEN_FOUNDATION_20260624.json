@@ -1,0 +1,59 @@
+{
+  "protected_files": [
+    {
+      "file": "core/settings_run_orchestrator_20260617.py",
+      "sha256_before": "1b1605553e6b2cf55953b8ea357510b48baffb354f21a8f946e8b73bcc39cd6e",
+      "exists": true
+    },
+    {
+      "file": "core/decision_product_engine_20260617.py",
+      "sha256_before": "e6577fa0fe8d8bbcc9a388bbd61f2e56b9db0bd83d9b419b3ab1f35a0d2630a7",
+      "exists": true
+    },
+    {
+      "file": "core/canonical_runtime_20260617.py",
+      "sha256_before": "4cc6f40de479f245a21b293bac0c3a7a7bd8d0d0e27d5f30ae69078372f5bd12",
+      "exists": true
+    },
+    {
+      "file": "core/decision_policy_20260617.py",
+      "sha256_before": "eab139958c687022bc8ae5fc938ba5f56a11cfe3effa0736278d038006c72739",
+      "exists": true
+    },
+    {
+      "file": "core/medium_standard_regime_bias_20260619.py",
+      "sha256_before": "f2707d52797467d14c8f361c34db716592b8020e01643b28a57f61853e475214",
+      "exists": true
+    },
+    {
+      "file": "core/prediction_ledger_20260617.py",
+      "sha256_before": "02685f33c7718575d0322c24353bd901635bf46c08c81d500fcd96cc2d77e507",
+      "exists": true
+    },
+    {
+      "file": "services/position_sizing.py",
+      "sha256_before": "63231cb600f05f0f95e90a4259f7279fb3a50d4ba2e47b0cb8b36f0df775de8e",
+      "exists": true
+    },
+    {
+      "file": "core/adx_shared_sync_20260615.py",
+      "sha256_before": "ce080d35b4f7d38ac62b9aa2d0e18aed59b041ad02dd958359b5182f0627e16d",
+      "exists": true
+    },
+    {
+      "file": "core/canonical_sync_v9.py",
+      "sha256_before": "e470b7292af31d359afb879d0372665b157b37ccfa88769ea285ef42260fda95",
+      "exists": true
+    },
+    {
+      "file": "core/canonical/snapshot.py",
+      "sha256_before": "58cefc4a166dc0c812241f8bbe447b1eb52e7a9f7d446b659a88b221a08aadc4",
+      "exists": true
+    },
+    {
+      "file": "core/powerbi_path_calibration_20260617.py",
+      "sha256_before": "73e1a4adb3eefa993c6a168eeb19a9a7d394aca10d18c270de35d8c8df8a85c2",
+      "exists": true
+    }
+  ]
+}

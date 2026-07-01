@@ -1,0 +1,18 @@
+{
+  "shadow_only": true,
+  "automatic_promotion": false,
+  "eligible_for_human_review": false,
+  "checks": {
+    "lower_oos_crps": false,
+    "noninferior_mae": false,
+    "noninferior_brier": false,
+    "coverage_ok": false,
+    "mcs_member": false,
+    "stable_across_regimes_sessions": false,
+    "no_leakage": true,
+    "protected_hash_unchanged": true,
+    "bounded_runtime": true,
+    "deterministic_fallback": true
+  },
+  "reason": "No automatic promotion. Real settled out-of-sample evidence is required."
+}

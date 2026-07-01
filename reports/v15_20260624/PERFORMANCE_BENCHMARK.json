@@ -1,0 +1,7 @@
+{
+  "benchmark": "10 bounded research cycles",
+  "elapsed_seconds": 3.8971610559999874,
+  "mean_seconds_per_cycle": 0.38971610559999875,
+  "peak_python_alloc_bytes": 16029888,
+  "note": "Synthetic local benchmark; not a full Streamlit run and not comparable to an unavailable pre-upgrade baseline."
+}

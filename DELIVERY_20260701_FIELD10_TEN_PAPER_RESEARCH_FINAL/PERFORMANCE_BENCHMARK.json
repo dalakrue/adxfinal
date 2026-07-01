@@ -1,0 +1,45 @@
+{
+  "benchmark_version": "field10-local-synthetic-20260701-v2",
+  "workload": {
+    "symbols": 14,
+    "completed_h1_rows_per_symbol": 720,
+    "network_calls": 0,
+    "broker_calls": 0
+  },
+  "before_internal_prototype": {
+    "first_field10_open_wall_seconds": 20.542982,
+    "first_open_rss_delta_mb": 227.52,
+    "implementation": "initial unoptimized research prototype on same synthetic workload"
+  },
+  "after_optimized": {
+    "environment": "local synthetic benchmark; no broker/API/network calls",
+    "python_version": "3.13.5",
+    "symbols": 14,
+    "rows_per_symbol": 720,
+    "field10_closed_research_cost_seconds": 0.0,
+    "first_field10_open_wall_seconds": 3.193346,
+    "cached_reopen_wall_seconds": 0.000666,
+    "first_open_cpu_seconds": 2.99,
+    "cached_reopen_cpu_seconds": 0.0,
+    "first_open_rss_delta_mb": 4.695,
+    "cached_reopen_rss_delta_mb": 0.0,
+    "first_status": "COMPLETED",
+    "first_calculated_symbols": 14,
+    "cached_status": "CACHED",
+    "cached_calculated_symbols": 0,
+    "cache_speedup_ratio": 4791.55,
+    "algorithm_optimizations": [
+      "vectorized bounded ADWIN-style scan",
+      "one shared Ledoit-Wolf covariance fit per parent run",
+      "no scikit-learn import for covariance",
+      "bounded 480-point structural-break window"
+    ],
+    "limitations": "Does not measure the production Quick Run with live Twelve Data/Finnhub/MT5. It measures the new lazy research layer and cache behavior only."
+  },
+  "calculated_improvement": {
+    "first_open_wall_time_reduction_percent": 84.46,
+    "rss_delta_reduction_percent": 97.94
+  },
+  "production_quick_run_measurement": "NOT MEASURED: live Twelve Data/Finnhub/MT5 credentials and broker session were not available in this environment.",
+  "interpretation": "The new research layer adds zero execution cost while Field 10 is closed because it is not called. First opening computes missing saved generations; subsequent reopening uses SQLite cache."
+}

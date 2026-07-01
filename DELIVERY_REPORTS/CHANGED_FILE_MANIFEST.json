@@ -1,0 +1,166 @@
+{
+  "generated_at_utc": "2026-06-26T13:27:20.390659+00:00",
+  "uploaded_project_root": "adx_work",
+  "changed_files": [
+    {
+      "path": "core/ai_canonical_intents_v10.py",
+      "uploaded_sha256": "d8582d5a87d2f7c1260d7b68ec8d0b9c237959e356fd15c7e62f2f64e2d60c36",
+      "delivered_sha256": "db3cbd16eca5adcb85798c61c3c725d866818a998744c8a9c9a0857419df4459",
+      "reason": "Use the read-only canonical fallback resolver; no AI scoring formula changed."
+    },
+    {
+      "path": "core/config/defaults.py",
+      "uploaded_sha256": "ef9039c6297157f218443e0ee51e5f8f47084ba4a2786ff9fcf81e4adb0ff711",
+      "delivered_sha256": "198fe1c9ef1dca568dc12f68b2b1ae991a240c13fd49dc742164ef9b61f46621",
+      "reason": "Make the eight requested independent top-level routes authoritative."
+    },
+    {
+      "path": "core/decision_table_20260626.py",
+      "uploaded_sha256": "433cfdcb76db7b93b856ced46b38301e1f1c4cb7b99ef7d2db5916979a521993",
+      "delivered_sha256": "894ffe1683765fe71629ba32d2491e7bd289d5b93b118b756b1c60626fee0a35",
+      "reason": "Pin the Quick Run fallback row to its completed broker candle so it appears immediately as PENDING."
+    },
+    {
+      "path": "core/navigation_parts/main.py",
+      "uploaded_sha256": "cbd647e571bd7fba627a5da303ceba999d529424e52b5abbdccdd23b89039ce4",
+      "delivered_sha256": "fad589944348e7c65f4929aac78c4925687b2b431da737445a6176326797ef12",
+      "reason": "Align fallback navigation with the requested eight routes."
+    },
+    {
+      "path": "core/quick_source_signature_20260626.py",
+      "uploaded_sha256": "39d70bdc2a2b703849975a7d24af09c87aa26ba607e16339744de122102c7613",
+      "delivered_sha256": "5122f3dd2703b8f84a46ed8fccda46aa4ed02b2ca7880bdefe606ded80d88775",
+      "reason": "Publish source snapshot hash and completed broker-candle aliases with the Quick manifest."
+    },
+    {
+      "path": "pages/ai_assistant.py",
+      "uploaded_sha256": "3e646e858bf5ea13b15345434a3d4acbab3be2f7153b40de4378ed6ad5e8999f",
+      "delivered_sha256": "1e7f0a0dc3c681bc78364ffab6e103e6775f09ac75585441dee15481445afe4f",
+      "reason": "Add explicit optional AirLLM selection while retaining the lightweight grounded fallback."
+    },
+    {
+      "path": "requirements-optional-heavy.txt",
+      "uploaded_sha256": "4c970109345f6a0a3abbdd6aed0fddab021987328a5f2dbbc0f648480a8ccd36",
+      "delivered_sha256": "4addfbed2c7b6d75af4865b338798608ce492961f25637a6202f7d55702ff5fa",
+      "reason": "Move AirLLM to explicit optional server dependencies."
+    },
+    {
+      "path": "requirements.txt",
+      "uploaded_sha256": "1eb135d0d85cf933868357502197e61661471b87e00b2fb5d765b89a50f060da",
+      "delivered_sha256": "ee191c0da39667c383fb9fc6008fc271fafe4ce76f96ade27073cbf1a02aafed",
+      "reason": "Remove AirLLM from normal deployment startup dependencies."
+    },
+    {
+      "path": "services/current_canonical_copy_20260625.py",
+      "uploaded_sha256": "7e213ff554df82648f352c2cb1457c0107e07b878bbbc4bcfda50d0514a6eb8f",
+      "delivered_sha256": "aec3f652dc1850d6bb92689ba604f1cab5e291df99ba47af1b4385cecf41e51a",
+      "reason": "Resolve current canonical identity through the shared read-only fallback chain."
+    },
+    {
+      "path": "ui/airllm_mobile_assistant_20260626.py",
+      "uploaded_sha256": "76f8173e37876eddc3028d6d75d7abe9274907dfa03180a888b0528ab43a8e34",
+      "delivered_sha256": "16844598650ffca577b88972885c279b3aad6f4305fcb9101d51113735b003c9",
+      "reason": "Render status only; no import, download, model load, or inference during page render."
+    },
+    {
+      "path": "ui/canonical_copy_export_20260619.py",
+      "uploaded_sha256": "9acd4c7d673f400b258820954eae09286842305d16e3b2c28024000a4f8fddc7",
+      "delivered_sha256": "0b7b7567f04c3f480c02a038ef62d2ac2a3aabcb27feb650bf9fcb66897c9cfa",
+      "reason": "Use shared canonical resolution and keep the only active direct Copy Short/Copy Full pair generation-cached."
+    },
+    {
+      "path": "ui/home_master_control_bar_20260615.py",
+      "uploaded_sha256": "303e963bc069491794a605dc96d7ff2ea884ae1f065999face7417bcffc756da",
+      "delivered_sha256": "f3f19f56c1d1806652a5a53ef606ce7a2662fa0291a0007823d01952c6b7bc72",
+      "reason": "Align navigation controls with the requested independent pages."
+    },
+    {
+      "path": "ui/liquid_menu_popup_20260615.py",
+      "uploaded_sha256": "8311fe0979f8e2f64b323c2f06893c8f1feaea4c8a393bd8e4440a2b1eb1054c",
+      "delivered_sha256": "629094414b98cb17253c2ef8957c45261aec51df9c8cef67be4ec36000a16618",
+      "reason": "Remove the duplicate popup copy renderer."
+    },
+    {
+      "path": "ui/lunch_decision_table_20260626.py",
+      "uploaded_sha256": "555d18d0b7d8edacf9202fff8cdb9c53f6d287cb6136f095b6fd5e4588a77b3c",
+      "delivered_sha256": "d03f3b43319b3925f26a5654cc0683cdedcef11605b2cacfd9f75c42e065a508",
+      "reason": "Use the requested Table 1 title while preserving compatibility markers."
+    },
+    {
+      "path": "ui/lunch_four_core_fields_20260619.py",
+      "uploaded_sha256": "c675fe01c8701e3b20b1b38421179f28b96dc7504b0ba6beb5debcf3bcac112a",
+      "delivered_sha256": "f16aa9141820b43077f5bb6e107fb864feb2343df8b9ea75b53a57d7b0cd069d",
+      "reason": "Use shared canonical identity, requested table titles/Table 4 call, no-copy Field 6 display, and selected-field-only rendering."
+    },
+    {
+      "path": "ui/lunch_identity_strip_20260626.py",
+      "uploaded_sha256": "793b04d47760633b78259c6bd462bda3e9eb6c5011fa7e750490fd2bac27e6a3",
+      "delivered_sha256": "ce855d5c96920277b98f18b663a60e112f46d742aadfd620fa7fbd1490445dce",
+      "reason": "Recover valid canonical identities from compatible aliases and display source signature."
+    },
+    {
+      "path": "ui/lunch_next_hour_bias_history_20260626.py",
+      "uploaded_sha256": "92b8edb15718e85465c644cc5929c1e540d4c5f53c97feb2294468f86a8c3c72",
+      "delivered_sha256": "5187106b560360fad3d12785216b1b75d7465613b1ce14a2f334e75103f776a7",
+      "reason": "Implement bounded display-only Table 4 from genuine published news/technical/session/regime evidence."
+    },
+    {
+      "path": "ui/lunch_restored.py",
+      "uploaded_sha256": "c158b956cc71622deafb0ad353324f91c1b96ad67d252e7accdaa7a8890cc483",
+      "delivered_sha256": "25964377a7d6bf634c73c3281736d7ec8895eea5fed55bed405a7e8285fb7346",
+      "reason": "Remove legacy duplicate copy controls."
+    },
+    {
+      "path": "ui/main_menu_drawer.py",
+      "uploaded_sha256": "52cf309e206044c725c75843bea2ed4af406cd59878aa7d6931f2b7552ba2fb4",
+      "delivered_sha256": "6b3c5ff7214a49422ae47fed46d1e66034f3f5cb727a93446789c8af185cdf6b",
+      "reason": "Replace legacy Dinner route with independent AI Assistant while retaining Field 456/789."
+    },
+    {
+      "path": "ui/powerbi_cached_renderer_20260619.py",
+      "uploaded_sha256": "0a27ef73f4c9aaca30042f9860445193b299f6c50c71e835e6f267c00068c654",
+      "delivered_sha256": "1af4932b07b097bea1a9cc6b0b0ed0abe09ba5611e5388d79b38cd42f1183e41",
+      "reason": "Use shared canonical identity only; protected central and session-shadow projection math remains unchanged."
+    },
+    {
+      "path": "ui/risk_position_panel_20260619.py",
+      "uploaded_sha256": "c504a2b1cad7b4749f8f092df3fd3b04689f6780773fdb8e659da6be4c4bc500",
+      "delivered_sha256": "f2cfe54a9f9e3699d505f3824cc426112abc8fd2d2331fb6acfe7b93c610b9b2",
+      "reason": "Remove legacy duplicate copy/export invocation."
+    },
+    {
+      "path": "ui/system_readiness_20260621.py",
+      "uploaded_sha256": "1b6a90f9ff4bf5a71af735fb961169d419c600350439450677a22128e9be4e4e",
+      "delivered_sha256": "70118e1f40aa8ffda2cc2568cb0dc9b383d91b66542eb2d66fb06b98e6ef5e8f",
+      "reason": "Remove Field 6 duplicate copy/export toggle."
+    }
+  ],
+  "added_files": [
+    {
+      "path": "PROTECTED_UPLOAD_HASHES_20260626.json",
+      "delivered_sha256": "2e50730a4bfb8e5970553a4e74d8524e2c5fd1971b134706ae692eb48e803545",
+      "reason": "Record SHA-256 values from the actual uploaded ZIP for protected-file verification."
+    },
+    {
+      "path": "core/canonical_lookup_20260626.py",
+      "delivered_sha256": "b99b81dc03c21a9d9af1931a6e679ff1b617493d736a67780d7c977284bee8a8",
+      "reason": "New read-only active/last-valid/sync/alias canonical resolver; no publication or calculation side effects."
+    },
+    {
+      "path": "services/airllm_backend_20260626.py",
+      "delivered_sha256": "edc40a9158919b0c54fed8d73ef66528a419f3251f3101f0bac0711a7438a4b1",
+      "reason": "New optional lazy server backend with environment gates, lock, bounded context/output, and deterministic fallback."
+    },
+    {
+      "path": "tests/test_delivery_acceptance_20260626.py",
+      "delivered_sha256": "d8ca31946425901744265232d8a241d74399ff172e42c38c6f2da10694af50c4",
+      "reason": "New delivery acceptance tests for the requested repair contract."
+    }
+  ],
+  "removed_files": [],
+  "summary": {
+    "changed": 22,
+    "added": 4,
+    "removed": 0
+  }
+}

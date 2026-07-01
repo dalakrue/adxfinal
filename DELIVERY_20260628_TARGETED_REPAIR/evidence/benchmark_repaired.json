@@ -1,0 +1,115 @@
+{
+  "root": "/mnt/data/adx_work/ADX_QUANT_PRO_REPAIRED_20260628_FINAL",
+  "python": "3.13.5",
+  "arert_na_label_60000": {
+    "status": "PASS",
+    "error": null,
+    "samples_ms": [
+      168.418,
+      195.789,
+      168.046
+    ],
+    "median_ms": 168.418,
+    "rss_delta_mb": 1.977
+  },
+  "mixed_timestamp_history_600": {
+    "status": "PASS",
+    "error": null,
+    "samples_ms": [
+      35.513,
+      25.152,
+      22.613,
+      21.646,
+      19.536
+    ],
+    "median_ms": 22.613,
+    "rss_delta_mb": 0.258
+  },
+  "dinner_history_cold_600x5": {
+    "status": "PASS",
+    "error": null,
+    "samples_ms": [
+      724.635
+    ],
+    "median_ms": 724.635,
+    "rss_delta_mb": 4.297
+  },
+  "dinner_history_warm_cache_600x5": {
+    "status": "PASS",
+    "error": null,
+    "samples_ms": [
+      0.188,
+      0.053,
+      0.036,
+      0.032,
+      0.029
+    ],
+    "median_ms": 0.036,
+    "rss_delta_mb": 0.0
+  },
+  "dinner_output": {
+    "rows": 600,
+    "columns": 88,
+    "protective_labels": [
+      "HOLD AND PROTECT",
+      "WAIT FOR PULLBACK"
+    ]
+  },
+  "finder_hour_filter_600": {
+    "status": "PASS",
+    "error": null,
+    "samples_ms": [
+      9.108,
+      7.403,
+      7.536,
+      6.906,
+      8.155,
+      8.005,
+      7.913,
+      7.977,
+      8.792,
+      9.775,
+      8.334,
+      8.425,
+      7.712,
+      7.693,
+      7.68,
+      7.6,
+      7.327,
+      6.981,
+      7.544,
+      8.074
+    ],
+    "median_ms": 7.813,
+    "rss_delta_mb": 0.0
+  },
+  "finder_complete_copy_payload": {
+    "status": "PASS",
+    "error": null,
+    "samples_ms": [
+      14.724,
+      12.138,
+      12.637,
+      11.272,
+      11.847,
+      11.25,
+      14.169,
+      11.593,
+      10.484,
+      10.471,
+      11.279,
+      14.282,
+      11.034,
+      10.628,
+      11.137,
+      11.217,
+      11.222,
+      11.903,
+      11.794,
+      11.767
+    ],
+    "median_ms": 11.436,
+    "rss_delta_mb": 0.0
+  },
+  "peak_rss_mb": 387.18
+}

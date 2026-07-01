@@ -1,0 +1,3 @@
+Command: streamlit run app.py --server.headless true --server.port 8765
+Result: PASS
+Evidence: Streamlit reported "You can now view your Streamlit app in your browser" and exposed Local URL http://localhost:8765.

@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-06-24",
+  "compile_all": {
+    "status": "PASSED",
+    "python_files": 991
+  },
+  "import_smoke": {
+    "status": "PASSED",
+    "modules": [
+      "core.regime_intelligence_stack_20260624",
+      "core.regime_intelligence_store_20260624",
+      "core.services.research_service",
+      "ui.lunch_field3_regime_matrix_v13"
+    ]
+  },
+  "targeted_and_existing_regime_tests": {
+    "status": "PASSED",
+    "passed": 19,
+    "failed": 0,
+    "duration_seconds": 4.89
+  },
+  "full_pytest_suite": {
+    "status": "INCOMPLETE_TIMEOUT",
+    "progress_percent": 56,
+    "failures_observed_before_timeout": 0,
+    "timeout_seconds": 120
+  },
+  "field1_hash_comparison": {
+    "status": "PASSED",
+    "protected_files": 10,
+    "differences": 0
+  },
+  "production_decision_invariance": {
+    "status": "PASSED_STATIC_AND_SYNTHETIC",
+    "notes": "No protected production files changed; synthetic outlier test confirmed shadow stack does not mutate production decision."
+  },
+  "limitations": [
+    "No live broker/API connection was available in the offline test environment.",
+    "The complete repository pytest suite exceeded the 120-second execution limit after reaching 56%; no failure was printed before timeout."
+  ],
+  "application_startup_smoke": {
+    "status": "FAILED",
+    "method": "streamlit exited before timeout",
+    "exit_code": 127
+  }
+}

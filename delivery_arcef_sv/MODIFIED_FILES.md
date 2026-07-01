@@ -1,0 +1,28 @@
+# Modified and Added Files
+
+- `core/settings_run_orchestrator_20260617.py`
+- `tabs/dinner_unified_center_20260617.py`
+- `lunch/registry.py`
+- `core/thesis_engine/__init__.py`
+- `core/thesis_engine/ablation.py`
+- `core/thesis_engine/calibration.py`
+- `core/thesis_engine/changepoint.py`
+- `core/thesis_engine/conditional_reliability.py`
+- `core/thesis_engine/correlation_penalty.py`
+- `core/thesis_engine/decision_mapping.py`
+- `core/thesis_engine/diagnostics.py`
+- `core/thesis_engine/dynamic_model_averaging.py`
+- `core/thesis_engine/evidence_fusion.py`
+- `core/thesis_engine/history_store.py`
+- `core/thesis_engine/master_policy.py`
+- `core/thesis_engine/orchestrator.py`
+- `core/thesis_engine/proper_scoring.py`
+- `core/thesis_engine/regime_model.py`
+- `core/thesis_engine/schemas.py`
+- `core/thesis_engine/settled_outcomes.py`
+- `core/thesis_engine/validation_gates.py`
+- `lunch/field_arcef/__init__.py`
+- `lunch/field_arcef/contract.py`
+- `lunch/field_arcef/renderer.py`
+- `lunch/field_arcef/view_model.py`
+- `tests/test_arcef_sv.py`

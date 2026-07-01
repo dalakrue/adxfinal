@@ -1,0 +1,45 @@
+Inspect, repair, test, optimize, and package the attached ADX Quant Pro Streamlit project as one deployable ZIP.
+
+NON-NEGOTIABLE PROTECTION
+Preserve every protected production calculation, Field 1 source-of-truth value, BUY/SELL/WAIT/HOLD/NO-TRADE rule, threshold, Power BI central prediction path, regime formula, canonical snapshot identity, historical outcome, database record, model weight, TP/SL calculation, and broker-time rule. Do not fabricate history, accuracy, reliability, uncertainty, news, outcomes, model evidence, sample sizes, prices, bands, or performance improvements. Keep app.py as the deployment entry point and Python 3.12 as the deployment runtime.
+
+CANONICAL RUN AND SYNCHRONIZATION
+1. Make Quick Run Fields 1–3 + Open Lunch sufficient for the complete Lunch Field 1–3 display contract. It must refresh and normalize EURUSD H1 once, use the latest completed broker H1 candle, publish one immutable canonical generation, and open Lunch Field 1.
+2. After both Quick Run and Full Run, execute one post-run consistency transaction that binds run_id, generation_id, symbol, timeframe, completed broker candle, source snapshot hash, source signature, Field 1 current row, already-computed Power BI result, and last-valid canonical aliases to the same generation.
+3. Switching fields or tabs must never recalculate Field 1 or create a new canonical identity.
+4. Reject stale mismatched fragments. Reuse a last-valid fragment only when its exact canonical identity matches. Never synthesize a replacement prediction path or history.
+
+FIELD 1
+1. Always render Table 1 Decision History, Table 2 Overall Full Metric History, and all ten Table 3 decision-history structures after Quick Run.
+2. When no settled archive exists, render the complete empty schema and the current canonical completed-candle row as PENDING/N/A. Never hide the section with an early return and never invent historical rows.
+3. Use completed EURUSD H1 broker candles only, newest first, with one shared broker-time provider.
+4. Preserve genuine 0 and 100 values. Missing values remain N/A, not zero.
+
+POWER BI / FIELD 2
+1. Resolve the latest completed H1 timestamp from the canonical transaction, not from local PC time.
+2. Bind only an already-built exact-generation result. If no real central path exists, show an explicit unavailable state rather than a flat or synthetic path.
+3. Preserve existing central path, upper/lower bands, calibration, and all production formulas.
+
+NLP / NEWS
+1. Remove the Settings section named “Open / Close — NLP / AI Assistant API Key”, including the mobile key box, model box, endpoint box, save, and clear controls.
+2. Read NLP/news from existing configured connectors and saved evidence stores only. API connectivity must not invalidate the canonical trading generation.
+3. If no published news rows exist, keep the 24-row table schema visible and state that evidence is unavailable. Do not fabricate news or sentiment.
+
+AI ASSISTANT
+1. Delete the embedded Field 5 Grounded AI Assistant and its renderer path.
+2. Keep one independent top-level AI Assistant only.
+3. Use the AirLLM Python library only in that independent AI Assistant, lazily after the user sends a question. It must be disabled by default on small Streamlit servers and must never load during page rendering.
+4. Ground every answer in the current canonical EURUSD H1 fact pack. If AirLLM is unavailable, use deterministic canonical retrieval rather than an unrelated or invented answer.
+5. Discard stale answers when the canonical generation changes.
+
+COMBINED DISPLAY
+Combine Field 456 and Field 789 into one top-level combined workspace for display and navigation only. Keep every original Field 4–9 engine, function, cache, persistence store, table, research layer, and calculation independent. Render only the selected inner section to reduce RAM and CPU.
+
+COPY BUTTONS
+1. Render exactly two mobile-safe controls at the top of Lunch: Copy Short and Copy Full.
+2. They must become active immediately after Quick Run and remain active even when all field panels are closed.
+3. Serialize and cache their payload once per canonical identity. Stack the controls vertically so browser iframe overlays cannot block either button.
+4. Do not require Full Run and do not duplicate copy controls elsewhere.
+
+TESTS
+Compile all Python files and run acceptance tests for: app.py startup; Python 3.12 declarations; Quick Run canonical publication; post-run identity consistency; Field 1 empty-schema visibility; current pending row; no fabricated data; exact two copy controls; copy availability after Quick Run; Field 2 timestamp validation; NLP empty state; removal of API-key UI; removal of embedded Field 5; independent AirLLM lazy loading; combined 456+789 display-only navigation; and no calculation on tab switching. Run a headless Streamlit startup smoke test. Package reports and SHA-256 checksums with the project.

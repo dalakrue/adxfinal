@@ -1,0 +1,10 @@
+{
+  "compileall": "PASS",
+  "focused_pytest_output": ".............                                                            [100%]\n13 passed in 0.41s",
+  "passed": 13,
+  "failed": 0,
+  "protected_hashes_unchanged": true,
+  "application_import_smoke": "NOT_RUN_DEPENDENCY_MISSING_STREAMLIT",
+  "streamlit_headless_startup": "NOT_RUN_DEPENDENCY_MISSING_STREAMLIT",
+  "environment_note": "The execution container did not have Streamlit installed; requirements.txt retains the project dependency."
+}

@@ -1,0 +1,54 @@
+Inspect, repair, test, optimize, and package the attached ADX Quant Pro Streamlit project while preserving all protected calculations, thresholds, production decisions, canonical identities, historical outcomes, databases, broker-time rules, Power BI central-path logic, TP/SL logic, model weights, and BUY/SELL/WAIT/HOLD/NO-TRADE rules.
+
+FIELD 1 TABLE 1
+1. Treat Field 1 Table 3 `history_by_factor` as Table 1's direct source of truth.
+2. Resolve the richest published Full Metric result across current and legacy cache names.
+3. Extract these ten histories: Entry Strength, SELL Pressure, BUY Pressure, Net Pressure, Pullback Readiness, M1 Confirmation, Master Decision, Hold Safety, TP Quality, and Direction Confirmation.
+4. Outer-join them by exact completed broker H1 candle.
+5. Show Date, Weekday, Hour, all ten score/decision pairs, final decision, confidence, reliability, uncertainty, error, settlement and correctness fields.
+6. Sort newest completed broker candle first and retain rows from the newest 25 distinct broker dates.
+7. Never use the one-row current confirmation object when richer Table 3 history exists. Use it only as a current PENDING fallback.
+8. Never fabricate prior rows, scores, outcomes, or correctness.
+
+TABLE 4
+1. Keep Table 4 display-only and never alter Field 1 or production weights.
+2. Preserve every BUY/SELL directional row.
+3. In the lower-standard display, retain only every second WAIT/WEAK row to reduce repetitive neutral output by about half.
+4. Permit a tie-break only from already-published directional components; otherwise keep WAIT.
+5. Show each technical, sentiment, session and regime component independently.
+
+NAVIGATION
+1. Make Field 456, Field 789, Field 456+789 and Field 4 to 9 aliases route to one combined Field 4 to 9 page.
+2. Never redirect those menu choices to Settings.
+3. Render the existing published results of Fields 4, 5, 6, 7, 8 and 9 together without merging or recalculating their engines.
+
+AI ASSISTANT
+1. Add an Open / Close AirLLM Mode toggle.
+2. Closed: deterministic canonical assistant only.
+3. Open: lazily invoke AirLLM only after a question is submitted.
+4. If AirLLM is unavailable, use the canonical deterministic fallback and state the failure clearly.
+5. Never permit AirLLM to modify production state.
+
+RESEARCH
+1. After Settings Full Calculation has published a canonical generation, open the selected Research workspace directly.
+2. Remove the extra post-calculation Load Selected Research Workspace gate.
+3. Research remains read-only during navigation and must not start another full calculation.
+
+FIELD 2 / POWER BI
+1. Resolve projection data from canonical powerbi/projection plus all known current/legacy published caches.
+2. Do not report missing source data when a valid published forecast payload exists elsewhere in the same generation.
+3. Bind every displayed metric to the same run_id, generation_id and completed broker candle.
+4. Show unavailable only for genuinely absent values; do not silently replace valid nonzero values with zero.
+5. Validate calibrated confidence, above/below probabilities, H+3 price, TP/SL touch states, band coverage, regime, robust EV, extreme risk, CRPS/energy status, event cluster, model weights, forecast timestamps, authority, Alpha, Delta, causal accuracy, MAE, regime reliability, balanced accuracy, forecast age, actionable coverage and benchmark skills.
+
+TESTING
+1. Compile every Python file.
+2. Test Table 1 against a fixture with 25 days of ten Table 3 factor histories.
+3. Test current-row fallback with no archive.
+4. Test Table 4 neutral suppression and no production mutation.
+5. Test all Field 4–9 menu aliases.
+6. Test AirLLM open and closed modes with missing optional package.
+7. Test Research direct opening after a canonical full run.
+8. Test Power BI lookup across every cache alias and identity mismatch rejection.
+9. Run a Streamlit startup smoke test in Python 3.12 with dependencies installed.
+10. Package a deployable ZIP with app.py as entry point, reports, checksums and rollback instructions.

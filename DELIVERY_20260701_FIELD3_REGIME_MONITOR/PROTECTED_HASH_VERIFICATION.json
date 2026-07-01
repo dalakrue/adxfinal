@@ -1,0 +1,44 @@
+[
+  {
+    "file": "core/regime_intelligence_stack_20260624.py",
+    "original_sha256": "7634f48d3512ac82c4a5f03faef0db8ff6ff4ac8f4c98bf4acc7964ddd687c70",
+    "modified_sha256": "7634f48d3512ac82c4a5f03faef0db8ff6ff4ac8f4c98bf4acc7964ddd687c70",
+    "unchanged": true
+  },
+  {
+    "file": "core/shared_broker_time_20260622.py",
+    "original_sha256": "440ceef72d257d68a5e73680884bfe8603580e35b99756e17e1aa37cd0df97cd",
+    "modified_sha256": "440ceef72d257d68a5e73680884bfe8603580e35b99756e17e1aa37cd0df97cd",
+    "unchanged": true
+  },
+  {
+    "file": "core/canonical_sync_v9.py",
+    "original_sha256": "e470b7292af31d359afb879d0372665b157b37ccfa88769ea285ef42260fda95",
+    "modified_sha256": "e470b7292af31d359afb879d0372665b157b37ccfa88769ea285ef42260fda95",
+    "unchanged": true
+  },
+  {
+    "file": "ui/lunch_four_core_fields_20260619.py",
+    "original_sha256": "1fff289c7bcb9b3ec2172ddc7ed4bcaacc00f139c9c0bcd3126ce1a2204d0bc3",
+    "modified_sha256": "1fff289c7bcb9b3ec2172ddc7ed4bcaacc00f139c9c0bcd3126ce1a2204d0bc3",
+    "unchanged": true
+  },
+  {
+    "file": "core/lunch_h1_data_quality_v13.py",
+    "original_sha256": "0d523c4dc02a92381b361714d8e7b879cbaa25d7c16ef9b87df0aad96430c874",
+    "modified_sha256": "0d523c4dc02a92381b361714d8e7b879cbaa25d7c16ef9b87df0aad96430c874",
+    "unchanged": true
+  },
+  {
+    "file": "app.py",
+    "original_sha256": "0faadee93eb0c2933005df2d8b2c7c46605c88c43128c388df01d67d51f7ee6a",
+    "modified_sha256": "0faadee93eb0c2933005df2d8b2c7c46605c88c43128c388df01d67d51f7ee6a",
+    "unchanged": true
+  },
+  {
+    "file": "adx_dashpoard.py",
+    "original_sha256": "5af034f20b4804fa8513ed433fc58c0be5be911ec63e450ef53e7192786f59ca",
+    "modified_sha256": "5af034f20b4804fa8513ed433fc58c0be5be911ec63e450ef53e7192786f59ca",
+    "unchanged": true
+  }
+]

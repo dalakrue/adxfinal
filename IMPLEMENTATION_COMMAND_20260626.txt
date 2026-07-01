@@ -1,0 +1,75 @@
+Inspect, repair, optimize, test, and package this ADX Quant Pro Streamlit project as one deployable ZIP.
+
+PRIMARY ARCHITECTURE
+1. Keep app.py as the only deployment entry point. Preserve all protected production calculations, Field 1 source-of-truth values, BUY/SELL/WAIT logic, Power BI central path, regime formulas, thresholds, historical tables, canonical identity, and protected hashes.
+2. The Lunch tab must expose exactly five principal display fields:
+   - Field 1: Decision Table + protected Full Metric History.
+   - Field 2: existing Power BI Projection.
+   - Field 3: existing Regime / Three-Standards History.
+   - Field 456: display-only grouping of existing Fields 4, 5, and 6.
+   - Field 789: display-only grouping of existing Fields 7, 8, and 9.
+3. Combining fields means presentation grouping only. Do not merge, average, replace, weaken, rename, or recompute their independent logic. Use lazy imports/tabs/expanders so only opened content is rendered.
+
+FIELD 1 DECISION TABLE
+4. Put the Decision Table at the very top of Field 1, before the protected Full Metric History.
+5. Use the last 25 distinct completed broker days only, descending newest-first, and never include a future/incomplete candle.
+6. Required columns, in order:
+   Date, Weekday, Hour, Broker Candle Time, FX Session,
+   Entry Strength Score, Entry Strength Decision,
+   SELL Pressure Score, SELL Pressure Decision,
+   BUY Pressure Score, BUY Pressure Decision,
+   Net Pressure Score, Pressure Decision,
+   Pullback Readiness Score, Pullback Readiness Decision,
+   M1 Confirmation Score, M1 Confirmation Decision,
+   Hold Safety Score, Hold Safety Decision,
+   TP Quality Score, TP Quality Decision,
+   Master Decision Score, Master Decision,
+   Direction Confirmation Score, Direction Confirmation Decision,
+   Final Decision, Decision Confidence, Decision Reliability,
+   Uncertainty Percentage, Error Percentage,
+   Realized Direction, Decision Correct, Outcome Status,
+   Canonical run_id, Canonical generation_id.
+7. Normalize score displays to 0–10 only at the presentation boundary. Do not change stored/protected numerical values. Never fabricate unavailable data. Pending outcomes must show Decision Correct = N/A.
+8. Freeze one canonical_decision_snapshot containing run_id, generation_id, snapshot_hash, completed broker candle identity, symbol, timeframe, production decision, regime, latest decision row, and data signature.
+
+SYNCHRONIZATION
+9. Fields 2, 3, 456, and 789 must display a lightweight read-only Field 1 synchronization strip sourced from canonical_decision_snapshot. Show canonical decision, direction confirmation, master decision, reliability, broker candle, run_id/generation_id/hash. Never trigger calculations from renderers.
+10. Field 1 remains the source of truth. Other fields may show agreement/conflict diagnostics, but must not overwrite the production decision.
+
+DIRECTION CONFIRMATION RESEARCH LAYER
+11. Improve one-hour direction confirmation as an additive leakage-safe operational layer, not by altering protected Field 1 truth.
+12. Use immutable completed-candle forecast origins and settle outcomes only after the target H1 candle closes.
+13. Combine independently useful evidence: protected forecast displacement, short-horizon momentum, session/regime conditional history, alpha-beta stability, robust dispersion, probability calibration, transaction-cost/noise threshold, and bounded model weights.
+14. Use hierarchical shrinkage: session+regime+hour -> session+regime -> session -> global. Report the fallback level and effective sample size.
+15. Use calibrated probabilities P(BUY), P(SELL), P(NEUTRAL), probability margin, reliability components, Brier score, log loss, directional accuracy, coverage, and empirical wrong-direction probability.
+16. Keep a 50-pip absolute safety cap and tighter ATR/tail caps for the operational shadow path. Preserve the protected raw Power BI central path separately.
+17. Do not blindly force HOLD/WAIT frequency to half. Reduce unnecessary WAIT only through walk-forward-selected acceptance thresholds with minimum reliability, cost/noise filtering, calibrated probability margin, and out-of-sample utility/accuracy constraints. If evidence is weak, WAIT must remain permitted.
+18. Add CONFIRMED BUY/SELL and LEAN BUY/SELL tiers. LEAN may reduce excessive WAIT but must be clearly separated from CONFIRMED and must never silently become the protected production decision.
+
+PERFORMANCE
+19. Quick Run Fields 1–3 + Open Lunch must refresh/normalize EURUSD H1 once, calculate only Fields 1–3 and strictly required dependencies, publish one immutable generation, stop, and navigate to Lunch Field 1.
+20. Reuse the immutable generation when completed candle identity and source signature are unchanged.
+21. Avoid database full scans: query last 25 broker days with indexed forecast_origin_time/run_id/generation_id; fetch only needed columns.
+22. Use lazy imports for Fields 456/789 and their child outputs. Do not load AI/NLP/Field 7–9 research in QUICK mode.
+23. Do not store duplicate DataFrames in session_state. Store compact canonical scalar/dict payloads and bounded history references.
+24. Cache pure transformations by source signature, schema version, broker candle, and run_id. Never cache mutable state or stale decisions.
+25. Use column projection, categorical dtypes for repeated decision/session labels, and bounded result sizes. Avoid repeated JSON decode/groupby work during Streamlit reruns.
+26. Keep mobile render light: five top-level fields, closed-by-default heavy sections, fixed-height tables, no duplicate charts, no automatic expansion.
+
+RESEARCH PAPERS / METHODS TO MAP INTO THE ADDITIVE LAYER
+1. James D. Hamilton (1989), “A New Approach to the Economic Analysis of Nonstationary Time Series and the Business Cycle” — Markov regime switching.
+2. M. Hashem Pesaran and Allan Timmermann (1992), “A Simple Nonparametric Test of Predictive Performance” — directional-accuracy validation.
+3. Glenn W. Brier (1950), “Verification of Forecasts Expressed in Terms of Probability” — Brier score and calibration.
+4. Allan H. Murphy (1973), “A New Vector Partition of the Probability Score” — reliability/resolution/uncertainty decomposition.
+5. Tilmann Gneiting and Adrian E. Raftery (2007), “Strictly Proper Scoring Rules, Prediction, and Estimation” — proper probability scoring.
+6. Volodymyr Vovk, Alexander Gammerman, and Glenn Shafer (2005), “Algorithmic Learning in a Random World” — conformal uncertainty foundations.
+7. Leying Guan (2023), “Localized Conformal Prediction: A Generalized Inference Framework for Conformal Prediction” — local/session-conditioned intervals.
+8. Mark Herbster and Manfred K. Warmuth (1998), “Tracking the Best Expert” — Fixed Share for changing regimes/models.
+9. Wouter Koolen and Tim van Erven (2010), “Switching between Hidden Markov Models using Fixed Share” — efficient switching expert ensembles.
+10. Andreas Christoffersen (1998), “Evaluating Interval Forecasts” — conditional coverage and interval independence testing.
+
+VALIDATION
+27. Add tests for exact decision-table schema/order, 25 distinct broker days, newest-first ordering, pending-outcome handling, score normalization, canonical identity, no future rows, and no renderer-triggered heavy calculation.
+28. Compile all Python files. Run focused unit tests and then the full test suite in an environment with requirements installed.
+29. Report any unavailable dependency honestly. Do not claim Streamlit UI runtime validation unless Streamlit and all requirements are installed.
+30. Package one deployable ZIP plus a concise changed-files manifest, test report, and rollback notes.

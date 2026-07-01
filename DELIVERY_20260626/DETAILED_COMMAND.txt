@@ -1,0 +1,53 @@
+Inspect, repair, test, and package the attached ADX Quant Pro project as one deployable ZIP.
+
+Preserve every protected production calculation, Field 1 source-of-truth value, BUY/SELL/WAIT rule, existing threshold, Power BI central path, regime formula, historical result, canonical snapshot identity, run_id, generation_id, source hash, completed-candle identity, engine, cache, function, table, and database store. Never merge calculation logic because fields are displayed together.
+
+ARCHITECTURE
+1. Keep exactly seven visible top-level tabs in this order:
+   Settings, Lunch, AI Assistant, Research, Other, Field 456, Field 789.
+2. Lunch must contain exactly three selectable core fields:
+   Field 1 — Full Metric History and Decision History
+   Field 2 — Power BI Price Prediction Path
+   Field 3 — Regime History
+3. Create an independent Field 456 tab that displays original Fields 4+5+6 together through a nested selector. Combine UI only. Keep all three engines, caches, functions, histories, stores and calculations independent.
+4. Create an independent Field 789 tab that displays original Fields 7+8+9 together through a nested selector. Combine UI only. Keep all three research engines, caches, functions, histories, stores and calculations independent.
+5. Quick Run Fields 1–3 + Open Lunch must refresh/normalize EURUSD H1 once, calculate only Fields 1–3 and strict dependencies, publish one immutable canonical generation, stop, and open Lunch Field 1. It must not calculate Fields 4–9, AI, NLP, Similar-Day, or full research.
+
+FIELD 1 DECISION HISTORY
+At the absolute top of Field 1 render “Decision History — Last 25 Days”. Use completed EURUSD H1 broker candles only, newest first, and the same shared broker-time provider used by all fields.
+
+Include these columns in this order:
+Date, Weekday, Hour,
+Entry Strength Score, Entry Strength Decision,
+SELL Pressure Score, SELL Pressure Decision,
+BUY Pressure Score, BUY Pressure Decision,
+Net Pressure Score, Pressure Decision,
+Pullback Readiness Score, Pullback Readiness Decision,
+M1 Confirmation Score, M1 Confirmation Decision,
+Master Decision Score, Master Decision,
+Hold Safety Score, Hold Safety Decision,
+TP Quality Score, TP Quality Decision,
+Direction Confirmation Score, Direction Confirmation Decision,
+Final Decision, Decision Confidence, Decision Reliability,
+Uncertainty Percentage, Error Percentage,
+Outcome Status, Decision Correct.
+
+Normalize scores for display to 0–10 while preserving original stored values. Never convert missing data to zero. Show N/A for unavailable values. Genuine 0% and 100% values must remain valid. Decision Correct must remain N/A until the outcome is settled.
+
+Below Decision History, preserve and render:
+- Overall Full Metric History — Last 25 Days
+- All 10 Decision Histories — Last 25 Days
+Do not recalculate these tables while rendering.
+
+DIRECTION CONFIRMATION AND HOLD/NO-TRADE RESEARCH
+Do not blindly halve the protected production HOLD/NO-TRADE threshold. Add a research-only threshold calibration protocol using settled outcomes and completed H1 candles. Test 90%, 80%, 70%, 60%, and 50% of the current threshold with anchored walk-forward validation, session stratification, spread/slippage costs, embargo, drift checks, Pesaran–Timmermann directional testing, Diebold–Mariano comparison, SPA multiple-testing control, Model Confidence Set filtering, and calibrated confidence. Promote a lower production threshold only if it improves net expected value while drawdown, error, turnover and calibration remain within existing limits. Otherwise retain production.
+
+Use these ten research foundations in shadow/research layers only unless validated and explicitly promoted:
+Hamilton regime switching; Pesaran–Timmermann direction test; Diebold–Mariano predictive comparison; Christoffersen interval coverage; Gneiting calibration/sharpness; ADWIN drift detection; conformalized quantile regression; Hansen SPA; Hansen–Lunde–Nason Model Confidence Set; Harvey–Liu–Zhu multiple-testing control.
+
+TESTING
+- Verify app.py is the deployable Streamlit entry point.
+- Compile all Python files.
+- Run targeted tests for field count, tab count/order, Field 1 table order/schema, completed-H1 filtering, broker-time consistency, missing-value preservation, 0/100 boundary preservation, copy buttons, Quick Run scope, and independent Field 456/789 lazy rendering.
+- Confirm ordinary tab switching starts no calculation.
+- Package the complete project plus implementation report, modified-files report, test report, and SHA-256 manifest into one deployable ZIP.

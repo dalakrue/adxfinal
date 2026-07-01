@@ -1,0 +1,1128 @@
+{
+  "broker_conversion_candidates": [
+    {
+      "file": "core/finnhub_connector.py",
+      "line": 114,
+      "text": "return datetime.now(timezone.utc).astimezone().strftime(\"%Y-%m-%d %H:%M:%S %Z\")"
+    },
+    {
+      "file": "core/market_time_freshness_20260622.py",
+      "line": 84,
+      "text": "\"mt5_broker_utc_offset_hours_20260622\","
+    },
+    {
+      "file": "core/market_time_freshness_20260622.py",
+      "line": 85,
+      "text": "\"broker_utc_offset_hours\","
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 28,
+      "text": "\"manual_broker_offset_minutes_20260622\","
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 29,
+      "text": "\"manual_broker_utc_offset_hours_20260622\","
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 30,
+      "text": "\"mt5_broker_utc_offset_hours_20260622\","
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 31,
+      "text": "\"broker_utc_offset_hours\","
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 39,
+      "text": "\"persisted_broker_offset_minutes_20260622\", \"last_valid_broker_offset_minutes_20260622\","
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 40,
+      "text": "\"persisted_broker_utc_offset_hours\", \"last_valid_broker_utc_offset_hours\","
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 169,
+      "text": "zone = ZoneInfo(timezone_name)"
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 170,
+      "text": "offset = event.astimezone(zone).utcoffset()"
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 193,
+      "text": "tzinfo = ZoneInfo(timezone_name)"
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 199,
+      "text": "state[\"mt5_broker_utc_offset_hours_20260622\"] = hours"
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 200,
+      "text": "state[\"broker_utc_offset_hours\"] = hours"
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 201,
+      "text": "state[\"persisted_broker_offset_minutes_20260622\"] = int(minutes)"
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 202,
+      "text": "state[\"last_valid_broker_offset_minutes_20260622\"] = int(minutes)"
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 207,
+      "text": "\"broker_offset_minutes\": int(minutes) if minutes is not None else None,"
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 291,
+      "text": "\"broker_offset_minutes\": clock.get(\"broker_offset_minutes\"),"
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 412,
+      "text": "expected_offset = str(clock.get(\"broker_offset_minutes\"))"
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 416,
+      "text": "offset_values = _single_column_identity(history_frame, (\"broker_offset_minutes\",))"
+    },
+    {
+      "file": "core/lunch_broker_sentiment_ai_history_20260622.py",
+      "line": 57,
+      "text": "for key in (\"broker_offset_minutes\", \"broker_offset_minutes_20260622\"):"
+    },
+    {
+      "file": "core/lunch_broker_sentiment_ai_history_20260622.py",
+      "line": 64,
+      "text": "for key in (\"mt5_broker_utc_offset_hours_20260622\", \"broker_utc_offset_hours\", \"mt5_server_utc_offset_hours\"):"
+    },
+    {
+      "file": "core/lunch_broker_sentiment_ai_history_20260622.py",
+      "line": 279,
+      "text": "raw = \"|\".join(str(contract.get(k) or \"\") for k in (\"calculation_id\", \"calculation_generation\", \"latest_completed_h1_utc\", \"broker_offset_minutes\"))"
+    },
+    {
+      "file": "core/lunch_broker_sentiment_ai_history_20260622.py",
+      "line": 342,
+      "text": "f\"Broker Offset Minutes: {contract.get('broker_offset_minutes')}\", f\"Broker Timezone: {contract.get('broker_timezone_iana') or 'fixed/manual'}\","
+    },
+    {
+      "file": "core/cross_table_sync_20260622.py",
+      "line": 38,
+      "text": "offset = _values(frame, (\"broker_offset_minutes\",))"
+    },
+    {
+      "file": "core/cross_table_sync_20260622.py",
+      "line": 46,
+      "text": "\"broker_offset_match\": not offset or offset == {str(contract.get(\"broker_offset_minutes\"))},"
+    },
+    {
+      "file": "core/cross_table_sync_20260622.py",
+      "line": 93,
+      "text": "\"broker_offset_minutes\": contract.get(\"broker_offset_minutes\"),"
+    },
+    {
+      "file": "core/ai_domain_analysis_registry_20260622.py",
+      "line": 103,
+      "text": "\"broker_offset_minutes\": contract.get(\"broker_offset_minutes\"),"
+    },
+    {
+      "file": "core/ai_domain_analysis_registry_20260622.py",
+      "line": 381,
+      "text": "\"broker_offset_minutes\": contract.get(\"broker_offset_minutes\"),"
+    },
+    {
+      "file": "core/field6_quant_history_20260622.py",
+      "line": 107,
+      "text": "\"broker_offset_minutes\": contract.get(\"broker_offset_minutes\"), \"timestamp_source\": contract.get(\"timestamp_source\"),"
+    },
+    {
+      "file": "core/field6_quant_history_20260622.py",
+      "line": 225,
+      "text": "frame[\"broker_offset_minutes\"] = contract.get(\"broker_offset_minutes\")"
+    },
+    {
+      "file": "tabs/ai_assistant_compact_20260619.py",
+      "line": 47,
+      "text": "\"broker_offset_minutes\", \"broker_timezone_iana\", \"contract_version\", \"latest_completed_h1_utc\""
+    },
+    {
+      "file": "tabs/ai_assistant_compact_20260619.py",
+      "line": 551,
+      "text": "\"broker_offset_minutes\": pack.get(\"broker_offset_minutes\"),"
+    },
+    {
+      "file": "tabs/antd_page_router_20260615.py",
+      "line": 397,
+      "text": "st.session_state.setdefault(\"mt5_broker_utc_offset_hours_20260622\", 4.0)"
+    },
+    {
+      "file": "tabs/antd_page_router_20260615.py",
+      "line": 470,
+      "text": "key=\"mt5_broker_utc_offset_hours_20260622\","
+    }
+  ],
+  "wall_clock_candidates": [
+    {
+      "file": "core/advanced_analytics_20260615.py",
+      "line": 76,
+      "text": "d[\"time\"] = pd.date_range(end=pd.Timestamp.now().floor(\"h\"), periods=len(d), freq=\"h\")"
+    },
+    {
+      "file": "core/advanced_analytics_20260615.py",
+      "line": 390,
+      "text": "out[\"time\"] = pd.to_datetime(hist[tcol], errors=\"coerce\") if tcol else pd.date_range(end=pd.Timestamp.now().floor(\"h\"), periods=len(out), freq=\"h\")"
+    },
+    {
+      "file": "core/advanced_reliability_shift_20260620.py",
+      "line": 49,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/adx_shared_sync_20260615.py",
+      "line": 44,
+      "text": "return str(pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\"))"
+    },
+    {
+      "file": "core/canonical_data_validation_20260621.py",
+      "line": 177,
+      "text": "now_ts = utc_timestamp(now) or pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/canonical_data_validation_20260621.py",
+      "line": 266,
+      "text": "now_ts = utc_timestamp(now) or pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/canonical_runtime_20260617.py",
+      "line": 50,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/code_quality.py",
+      "line": 21,
+      "text": "return pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\")"
+    },
+    {
+      "file": "core/connector_state_machine_20260621.py",
+      "line": 15,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/connector_state_machine_20260621.py",
+      "line": 30,
+      "text": "age = (datetime.now(timezone.utc) - datetime.fromisoformat(str(updated))).total_seconds()"
+    },
+    {
+      "file": "core/decision_contract_20260617.py",
+      "line": 19,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/decision_product_engine_20260617.py",
+      "line": 48,
+      "text": "ts = pd.Timestamp(value if value is not None else datetime.now(timezone.utc))"
+    },
+    {
+      "file": "core/decision_product_engine_20260617.py",
+      "line": 171,
+      "text": "now_ts = pd.Timestamp(now or datetime.now(timezone.utc))"
+    },
+    {
+      "file": "core/decision_product_engine_20260617.py",
+      "line": 327,
+      "text": "now = frame[\"time\"].iloc[-1] if not frame.empty else pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/decision_product_engine_20260617.py",
+      "line": 1035,
+      "text": "created=pd.Timestamp(now or datetime.now(timezone.utc)); created=created.tz_localize(\"UTC\") if created.tzinfo is None else created.tz_convert(\"UTC\")"
+    },
+    {
+      "file": "core/finnhub_connector.py",
+      "line": 114,
+      "text": "return datetime.now(timezone.utc).astimezone().strftime(\"%Y-%m-%d %H:%M:%S %Z\")"
+    },
+    {
+      "file": "core/full_metric_canonical_adapter_20260618.py",
+      "line": 99,
+      "text": "now = pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/full_system_upgrade.py",
+      "line": 306,
+      "text": "\"export_time\": pd.Timestamp.now().isoformat(),"
+    },
+    {
+      "file": "core/history_identity_20260620.py",
+      "line": 40,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/market_time_freshness_20260622.py",
+      "line": 176,
+      "text": "now = pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/multiscale_probabilistic_upgrade_20260618.py",
+      "line": 1014,
+      "text": "\"cached_at\": pd.Timestamp.now(tz=\"UTC\").isoformat(),"
+    },
+    {
+      "file": "core/news_event_store_20260618.py",
+      "line": 78,
+      "text": "current = pd.Timestamp(now or datetime.now(timezone.utc))"
+    },
+    {
+      "file": "core/news_event_store_20260618.py",
+      "line": 88,
+      "text": "retrieval = pd.Timestamp.now(tz=\"UTC\").isoformat()"
+    },
+    {
+      "file": "core/news_event_store_20260618.py",
+      "line": 196,
+      "text": "pd.Timestamp.now(tz=\"UTC\").isoformat(),"
+    },
+    {
+      "file": "core/news_event_store_20260618.py",
+      "line": 209,
+      "text": "current = pd.Timestamp(now or datetime.now(timezone.utc))"
+    },
+    {
+      "file": "core/nlp_event_response.py",
+      "line": 42,
+      "text": "out[\"time\"] = pd.date_range(end=pd.Timestamp.now(tz=\"UTC\"), periods=len(ohlc), freq=\"h\")"
+    },
+    {
+      "file": "core/nlp_pipeline.py",
+      "line": 203,
+      "text": "current = pd.Timestamp.now(tz=\"UTC\") if now is None else parse_timestamp(now)"
+    },
+    {
+      "file": "core/nlp_related_priority_20260615.py",
+      "line": 104,
+      "text": "now = pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/nlp_related_priority_20260615.py",
+      "line": 142,
+      "text": "now = pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/operational_sync_20260618.py",
+      "line": 29,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/performance_store_20260619.py",
+      "line": 56,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/powerbi_path_calibration_20260617.py",
+      "line": 378,
+      "text": "\"current_regime\":regime,\"regime_reliability_pct\":round(regime_rel,2),\"calculation_timestamp\":str(calculation_timestamp or pd.Timestamp.utcnow()),\"source_data_timestamp\":str(source_data_timestamp or anchor_time),"
+    },
+    {
+      "file": "core/prediction_ledger_20260617.py",
+      "line": 34,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/pro_quality_upgrade.py",
+      "line": 20,
+      "text": "return pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\")"
+    },
+    {
+      "file": "core/regime_sync_20260617.py",
+      "line": 151,
+      "text": "age_hours = max(0.0, (pd.Timestamp.now(tz=freshness.tz) - freshness).total_seconds() / 3600.0) if freshness.tzinfo else max(0.0, (pd.Timestamp.now() - freshness).total_seconds() / 3600.0)"
+    },
+    {
+      "file": "core/regime_sync_20260617.py",
+      "line": 181,
+      "text": "now = pd.Timestamp.now()"
+    },
+    {
+      "file": "core/regime_sync_20260617.py",
+      "line": 210,
+      "text": "reference = pd.Timestamp.now(tz=latest.tz) if latest.tzinfo else now"
+    },
+    {
+      "file": "core/regime_sync_20260617.py",
+      "line": 236,
+      "text": "now = _dt_scalar(anchor).floor(\"s\") if anchor is not None and not pd.isna(anchor) else pd.Timestamp.now(tz=\"UTC\").tz_convert(None).floor(\"s\")"
+    },
+    {
+      "file": "core/regime_sync_20260617.py",
+      "line": 547,
+      "text": "ref = _dt_scalar(anchor) if anchor is not None and not pd.isna(anchor) else pd.Timestamp.now(tz=\"UTC\").tz_convert(None)"
+    },
+    {
+      "file": "core/regime_transition_trust_20260621.py",
+      "line": 543,
+      "text": "latest_time = completed[\"__time\"].iloc[-1] if not completed.empty else pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/regime_transition_trust_20260621.py",
+      "line": 548,
+      "text": "now_utc = pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/regime_transition_trust_20260621.py",
+      "line": 605,
+      "text": "timestamp = pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/regime_trust_store_20260621.py",
+      "line": 327,
+      "text": "\"timestamp\": pd.Timestamp.now(tz=\"UTC\"),"
+    },
+    {
+      "file": "core/research_calibration_20260618.py",
+      "line": 1730,
+      "text": "row.get(\"session\"), row.get(\"transition_state\"), pd.Timestamp.utcnow().isoformat()),"
+    },
+    {
+      "file": "core/research_calibration_20260618.py",
+      "line": 1771,
+      "text": "(experiment_id, configuration_hash, json.dumps(_json_safe(parameters)), json.dumps(_json_safe(experiment.get(\"feature_set\") or [])), json.dumps(_json_safe(experiment.get(\"thresholds\") or {})), json.dumps(_json_safe(exper"
+    },
+    {
+      "file": "core/research_risk_stack_20260619.py",
+      "line": 35,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/research_validation_common_20260621.py",
+      "line": 19,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/settings_run_orchestrator_20260617.py",
+      "line": 306,
+      "text": "run_started_at = pd.Timestamp.now(tz=\"UTC\").isoformat()"
+    },
+    {
+      "file": "core/settings_run_orchestrator_20260617.py",
+      "line": 322,
+      "text": "\"built_at\": pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\"),"
+    },
+    {
+      "file": "core/settings_run_orchestrator_20260617.py",
+      "line": 399,
+      "text": "failed_run_id = f\"FAILED-{pd.Timestamp.utcnow().strftime('%Y%m%dT%H%M%S')}-{int(time.time()*1000)%1000000:06d}\""
+    },
+    {
+      "file": "core/settings_run_orchestrator_20260617.py",
+      "line": 402,
+      "text": "\"created_at\": pd.Timestamp.utcnow().isoformat(),"
+    },
+    {
+      "file": "core/settings_run_orchestrator_20260617.py",
+      "line": 958,
+      "text": "\"calculated_at\": pd.Timestamp.now(tz=\"UTC\").isoformat(),"
+    },
+    {
+      "file": "core/settings_run_orchestrator_20260617.py",
+      "line": 1379,
+      "text": "status[\"built_at\"] = pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\")"
+    },
+    {
+      "file": "core/settings_run_orchestrator_20260617.py",
+      "line": 1391,
+      "text": "status.setdefault(\"built_at\", pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\"))"
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 151,
+      "text": "event = _as_utc(event_time_utc) or pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/shared_broker_time_20260622.py",
+      "line": 265,
+      "text": "processing = pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/similar_day_intelligence_20260619.py",
+      "line": 78,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/snapshot_schema_20260619.py",
+      "line": 73,
+      "text": "now = datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/system_wide_completion_20260618.py",
+      "line": 23,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/trust_history_20260619.py",
+      "line": 33,
+      "text": "return datetime.now(timezone.utc).isoformat()"
+    },
+    {
+      "file": "core/trust_history_20260619.py",
+      "line": 502,
+      "text": "created = _utc(canonical.get(\"created_at\")) or pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/lunch_broker_sentiment_ai_history_20260622.py",
+      "line": 506,
+      "text": "now = _utc(now_utc) or pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "core/lunch_broker_sentiment_ai_history_20260622.py",
+      "line": 766,
+      "text": "\"last_validated_at_utc\": pd.Timestamp.now(tz=\"UTC\").isoformat(),"
+    },
+    {
+      "file": "core/connectors/websocket_feed.py",
+      "line": 104,
+      "text": "tick_time = pd.Timestamp.utcnow().tz_localize(None)"
+    },
+    {
+      "file": "core/connectors/websocket_feed.py",
+      "line": 112,
+      "text": "tick_time = pd.Timestamp.utcnow().tz_localize(None)"
+    },
+    {
+      "file": "core/connectors/websocket_feed.py",
+      "line": 114,
+      "text": "tick_time = pd.Timestamp.utcnow().tz_localize(None)"
+    },
+    {
+      "file": "core/data/synthetic.py",
+      "line": 38,
+      "text": "\"time\": pd.date_range(end=pd.Timestamp.now(), periods=int(bars), freq=\"min\"),"
+    },
+    {
+      "file": "core/logic_safety/_shared.py",
+      "line": 196,
+      "text": "x[\"time\"] = pd.date_range(end=pd.Timestamp.now(), periods=len(x), freq=\"h\")"
+    },
+    {
+      "file": "core/logic_safety/data_quality_guard.py",
+      "line": 59,
+      "text": "now = pd.Timestamp.now(tz=last_time.tz) if last_time.tzinfo else pd.Timestamp.now()"
+    },
+    {
+      "file": "core/state/session_state.py",
+      "line": 58,
+      "text": "st.session_state[\"system_boot_time\"] = pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\")"
+    },
+    {
+      "file": "core/state/session_state.py",
+      "line": 79,
+      "text": "\"time\": pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\"),"
+    },
+    {
+      "file": "core/storage/database.py",
+      "line": 48,
+      "text": "return pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\")"
+    },
+    {
+      "file": "core/storage/database.py",
+      "line": 241,
+      "text": "stamp = pd.Timestamp.now().strftime(\"%Y%m%d_%H%M%S\")"
+    },
+    {
+      "file": "core/storage/database.py",
+      "line": 251,
+      "text": "stamp = pd.Timestamp.now().strftime(\"%Y%m%d_%H%M%S\")"
+    },
+    {
+      "file": "core/storage/database.py",
+      "line": 365,
+      "text": "stamp = pd.Timestamp.now().strftime(\"%Y%m%d_%H%M%S\")"
+    },
+    {
+      "file": "core/ui/helpers.py",
+      "line": 143,
+      "text": "age_h = (pd.Timestamp.now() - t).total_seconds() / 3600.0"
+    },
+    {
+      "file": "core/ui/helpers.py",
+      "line": 152,
+      "text": "st.session_state[signal_key] = pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')"
+    },
+    {
+      "file": "core/legacy_impl/global_upgrade_impl_parts/part_000.py",
+      "line": 2,
+      "text": "SOURCE = '\"\"\"2026-06-02 Global full-system upgrade layer.\\n\\nAdditive only: this module gives every tab the same compact command center,\\ncopy/export helper, data-quality metrics, UI/animation hooks, and safe health\\nche"
+    },
+    {
+      "file": "core/legacy_impl/system_contract_impl_parts/part_000.py",
+      "line": 2,
+      "text": "SOURCE = '\"\"\"System relationship / timing contract for M1 ADX Quant Pro.\\n\\nThis module is intentionally additive.  It does not replace any original tab,\\nconnector, database, frontend, or backend function.  It creates o"
+    },
+    {
+      "file": "ui/nlp_research_panel.py",
+      "line": 169,
+      "text": "now = pd.Timestamp.now(tz=\"UTC\")"
+    },
+    {
+      "file": "ui/nlp_research_panel.py",
+      "line": 314,
+      "text": "st.session_state[\"nlp_news_last_refresh_time_20260618\"] = pd.Timestamp.now(tz=\"UTC\").isoformat()"
+    },
+    {
+      "file": "ui/nlp_research_panel.py",
+      "line": 447,
+      "text": "\"built_at\": str(pd.Timestamp.now()),"
+    },
+    {
+      "file": "ui/nlp_research_panel.py",
+      "line": 495,
+      "text": "\"retrieval_time\": pd.Timestamp.now(tz=\"UTC\"),"
+    },
+    {
+      "file": "ui/powerbi_cached_renderer_20260619.py",
+      "line": 379,
+      "text": "hours = max(0.0, (pd.Timestamp.now(tz=\"UTC\") - pd.Timestamp(created)).total_seconds() / 3600.0)"
+    },
+    {
+      "file": "ui/table_ordering_20260618.py",
+      "line": 66,
+      "text": "current = pd.Timestamp(now or datetime.now(timezone.utc))"
+    },
+    {
+      "file": "tabs/advanced_efficiency_control_20260611.py",
+      "line": 98,
+      "text": "if 'time' not in x.columns: x['time'] = pd.date_range(end=pd.Timestamp.now(), periods=len(x), freq='h')"
+    },
+    {
+      "file": "tabs/advanced_efficiency_control_20260611.py",
+      "line": 147,
+      "text": "last_time = pd.to_datetime(reg.get('last_time') or r.get('last_time') or (df['time'].iloc[-1] if not df.empty else pd.Timestamp.now()))"
+    },
+    {
+      "file": "tabs/advanced_efficiency_control_20260611.py",
+      "line": 148,
+      "text": "age_hours = max(0.0, (pd.Timestamp.now(tz=None) - pd.Timestamp(last_time).tz_localize(None)).total_seconds()/3600.0)"
+    },
+    {
+      "file": "tabs/antd_page_router_20260615.py",
+      "line": 343,
+      "text": "st.session_state[\"nlp_api_last_saved_20260622\"] = pd.Timestamp.now(tz=\"UTC\").isoformat()"
+    },
+    {
+      "file": "tabs/dinner_morning_data_patch_20260614.py",
+      "line": 406,
+      "text": "last_t = pd.Timestamp.now().floor(\"h\")"
+    },
+    {
+      "file": "tabs/dinner_morning_data_patch_20260614.py",
+      "line": 473,
+      "text": "x[\"time\"] = pd.date_range(end=pd.Timestamp.now().floor(\"h\"), periods=len(x), freq=\"h\")"
+    },
+    {
+      "file": "tabs/dv_home_unified_intelligence_20260612.py",
+      "line": 136,
+      "text": "d[\"time\"] = pd.date_range(end=pd.Timestamp.now().floor(\"h\"), periods=len(d), freq=\"h\")"
+    },
+    {
+      "file": "tabs/dv_home_unified_intelligence_20260612.py",
+      "line": 273,
+      "text": "payload={\"export_type\":\"FINAL_MERGED_DV_HOME_INTELLIGENCE_20260612\",\"built_at\":str(pd.Timestamp.now()),\"symbol\":\"EURUSD\",\"timeframe\":\"H1\",\"master_regime\":reg,\"master_direction\":md,\"market_story\":story,\"news_nlp\":news,\"qu"
+    },
+    {
+      "file": "tabs/dv_news_nlp_intelligence_20260612.py",
+      "line": 79,
+      "text": "d[\"time\"] = pd.date_range(end=pd.Timestamp.now().floor(\"h\"), periods=len(d), freq=\"h\")"
+    },
+    {
+      "file": "tabs/dv_news_nlp_intelligence_20260612.py",
+      "line": 169,
+      "text": "age_hours = 999.0 if pd.isna(t) else max(0.0, (pd.Timestamp.utcnow() - t).total_seconds() / 3600.0)"
+    },
+    {
+      "file": "tabs/dv_news_nlp_intelligence_20260612.py",
+      "line": 505,
+      "text": "\"built_at\": str(pd.Timestamp.now()),"
+    },
+    {
+      "file": "tabs/dv_quant_structure_intelligence_20260612.py",
+      "line": 74,
+      "text": "d[\"time\"] = pd.date_range(end=pd.Timestamp.now().floor(\"h\"), periods=len(d), freq=\"h\")"
+    },
+    {
+      "file": "tabs/dv_quant_structure_intelligence_20260612.py",
+      "line": 280,
+      "text": "payload = {\"export_type\": \"DATA_VISUALIZATION_QUANT_STRUCTURE_INTELLIGENCE_20260612\", \"built_at\": str(pd.Timestamp.now()), \"symbol\": st.session_state.get(\"symbol\", \"EURUSD\"), \"timeframe\": st.session_state.get(\"timeframe\""
+    },
+    {
+      "file": "tabs/dv_research_alignment_20260612.py",
+      "line": 204,
+      "text": "payload = {\"export_type\": \"DV_RESEARCH_RANDOM_FOREST_REGIME_NLP_20260612\", \"built_at\": str(pd.Timestamp.now()), \"symbol\": \"EURUSD\", \"timeframe\": \"H1\", \"random_forest_powerbi_alignment\": rf, \"regime_prediction_history_wit"
+    },
+    {
+      "file": "tabs/final_priority_history_dv_fix_20260611.py",
+      "line": 104,
+      "text": "x['Time'] = pd.date_range(end=pd.Timestamp.now(), periods=len(x), freq='h')"
+    },
+    {
+      "file": "tabs/final_research_projection_auth_sync_20260612.py",
+      "line": 238,
+      "text": "last_time = pd.Timestamp(d[\"time\"].iloc[-1]) if \"time\" in d.columns else pd.Timestamp.now().floor(\"h\")"
+    },
+    {
+      "file": "tabs/final_research_projection_auth_sync_20260612.py",
+      "line": 367,
+      "text": "\"built_at\": str(pd.Timestamp.now()),"
+    },
+    {
+      "file": "tabs/final_three_center_upgrade_20260614.py",
+      "line": 369,
+      "text": "st.session_state[\"full_metric_regime_history_built_at_20260617\"] = pd.Timestamp.now()"
+    },
+    {
+      "file": "tabs/finder_alignment_upgrade_20260611.py",
+      "line": 51,
+      "text": "d[\"time\"] = pd.date_range(end=pd.Timestamp.now().floor(\"h\"), periods=len(d), freq=\"h\")"
+    },
+    {
+      "file": "tabs/finder_alignment_upgrade_20260611.py",
+      "line": 95,
+      "text": "now = pd.Timestamp.now().floor(\"h\")"
+    },
+    {
+      "file": "tabs/home_patch_20260609.py",
+      "line": 55,
+      "text": "\"built_at\": str(pd.Timestamp.now()),"
+    },
+    {
+      "file": "tabs/home_patch_20260609.py",
+      "line": 244,
+      "text": "\"built_at\": str(pd.Timestamp.now()),"
+    },
+    {
+      "file": "tabs/home_patch_20260609.py",
+      "line": 305,
+      "text": "d['time'] = pd.date_range(end=pd.Timestamp.utcnow().tz_localize(None), periods=len(df), freq='h')"
+    },
+    {
+      "file": "tabs/home_patch_20260609.py",
+      "line": 545,
+      "text": "d[\"time\"] = pd.date_range(end=pd.Timestamp.now(), periods=len(df), freq=\"h\")"
+    },
+    {
+      "file": "tabs/home_patch_20260609.py",
+      "line": 1327,
+      "text": "payload = {'export_type':'DATA_VISUALIZATION_UNIFIED_4_PROJECTIONS_NO_MISSING_ML_TABLES', 'built_at':str(pd.Timestamp.now()), 'powerbi_ml_summary':_safe_json_v6({k:v for k,v in (result or {}).items() if k not in {'vote_d"
+    },
+    {
+      "file": "tabs/home_patch_20260609.py",
+      "line": 1456,
+      "text": "x['time'] = pd.date_range(end=pd.Timestamp.now(), periods=len(x), freq='h')"
+    },
+    {
+      "file": "tabs/home_regime_inner_tab_20260614.py",
+      "line": 100,
+      "text": "d[\"time\"] = pd.date_range(end=pd.Timestamp.now().floor(\"h\"), periods=len(d), freq=\"h\")"
+    },
+    {
+      "file": "tabs/home_regime_inner_tab_20260614.py",
+      "line": 252,
+      "text": "ctx = {\"metrics\": metrics, \"history\": history, \"knn\": knn, \"built_at\": str(pd.Timestamp.now()), \"rows\": int(len(d))}"
+    },
+    {
+      "file": "tabs/lunch_unified_sync_run_gate_20260612.py",
+      "line": 73,
+      "text": "x[\"time\"] = pd.date_range(end=pd.Timestamp.now(), periods=len(x), freq=\"h\")"
+    },
+    {
+      "file": "tabs/lunch_unified_sync_run_gate_20260612.py",
+      "line": 295,
+      "text": "\"built_at\": str(pd.Timestamp.now()),"
+    },
+    {
+      "file": "tabs/mix.py",
+      "line": 53,
+      "text": "return pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\")"
+    },
+    {
+      "file": "tabs/reliability_control_center_20260614.py",
+      "line": 235,
+      "text": "now = pd.Timestamp.now()"
+    },
+    {
+      "file": "tabs/reliability_control_center_20260614.py",
+      "line": 520,
+      "text": "age_h = max(0.0, (pd.Timestamp.now() - bt).total_seconds() / 3600.0)"
+    },
+    {
+      "file": "tabs/reliability_control_center_20260614.py",
+      "line": 643,
+      "text": "\"built_at\": str(pd.Timestamp.now()), \"rows_used\": int(len(d)),"
+    },
+    {
+      "file": "tabs/research.py",
+      "line": 352,
+      "text": "\"built_at\": str(pd.Timestamp.now()), \"symbol\": \"EURUSD\", \"timeframe\": \"H1\","
+    },
+    {
+      "file": "tabs/research.py",
+      "line": 408,
+      "text": "\"built_at\": str(pd.Timestamp.now()),"
+    },
+    {
+      "file": "tabs/risk.py",
+      "line": 52,
+      "text": "return pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\")"
+    },
+    {
+      "file": "tabs/engine_split/combined_engine.py",
+      "line": 156,
+      "text": "work[\"time\"] = pd.date_range(end=pd.Timestamp.now(), periods=len(work), freq=\"min\")"
+    },
+    {
+      "file": "tabs/engine_split/combined_engine.py",
+      "line": 310,
+      "text": "\"export_time\": str(pd.Timestamp.now()),"
+    },
+    {
+      "file": "tabs/engine_split/combined_engine.py",
+      "line": 363,
+      "text": "st.session_state[\"engine_gpt_export_built_at\"] = str(pd.Timestamp.now())"
+    },
+    {
+      "file": "tabs/engine_split/pro_engine_upgrade.py",
+      "line": 90,
+      "text": "work[\"time\"] = pd.date_range(end=pd.Timestamp.now(), periods=len(work), freq=\"min\")"
+    },
+    {
+      "file": "tabs/engine_split/pro_engine_upgrade.py",
+      "line": 279,
+      "text": "row[\"saved_at\"] = str(pd.Timestamp.now())"
+    },
+    {
+      "file": "tabs/engine_split/pro_engine_upgrade.py",
+      "line": 293,
+      "text": "\"export_time\": str(pd.Timestamp.now()),"
+    },
+    {
+      "file": "tabs/engine_split/pro_engine_upgrade.py",
+      "line": 349,
+      "text": "st.session_state[\"engine_pro_export_at\"] = str(pd.Timestamp.now())"
+    },
+    {
+      "file": "tabs/engine_split/shared_state.py",
+      "line": 20,
+      "text": "st.session_state[\"combined_original_backtest_last_load\"] = pd.Timestamp.now()"
+    },
+    {
+      "file": "tabs/home_parts/part_000.py",
+      "line": 2,
+      "text": "SOURCE = '# Compact wrapper for Home tab. Original implementation is preserved.\\nfrom core.global_upgrade import render_page_shell, render_tab_footer\\nfrom core.full_system_upgrade import render_home_upgrade_panel\\nfrom "
+    },
+    {
+      "file": "tabs/home_parts/part_001.py",
+      "line": 2,
+      "text": "SOURCE = '    except Exception as exc:\\n        import streamlit as st\\n        with st.expander(\"Show Copy/Refresh error\", expanded=False):\\n            st.exception(exc)\\n\\n\\ndef _render_regime_zone_range_panel():\\n   "
+    },
+    {
+      "file": "tabs/home_parts/part_002.py",
+      "line": 2,
+      "text": "SOURCE = '            else:\\n                st.info(\"Skipped heavy history build for faster Lunch and lower RAM. Press Load Compact Details when needed.\")\\n    else:\\n        st.info(\"No valid metric result yet. Check d"
+    },
+    {
+      "file": "tabs/home_parts/part_003.py",
+      "line": 2,
+      "text": "SOURCE = '    for n in days:\\n        pred = last_close * (1 + avg_drift * n)\\n        width = max(float(ret.tail(120).std()), 1e-6) * (n ** .5) * 1.25\\n        f_rows.append({\"Horizon\": f\"{n}d\", \"LSTM Forecast\": round(l"
+    },
+    {
+      "file": "tabs/home_parts/part_004.py",
+      "line": 2,
+      "text": "SOURCE = '        \"current_regime\": str(current.get(\"Major Regime\", \"UNKNOWN\")),\\n        \"last_regime_change_day\": str(current.get(\"Regime Change Day\", \"-\")),\\n        \"last_regime_change_time\": str(current.get(\"Change "
+    },
+    {
+      "file": "tabs/home_split/finder_home_sync_patch.py",
+      "line": 116,
+      "text": "\"fetched_at\": pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\"),"
+    },
+    {
+      "file": "tabs/home_split/home.py",
+      "line": 90,
+      "text": "x[\"time\"] = pd.date_range(end=pd.Timestamp.now(), periods=len(x), freq=\"h\")"
+    },
+    {
+      "file": "tabs/home_split/home_command_center.py",
+      "line": 309,
+      "text": "\"time\": pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\"),"
+    },
+    {
+      "file": "tabs/home_split/home_command_center.py",
+      "line": 374,
+      "text": "\"time\": pd.Timestamp.now(),"
+    },
+    {
+      "file": "tabs/home_split/home_command_center.py",
+      "line": 457,
+      "text": "\"time\": str(pd.Timestamp.now()),"
+    },
+    {
+      "file": "tabs/home_split/home_master_upgrade.py",
+      "line": 231,
+      "text": "f\"created_at={pd.Timestamp.now()}\","
+    },
+    {
+      "file": "tabs/home_split/home_master_upgrade.py",
+      "line": 385,
+      "text": "\"time\": pd.Timestamp.now(),"
+    },
+    {
+      "file": "tabs/home_split/v13_locked_history_tables_patch.py",
+      "line": 131,
+      "text": "new[\"locked_first_seen\"] = pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\")"
+    },
+    {
+      "file": "tabs/home_split/v13_locked_history_tables_patch.py",
+      "line": 162,
+      "text": "today = pd.Timestamp.now().strftime(\"%Y-%m-%d\")"
+    },
+    {
+      "file": "tabs/home_split/v14_phase_transition_detector.py",
+      "line": 261,
+      "text": "today = pd.Timestamp.now().strftime(\"%Y-%m-%d\")"
+    },
+    {
+      "file": "tabs/home_split/v19_one_field_reversal_metric_patch.py",
+      "line": 141,
+      "text": "today = pd.Timestamp.now().strftime(\"%Y-%m-%d\")"
+    },
+    {
+      "file": "tabs/pre_clean_split/data.py",
+      "line": 247,
+      "text": "end = pd.Timestamp.now().floor(\"min\")"
+    },
+    {
+      "file": "tabs/profile_dashboard_split/helpers.py",
+      "line": 13,
+      "text": "return pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\")"
+    },
+    {
+      "file": "tabs/profile_dashboard_split/tabs.py",
+      "line": 28,
+      "text": "return pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\")"
+    },
+    {
+      "file": "tabs/train/legacy_impl/train_data_legacy_impl_parts/part_000.py",
+      "line": 2,
+      "text": "SOURCE = 'import time\\nfrom pathlib import Path\\n\\nimport numpy as np\\nimport pandas as pd\\nimport streamlit as st\\nfrom core.ui.compact import render_metric_cards\\nfrom core.global_upgrade import render_page_shell, rend"
+    },
+    {
+      "file": "tabs/train/legacy_impl/train_data_legacy_impl_parts/part_001.py",
+      "line": 2,
+      "text": "SOURCE = '            \"bias\": metrics.get(\"bias\"),\\n            \"buy_probability\": metrics.get(\"buy_probability\", metrics.get(\"last_buy_probability\")),\\n            \"sell_probability\": metrics.get(\"sell_probability\", met"
+    },
+    {
+      "file": "tabs/profile_dashboard_split/profile_dashboard_split/helpers.py",
+      "line": 35,
+      "text": "{\"time\": pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\"), \"event\": msg},"
+    },
+    {
+      "file": "tabs/profile_dashboard_split/profile_dashboard_split/tabs.py",
+      "line": 94,
+      "text": "\"time\": pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\"),"
+    },
+    {
+      "file": "tabs/profile_dashboard_split/profile_dashboard_split/tabs.py",
+      "line": 171,
+      "text": "\"time\": pd.Timestamp.now().strftime(\"%Y-%m-%d %H:%M:%S\"),"
+    },
+    {
+      "file": "tabs/pre_clean_split/legacy_impl/exit_survivability_impl_parts/part_003.py",
+      "line": 2,
+      "text": "SOURCE = '    st.metric(\"Adaptive Exit Threshold\", f\"{final_decision_threshold:.1f}\")\\n\\n    # =====================================================\\n    # FULL DIAGNOSTIC TABLE\\n    # ==================================="
+    },
+    {
+      "file": "tabs/legacy_impl/upgraded_doo_prime_home_impl_parts/part_000.py",
+      "line": 2,
+      "text": "SOURCE = 'import streamlit as st\\nimport pandas as pd\\nimport numpy as np\\n\\n# ==========================================================\\n# SAFE IMPORTS\\n# ==========================================================\\n\\nt"
+    },
+    {
+      "file": "tabs/legacy_impl/upgraded_doo_prime_home_impl_parts/part_001.py",
+      "line": 2,
+      "text": "SOURCE = '        return pd.DataFrame()\\n\\n    if df.empty:\\n        return pd.DataFrame()\\n\\n    if \"time\" in df.columns:\\n        df[\"open_time\"] = pd.to_datetime(df[\"time\"], unit=\"s\", errors=\"coerce\")\\n\\n    if \"time_"
+    },
+    {
+      "file": "tabs/legacy_impl/upgraded_doo_prime_home_impl_parts/part_002.py",
+      "line": 2,
+      "text": "SOURCE = '        chart = hist.copy()\\n        chart[\"time\"] = pd.to_datetime(chart[\"time\"], errors=\"coerce\")\\n        chart = chart.dropna(subset=[\"time\"]).set_index(\"time\")\\n        show_cols = [x for x in [\"margin_lev"
+    },
+    {
+      "file": "tabs/legacy_impl/upgraded_doo_prime_home_impl_parts/part_003.py",
+      "line": 2,
+      "text": "SOURCE = '                \"Meaning\": \"Must stay below daily max loss.\",\\n            },\\n        ]\\n    )\\n\\n    st.dataframe(risk_table, use_container_width=True, hide_index=True)\\n\\n    if st.button(\"\ud83d\udcbe Save Risk Snapsh"
+    },
+    {
+      "file": "tabs/home_split/doo_prime_deep_parts/part_01.py",
+      "line": 2,
+      "text": "PART = 'import time\\nimport numpy as np\\nimport pandas as pd\\nimport streamlit as st\\ntry:\\n    import streamlit.components.v1 as components\\nexcept Exception:\\n    components = None\\n\\ntry:\\n    from streamlit_autorefre"
+    },
+    {
+      "file": "tabs/home_split/doo_prime_deep_parts/part_02.py",
+      "line": 2,
+      "text": "PART = '            st.write(res.get(\"message\"))\\n\\n    m = res.get(\"market\", {}) or {}\\n    if not m:\\n        st.info(\"No market analytics yet for this block.\")\\n        return\\n\\n    c = st.columns(6)\\n    c[0].metric"
+    },
+    {
+      "file": "tabs/home_split/doo_prime_deep_parts/part_04.py",
+      "line": 2,
+      "text": "PART = '        \"regime\": regime,\\n        \"context_rows\": int(len(d)),\\n        \"selected_rows\": int(len(selected_df)),\\n    }\\n\\n\\ndef _finder_filtered_results(data, target_start, target_end):\\n    \"\"\"Recalculate Doo P"
+    },
+    {
+      "file": "tabs/home_split/legacy/implementation.py",
+      "line": 110,
+      "text": "\"export_time\": str(pd.Timestamp.now()),"
+    },
+    {
+      "file": "tabs/home_split/legacy/implementation_parts/part_01.py",
+      "line": 2,
+      "text": "PART = 'import time\\nimport streamlit as st\\nfrom core.ui.compact import render_metric_cards, render_section_note\\nimport pandas as pd\\nimport numpy as np\\n\\ntry:\\n    from core.ui_helpers import choice_buttons, sound_al"
+    },
+    {
+      "file": "tabs/home_split/legacy/implementation_parts/part_02.py",
+      "line": 2,
+      "text": "PART = '                st.write(f\"**EXIT SELL:** {sell_note}\")\\n            st.caption(\"Signals older than 21 hours are intentionally hidden so old opportunities do not confuse the current decision.\")\\n\\n\\n\\n\\n# ======="
+    },
+    {
+      "file": "tabs/home_split/legacy/implementation_parts/part_03.py",
+      "line": 2,
+      "text": "PART = '            return \"EXTREME\", \"Fat-tail shock: latest move is unusually large versus recent behavior.\"\\n        if v >= 2.0:\\n            return \"WATCH\", \"Large tail move; continuation or snap-back risk is higher"
+    },
+    {
+      "file": "tabs/home_split/legacy/implementation_parts/part_06.py",
+      "line": 2,
+      "text": "PART = '        margin_per_001 = st.number_input(\\n            \"Margin needed per 0.01 lot\",\\n            min_value=1.0,\\n            value=150.0,\\n            step=10.0,\\n            key=\"doo_margin_per_001\",\\n        )"
+    },
+    {
+      "file": "tabs/engine_split/legacy_impl/original_backtest_inner_impl_parts/part_003.py",
+      "line": 2,
+      "text": "SOURCE = '\\n    if clear:\\n        for key in [\\n            RAW_KEY,\\n            SOURCE_KEY,\\n            SYMBOL_KEY,\\n            LAST_LOAD_KEY,\\n            BT_RESULT_KEY,\\n            LAST_RUN_KEY,\\n        ]:\\n    "
+    },
+    {
+      "file": "tabs/engine_split/legacy_impl/original_engine_inner_impl_parts/part_000.py",
+      "line": 2,
+      "text": "SOURCE = 'import streamlit as st\\n\\ntry:\\n    from core.ui_helpers import choice_buttons\\nexcept Exception:\\n    choice_buttons = None\\nimport pandas as pd\\nimport numpy as np\\nimport plotly.graph_objects as go\\n\\n# ===="
+    },
+    {
+      "file": "tabs/engine_split/legacy_impl/original_engine_inner_impl_parts/part_002.py",
+      "line": 2,
+      "text": "SOURCE = '            \"Sideways Similar %\": 100.0,\\n            \"Safe Similarity Score /10\": 0.0,\\n            \"Top Similarity %\": 0.0,\\n            \"Days Ranked\": 0,\\n            \"Windows Scanned\": 0,\\n            \"Sear"
+    },
+    {
+      "file": "tabs/engine_split/legacy_impl/original_prelive_inner_impl_parts/part_000.py",
+      "line": 2,
+      "text": "SOURCE = 'import time\\nimport numpy as np\\nimport pandas as pd\\nimport streamlit as st\\n\\nfrom core.data_connectors import manual_connect\\nfrom core.database import append_csv, read_csv\\n\\n\\n# ==========================="
+    },
+    {
+      "file": "tabs/engine_split/legacy_impl/original_prelive_inner_impl_parts/part_001.py",
+      "line": 2,
+      "text": "SOURCE = '            \"Model Bias\": result[\"Model Bias\"],\\n            \"User Align\": result[\"User Align\"],\\n            \"Final Quality\": f\"{result[\\'Final Quality %\\']}%\",\\n            \"Grade\": result[\"Grade\"],\\n        "
+    },
+    {
+      "file": "tabs/account_split/legacy/implementation_parts/part_000.py",
+      "line": 2,
+      "text": "SOURCE = 'import time\\nimport streamlit as st\\nimport pandas as pd\\nimport numpy as np\\n\\n# ==========================================================\\n# SAFE IMPORTS\\n# =================================================="
+    },
+    {
+      "file": "tabs/account_split/legacy/implementation_parts/part_001.py",
+      "line": 2,
+      "text": "SOURCE = '              async function copyNow(e){{\\n                if(e){{e.preventDefault();e.stopPropagation();}}\\n                let ok=false;\\n                try{{ if(navigator.clipboard && window.isSecureContext"
+    },
+    {
+      "file": "tabs/account_split/legacy/implementation_parts/part_002.py",
+      "line": 2,
+      "text": "SOURCE = '    elif eff_falling >= 12:\\n        regime = \"ONE-WAY TREND STOPPING / CHOP RISK\"\\n    elif fat_tail_for_score >= 3:\\n        regime = \"IMPULSE / FAT-TAIL SHOCK\"\\n    else:\\n        regime = \"MIXED / ACCUMULAT"
+    },
+    {
+      "file": "tabs/account_split/legacy/implementation_parts/part_003.py",
+      "line": 2,
+      "text": "SOURCE = '        })\\n\\n    overview = {\\n        \"equity\": equity,\\n        \"current_margin\": total_margin,\\n        \"current_margin_level\": current_margin_level,\\n        \"stopout_level\": stopout,\\n        \"call_level\""
+    },
+    {
+      "file": "tabs/account_split/legacy/implementation_parts/part_004.py",
+      "line": 2,
+      "text": "SOURCE = '        \"Dedicated Doo Prime/MetaTrader channel: this Account button reads local MT5 account + optional MT5 candles. \"\\n        \"The sidebar API connector can stay on TwelveData/fallback without conflict.\"\\n   "
+    },
+    {
+      "file": "tabs/account_split/legacy/implementation_parts/part_005.py",
+      "line": 2,
+      "text": "SOURCE = '    row[4].metric(\"Current Drawdown %\", round(drawdown, 2))\\n    row[5].metric(\"Trades to Daily Stop\", trades_to_daily_stop)\\n\\n    st.markdown(\"#### Planned Day Risk\")\\n\\n    p1, p2, p3 = st.columns(3)\\n\\n    "
+    }
+  ],
+  "ai_field_open_dependencies": [
+    {
+      "file": "ui/liquid_menu_popup_20260615.py",
+      "line": 189,
+      "text": "if not bool(st.session_state.get(f\"lunch_field_open_{index}_20260621\", False)):"
+    },
+    {
+      "file": "ui/liquid_menu_popup_20260615.py",
+      "line": 190,
+      "text": "st.session_state.pop(f\"lunch_field_widget_{index}_20260621\", None)"
+    },
+    {
+      "file": "ui/lunch_four_core_fields_20260619.py",
+      "line": 755,
+      "text": "return f\"lunch_field_open_{index}_20260621\""
+    },
+    {
+      "file": "ui/lunch_four_core_fields_20260619.py",
+      "line": 759,
+      "text": "return f\"lunch_field_widget_{index}_20260621\""
+    },
+    {
+      "file": "tabs/antd_page_router_20260615.py",
+      "line": 380,
+      "text": "\"lunch_field_open_5_20260621\": True, \"lunch_field_widget_5_20260621\": True,"
+    },
+    {
+      "file": "tabs/antd_page_router_20260615.py",
+      "line": 386,
+      "text": "\"lunch_field_open_1_20260621\": False, \"lunch_field_widget_1_20260621\": False,"
+    },
+    {
+      "file": "tabs/antd_page_router_20260615.py",
+      "line": 387,
+      "text": "\"lunch_field_open_2_20260621\": False, \"lunch_field_widget_2_20260621\": False,"
+    },
+    {
+      "file": "tabs/antd_page_router_20260615.py",
+      "line": 388,
+      "text": "\"lunch_field_open_3_20260621\": False, \"lunch_field_widget_3_20260621\": False,"
+    },
+    {
+      "file": "tabs/antd_page_router_20260615.py",
+      "line": 389,
+      "text": "\"lunch_field_open_4_20260621\": False, \"lunch_field_widget_4_20260621\": False,"
+    },
+    {
+      "file": "tabs/antd_page_router_20260615.py",
+      "line": 390,
+      "text": "\"lunch_field_open_6_20260621\": False, \"lunch_field_widget_6_20260621\": False,"
+    },
+    {
+      "file": "tabs/antd_page_router_20260615.py",
+      "line": 393,
+      "text": "updates.update({\"lunch_field_open_1_20260621\": True, \"lunch_field_widget_1_20260621\": True})"
+    }
+  ]
+}

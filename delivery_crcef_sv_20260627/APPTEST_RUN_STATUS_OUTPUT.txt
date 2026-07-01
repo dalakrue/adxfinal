@@ -1,0 +1,15 @@
+entry app.py
+initial_exceptions 0
+guest_exceptions 0
+full_run_button_found true
+full_run_exceptions 0
+active_page_after_run Lunch
+canonical_run_id calc-7
+canonical_generation_id 7
+canonical_completed_broker_candle 2026-06-22 07:00:00 (Broker UTC+3)
+normalized_completed_broker_candle_utc 2026-06-22 04:00:00+00:00
+source_snapshot_hash 98115b8a944ff3472a37
+crcef_ok true
+crcef_status RESEARCH_ONLY
+crcef_production_decision_unchanged true
+note Protected overall run status remained false because live connector credentials/data were unavailable; the valid cached canonical generation was reused and clearly identified.

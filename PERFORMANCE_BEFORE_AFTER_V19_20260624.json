@@ -1,0 +1,13 @@
+{
+  "before": "Not reproducibly benchmarked from a clean production data run in this container. Existing code contained multiple independently rendered research panels.",
+  "after": {
+    "runs": 20,
+    "median_seconds": 0.12215197400001898,
+    "min_seconds": 0.11169535899995253,
+    "max_seconds": 0.13412658100003227,
+    "reported_peak_memory_bytes": 846452,
+    "history_rows": 721,
+    "note": "V19 reuses saved V17 outputs and one prediction-outcome history; no fitted heavy model object is retained."
+  },
+  "claim": "Architecture reduces duplicate V19 computation by publishing once and rendering compact saved outputs; no numerical 30-50% claim is made without matched production profiling."
+}

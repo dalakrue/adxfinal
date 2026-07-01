@@ -1,0 +1,9 @@
+[
+  "research/priority_field23_engine_20260624.py",
+  "core/services/priority_field23_service_20260624.py",
+  "ui/lunch_priority_field23_20260624.py",
+  "lunch/field_02/renderer.py",
+  "lunch/field_03/renderer.py",
+  "core/services/research_service.py",
+  "tests/test_priority_field23_engine_20260624.py"
+]

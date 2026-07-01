@@ -1,0 +1,87 @@
+# New Module Catalog — CRCEF-SV Repair 2026-06-27
+
+Every file below was absent from the uploaded ZIP. Research code is shadow-only unless explicitly described as shell/presentation infrastructure.
+
+- `core/canonical_identity_20260627.py` — Strict immutable canonical identity and completed-H1 validation. This module is presentation/orchestration infrastructure only. It does not calculate a decision, forecast, or historical row. It normalizes aliases from one already-published generation and validates that consumers 
+- `core/navigation_state_20260627.py` — Single application-shell navigation state machine. Only this module owns top-level page transitions. Page renderers may keep local field/section state, but they must not overwrite ``active_page``.
+- `docs/ABLATION_STUDY_PLAN.md` — Ablation Study Plan
+- `docs/CRCEF_SV_ARCHITECTURE.md` — CRCEF-SV Architecture
+- `docs/DINNER_INTEGRATION.md` — Dinner Integration
+- `docs/EXPERIMENT_PLAN.md` — Experiment Plan
+- `docs/LIMITATIONS_AND_ETHICS.md` — Limitations and Ethics
+- `docs/LUNCH_INTEGRATION.md` — Lunch Integration
+- `docs/MATHEMATICAL_DEFINITIONS.md` — Mathematical Definitions
+- `docs/MODEL_PROMOTION_POLICY.md` — Model Promotion Policy
+- `docs/RESEARCH_METHODOLOGY.md` — Research Methodology
+- `docs/RESEARCH_PAPER_IMPLEMENTATION_MAP.md` — Research Paper and Algorithm Implementation Map
+- `docs/THESIS_CONTRIBUTIONS.md` — Thesis Contributions
+- `docs/VALIDATION_AND_LEAKAGE_CONTROL.md` — Validation and Leakage Control
+- `research_quant/__init__.py` — Canonical Regime-Calibrated Evidence Fusion with Selective Validation. The public API is loaded lazily so importing the Streamlit shell does not load research persistence, NumPy, pandas, or optional model adapters before the controlled Settings run asks for them.
+- `research_quant/bellman_conformal/__init__.py` — CRCEF-SV module package.
+- `research_quant/bellman_conformal/interval_controller.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/bellman_conformal/interval_policy.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/bellman_conformal/interval_utility.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/calibration/__init__.py` — CRCEF-SV module package.
+- `research_quant/calibration/calibration_metrics.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/calibration/probability_calibration.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/calibration/reliability_diagram.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/canonical_adapter.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/config.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/conformal/__init__.py` — CRCEF-SV module package.
+- `research_quant/conformal/adaptive_intervals.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/conformal/coverage_metrics.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/conformal/enbpi.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/drift/__init__.py` — CRCEF-SV module package.
+- `research_quant/drift/adwin_monitor.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/drift/drift_registry.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/drift/promotion_guard.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/forecasting/__init__.py` — CRCEF-SV module package.
+- `research_quant/forecasting/multi_horizon_dataset.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/forecasting/quantile_forecast.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/forecasting/tft_adapter.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/fusion/__init__.py` — CRCEF-SV module package.
+- `research_quant/fusion/crcef_sv.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/fusion/evidence_registry.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/fusion/explanation.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/fusion/selective_policy.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/meta_labeling/__init__.py` — CRCEF-SV module package.
+- `research_quant/meta_labeling/action_policy.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/meta_labeling/actionability_model.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/meta_labeling/primary_direction_adapter.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/multifractal/__init__.py` — CRCEF-SV module package.
+- `research_quant/multifractal/msm_model.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/multifractal/volatility_capacity.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/multifractal/volatility_components.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/nlp_event_memory/__init__.py` — CRCEF-SV module package.
+- `research_quant/nlp_event_memory/deduplication.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/nlp_event_memory/entity_sentiment.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/nlp_event_memory/event_embedding.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/nlp_event_memory/response_estimator.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/nlp_event_memory/similarity_memory.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/orchestrator.py` — Single-run, research-only CRCEF-SV publisher. This module consumes one frozen canonical generation after all protected publishers finish. It never writes into protected production structures and never turns missing data into invented scores.
+- `research_quant/persistence/__init__.py` — Safe additive CRCEF-SV persistence with lazy imports. Keeping the package initializer lightweight allows ``python -m research_quant.persistence.research_store`` to run without the runpy double-import warning.
+- `research_quant/persistence/model_registry.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/persistence/outcome_store.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/persistence/research_store.py` — SQLite persistence for immutable CRCEF-SV research publications. The store is additive. It never edits protected production decisions or canonical snapshots. Every table is created with IF NOT EXISTS so an empty installation can be initialized safely.
+- `research_quant/regime/__init__.py` — CRCEF-SV module package.
+- `research_quant/regime/markov_switching.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/regime/regime_lifecycle.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/regime/transition_model.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/schemas.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/tests/__init__.py` — CRCEF-SV module package.
+- `research_quant/tests/test_crcef_sv.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/tests/test_persistence.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/ui/__init__.py` — Lazy Streamlit renderers for CRCEF-SV research-only output.
+- `research_quant/ui/audit_view.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/ui/dinner_research.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/ui/lunch_research.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/ui/validation_dashboard.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/validation/__init__.py` — CRCEF-SV module package.
+- `research_quant/validation/cpcv.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/validation/embargo.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/validation/metrics.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/validation/pbo.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/validation/purging.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `research_quant/validation/threshold_audit.py` — Leakage-safe shadow comparison for decision thresholds. This module never changes Table 4. It evaluates candidate thresholds only when settled outcome columns exist; otherwise it emits an explicit INSUFFICIENT_DATA row for every candidate.
+- `tests/test_priority_repair_20260627.py` — Additive project artifact required by the CRCEF-SV implementation.
+- `tests/test_projection_integrity_20260627.py` — Additive project artifact required by the CRCEF-SV implementation.

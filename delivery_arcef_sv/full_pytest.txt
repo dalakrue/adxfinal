@@ -1,0 +1,71 @@
+.F.......................F...F..........F............................... [ 81%]
+................                                                         [100%]
+=================================== FAILURES ===================================
+____________ test_table5_is_always_rendered_and_not_named_fallback _____________
+
+>   ???
+E   assert 0 >= 2
+E    +  where 0 = <built-in method count of str object at 0x2d57f10>('_render_table5(state, canonical)')
+E    +    where <built-in method count of str object at 0x2d57f10> = '"""Field 1 Table 4 — 25-day collection of published next-H1 bias evidence.\n\nThe adapter does not overwrite protecte...\n\n# Legacy heading marker: Table 4 — Next-Hour Technical + Sentiment + Session + Regime Bias — Latest 24 News Rows\n'.count
+
+/mnt/data/adx_repair/adx_fix/tests/test_20260627_user_table_contract.py:17: AssertionError
+____________ test_navigation_exact_routes_and_independent_registry _____________
+
+>   ???
+E   AssertionError: assert ['Settings', ...esearch', ...] == ['Settings', ...Morning', ...]
+E     
+E     At index 2 diff: 'Dinner' != 'Field 456'
+E     Right contains one more item: 'Other'
+E     
+E     Full diff:
+E       [
+E           'Settings',
+E           'Lunch',
+E     +     'Dinner',
+E     -     'Field 456',
+E     -     'Field 789',
+E           'AI Assistant',
+E           'Morning',
+E           'Research',
+E           'Other',
+E       ]
+
+/mnt/data/project_work/adx_fix/tests/test_delivery_acceptance_20260626.py:48: AssertionError
+___________ test_quick_run_source_refresh_and_route_contract_static ____________
+
+>   ???
+E   AssertionError: assert 'try_reuse_quick_fields_123' in 'def _settings_run_action_20260624():\n            ns = _home_ns()\n            refresh_result: dict[str, Any] = {}\n ...urn calculation_status\n        from core.settings_one_click_controller_20260624 import run_one_click_action\n        '
+
+/mnt/data/project_work/adx_fix/tests/test_delivery_acceptance_20260626.py:114: AssertionError
+__________________ test_table4_empty_news_and_populated_news ___________________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7eeac4952350>
+
+>   ???
+E   AttributeError: <module 'ui.lunch_next_hour_bias_history_20260626' from '/mnt/data/arcef_work/adx_fix/ui/lunch_next_hour_bias_history_20260626.py'> has no attribute 'st'
+
+/mnt/data/project_work/adx_fix/tests/test_delivery_acceptance_20260626.py:308: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_20260627_user_table_contract.py::test_table5_is_always_rendered_and_not_named_fallback - assert 0 >= 2
+ +  where 0 = <built-in method count of str object at 0x2d57f10>('_render_table5(state, canonical)')
+ +    where <built-in method count of str object at 0x2d57f10> = '"""Field 1 Table 4 — 25-day collection of published next-H1 bias evidence.\n\nThe adapter does not overwrite protecte...\n\n# Legacy heading marker: Table 4 — Next-Hour Technical + Sentiment + Session + Regime Bias — Latest 24 News Rows\n'.count
+FAILED tests/test_delivery_acceptance_20260626.py::test_navigation_exact_routes_and_independent_registry - AssertionError: assert ['Settings', ...esearch', ...] == ['Settings', ...Morning', ...]
+  
+  At index 2 diff: 'Dinner' != 'Field 456'
+  Right contains one more item: 'Other'
+  
+  Full diff:
+    [
+        'Settings',
+        'Lunch',
+  +     'Dinner',
+  -     'Field 456',
+  -     'Field 789',
+        'AI Assistant',
+        'Morning',
+        'Research',
+        'Other',
+    ]
+FAILED tests/test_delivery_acceptance_20260626.py::test_quick_run_source_refresh_and_route_contract_static - AssertionError: assert 'try_reuse_quick_fields_123' in 'def _settings_run_action_20260624():\n            ns = _home_ns()\n            refresh_result: dict[str, Any] = {}\n ...urn calculation_status\n        from core.settings_one_click_controller_20260624 import run_one_click_action\n        '
+FAILED tests/test_delivery_acceptance_20260626.py::test_table4_empty_news_and_populated_news - AttributeError: <module 'ui.lunch_next_hour_bias_history_20260626' from '/mnt/data/arcef_work/adx_fix/ui/lunch_next_hour_bias_history_20260626.py'> has no attribute 'st'
+4 failed, 84 passed in 3.46s

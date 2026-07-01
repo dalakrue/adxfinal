@@ -1,0 +1,23 @@
+INSTALL
+python -m pip install -r requirements.txt
+
+PRIMARY RUN
+streamlit run app.py
+
+BACKWARD-COMPATIBLE RUN
+streamlit run adx_dashpoard.py
+
+DATABASE INITIALIZATION
+python -m research_quant.persistence.research_store --db data/crcef_sv_research.sqlite3
+
+COMPILE
+python -m compileall -q .
+
+TEST
+PYTHONPATH=. pytest -q
+
+MODEL TRAINING
+Not applicable to this delivery. No model was promoted or trained from unavailable live credentials/settled history. Optional TFT remains lazy and MODEL_UNAVAILABLE until a separately validated artifact is supplied.
+
+ROLLBACK
+python delivery_crcef_sv_20260627/rollback_repair_20260627.py --project-root .

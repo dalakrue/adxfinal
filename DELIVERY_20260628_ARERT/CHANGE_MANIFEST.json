@@ -1,0 +1,153 @@
+{
+  "source_archive": "4046c636-c480-4c77-bc12-5497df35cbc9.zip",
+  "generated_at": "2026-06-28",
+  "changed_files": [
+    "services/current_canonical_copy_20260625.py",
+    "services/openrouter_backend_20260628.py",
+    "tabs/ai_assistant_compact_20260619.py",
+    "tabs/antd_page_router_20260615.py",
+    "tabs/field456789_page_20260626.py",
+    "ui/canonical_copy_export_20260619.py",
+    "ui/field4to9_collection_history_20260627.py",
+    "ui/lunch_field3_regime_matrix_v13.py",
+    "ui/lunch_four_core_fields_20260619.py",
+    "ui/lunch_next_hour_bias_history_20260626.py"
+  ],
+  "new_files": [
+    "ARERT_THEORY_DEFINITION.md",
+    "DATA_LEAKAGE_CONTROLS.md",
+    "DELIVERY_20260628_ARERT/ARERT_THEORY_DEFINITION.md",
+    "DELIVERY_20260628_ARERT/DATABASE_MIGRATION_REPORT.md",
+    "DELIVERY_20260628_ARERT/DATA_LEAKAGE_CONTROLS.md",
+    "DELIVERY_20260628_ARERT/DINNER_RESEARCH_ARCHITECTURE.md",
+    "DELIVERY_20260628_ARERT/FEATURE_DICTIONARY.md",
+    "DELIVERY_20260628_ARERT/FULL_PYTEST_RAW.txt",
+    "DELIVERY_20260628_ARERT/IMPLEMENTATION_REPORT.md",
+    "DELIVERY_20260628_ARERT/INCOMPLETE_ITEMS.md",
+    "DELIVERY_20260628_ARERT/MODEL_CARD.md",
+    "DELIVERY_20260628_ARERT/PERFORMANCE_BENCHMARK_RAW.json",
+    "DELIVERY_20260628_ARERT/PERFORMANCE_BENCHMARK_REPORT.md",
+    "DELIVERY_20260628_ARERT/RECOMMENDED_ENTRY_FILE.md",
+    "DELIVERY_20260628_ARERT/RESEARCH_HYPOTHESES.md",
+    "DELIVERY_20260628_ARERT/RESEARCH_LIMITATIONS.md",
+    "DELIVERY_20260628_ARERT/RESEARCH_METHODOLOGY.md",
+    "DELIVERY_20260628_ARERT/SECRET_SCAN_RAW.json",
+    "DELIVERY_20260628_ARERT/SECURITY_AND_API_SETUP_GUIDE.md",
+    "DELIVERY_20260628_ARERT/TEST_REPORT.md",
+    "DELIVERY_20260628_ARERT/THESIS_CHAPTER_OUTLINE.md",
+    "DELIVERY_20260628_ARERT/VALIDATION_PROTOCOL.md",
+    "DINNER_RESEARCH_ARCHITECTURE.md",
+    "FEATURE_DICTIONARY.md",
+    "METHODOLOGY.md",
+    "MODEL_CARD.md",
+    "RESEARCH_HYPOTHESES.md",
+    "RESEARCH_LIMITATIONS.md",
+    "THESIS_CHAPTER_OUTLINE.md",
+    "VALIDATION_PROTOCOL.md",
+    "core/time_safe_frame_20260628.py",
+    "reports/FULL_PYTEST_20260628.txt",
+    "reports/PERFORMANCE_BENCHMARK_20260628.json",
+    "reports/PERFORMANCE_BENCHMARK_20260628.txt",
+    "reports/SECRET_SCAN_20260628.json",
+    "reports/smoke_20260628/adx_dashpoard.log",
+    "reports/smoke_20260628/adx_dashpoard_health.txt",
+    "reports/smoke_20260628/app.log",
+    "reports/smoke_20260628/app_health.txt",
+    "research_quant/arert_lab.py",
+    "research_quant/arert_store.py",
+    "research_quant/ui/arert_dinner_lab.py",
+    "scripts/benchmark_arert_20260628.py",
+    "tests/test_arert_thesis_repair_20260628.py",
+    "ui/lunch_field1_ai_summary_20260628.py"
+  ],
+  "deleted_files": [],
+  "changed_sha256": {
+    "services/current_canonical_copy_20260625.py": {
+      "before": "9259b8e846f9930d73e58f390e715a517c8f0db9ef6df4fcc3fa6d3023837cd1",
+      "after": "a2a62fc1e9abe98c0267013cc0f9db8a28742f64d1374c6728f2eb19a8c925bc"
+    },
+    "services/openrouter_backend_20260628.py": {
+      "before": "1604c0973d43e11f213b5056441c53b5680cd476f91741db50578881690f604c",
+      "after": "94cda760ba2eac17d17d50953ebb528930ac5738f009b459ba34892bdbbbeace"
+    },
+    "tabs/ai_assistant_compact_20260619.py": {
+      "before": "a80f1068a25e7c77933a3816cc2f0970dc7486f7c262224d1c059da710645eb5",
+      "after": "7e231b41c82ef372665e53370cd08270e9d5af6c142fe5bb28134b5bc15e02a4"
+    },
+    "tabs/antd_page_router_20260615.py": {
+      "before": "7ff4509dd271b91e5f59e10164edb345d39e2a60ed69354ec93e81e7c8632af9",
+      "after": "613fedd69e75ab5d67a91d1731b16b564c829e9e204d26037c3e98c15363fe99"
+    },
+    "tabs/field456789_page_20260626.py": {
+      "before": "6c758f833672b729071f7723b23ec4748116d866125ee1ffea6ad25bec83bf29",
+      "after": "d287895c79f713d321bc3fb29ef719c6c6be41e02e48d014cd46f85403903ddc"
+    },
+    "ui/canonical_copy_export_20260619.py": {
+      "before": "af551c28655a858aaeb5658b950f020eba671fd4a10d0069959ab1cd28eccbc0",
+      "after": "7e70d39f79666db2041f818709f78dbe741f5ff501815f655840c892d066a4e4"
+    },
+    "ui/field4to9_collection_history_20260627.py": {
+      "before": "0b3d93cf33fc9e1a6af8e2e27ea88bfb1af5f19a7e7308f6d7fb6bfda1d55b2e",
+      "after": "08b1401c620f0945e0b9e181dd2dfbdbdbed3800b8b9cec36ed6f19edd006e52"
+    },
+    "ui/lunch_field3_regime_matrix_v13.py": {
+      "before": "8b1cc505590e79692b11ae87e310745b967ca71a844dcf389dbfc645ea37648a",
+      "after": "ec02e722e39980aa4d02e57e8dbabcc18a44b34c72df7ded246e4f6fe541b6e1"
+    },
+    "ui/lunch_four_core_fields_20260619.py": {
+      "before": "582acbdb501ab237de8cd0f10a7b9cdaf59dbf07cbb7848f6794b1613abc2e77",
+      "after": "7fec93a46d4a085614e56b35aa3ebc14e8aee9fbf95a0688d1ef93c847b35ef0"
+    },
+    "ui/lunch_next_hour_bias_history_20260626.py": {
+      "before": "b1136f292e68920cdef401c16c9c6e7b22494692c9d04760abe8d1fb8adf4608",
+      "after": "2857b07c487f359f091f562a0aa19a8a0d2683e1a06e188fa7bf1b96362af1a5"
+    }
+  },
+  "new_sha256": {
+    "ARERT_THEORY_DEFINITION.md": "1bab6f9ca0bb0c6bd0126017a91bad465c53c6b7ee315ce71a8a43c68dba48d1",
+    "DATA_LEAKAGE_CONTROLS.md": "4011720eaea2e5c13df02519af7d3847177280eb12b1202e507c6e9622c5aa40",
+    "DELIVERY_20260628_ARERT/ARERT_THEORY_DEFINITION.md": "1bab6f9ca0bb0c6bd0126017a91bad465c53c6b7ee315ce71a8a43c68dba48d1",
+    "DELIVERY_20260628_ARERT/DATABASE_MIGRATION_REPORT.md": "00706b2bc0aa5a695f35b86e1025ae69ab7041603b369360db724878b5ab260e",
+    "DELIVERY_20260628_ARERT/DATA_LEAKAGE_CONTROLS.md": "4011720eaea2e5c13df02519af7d3847177280eb12b1202e507c6e9622c5aa40",
+    "DELIVERY_20260628_ARERT/DINNER_RESEARCH_ARCHITECTURE.md": "28a685d18e66a1f7125485fa4601269569914513719df2879ebf489d82efab5d",
+    "DELIVERY_20260628_ARERT/FEATURE_DICTIONARY.md": "46b594bdc97ff10f5b115e8151cd2c2eefb7b65a513b436550ae77ef330b4a7d",
+    "DELIVERY_20260628_ARERT/FULL_PYTEST_RAW.txt": "8c1c5a301165b11e3fb5acb1c571d53e01b63590cb4978fbb5f6c4534d03676f",
+    "DELIVERY_20260628_ARERT/IMPLEMENTATION_REPORT.md": "f03a4700d8f839145eca269467b46142147e21399ce5d5e93c11c1bf6f0b9500",
+    "DELIVERY_20260628_ARERT/INCOMPLETE_ITEMS.md": "ea24b8f8d9ab0a076466c9d5f7c5046db800f5a2a6023a73f704caaac0244229",
+    "DELIVERY_20260628_ARERT/MODEL_CARD.md": "828b1622af419e42ff1005538cacf0b97989bad600781f01309ca8b9f13e86cf",
+    "DELIVERY_20260628_ARERT/PERFORMANCE_BENCHMARK_RAW.json": "f508e829788ae00f6270326c7605751f0edc7ef9bf87539064631dbd3e6743fa",
+    "DELIVERY_20260628_ARERT/PERFORMANCE_BENCHMARK_REPORT.md": "1fe25e7b642983a383f24cf0d1158888e1be90f19ff38aad48fc90ca98817e8b",
+    "DELIVERY_20260628_ARERT/RECOMMENDED_ENTRY_FILE.md": "afaa3ccbbcbca9841471e491fb126323a7e7bc35bdd2c5a3c8e1f441ad744186",
+    "DELIVERY_20260628_ARERT/RESEARCH_HYPOTHESES.md": "fa6041e7f7f27a636e6cfc1b8c31ebc5bf3e4f0554da0a55e8f27a3d5e703275",
+    "DELIVERY_20260628_ARERT/RESEARCH_LIMITATIONS.md": "37d4acaaf010ff89d978889af767730cb9154e2a7558bb79e7cb6d66b407c213",
+    "DELIVERY_20260628_ARERT/RESEARCH_METHODOLOGY.md": "5950598599d6e921fee55aa743238da7e45dc451f22d0ff2b4b8d0823c4b1309",
+    "DELIVERY_20260628_ARERT/SECRET_SCAN_RAW.json": "71a3bed4d2d12743d4f5c3934be09dded61b0ca88bec2f1ae8c5bd82d06ca250",
+    "DELIVERY_20260628_ARERT/SECURITY_AND_API_SETUP_GUIDE.md": "59f7babc4a5dc5ba2cac77684f3fb7c65eb67317e247731eac7be4405a41d958",
+    "DELIVERY_20260628_ARERT/TEST_REPORT.md": "74ac084657ebdc1361df5374ba0cd737a79f61d69a95f83a674421def1db49a2",
+    "DELIVERY_20260628_ARERT/THESIS_CHAPTER_OUTLINE.md": "b8c9f73e15aa7b9be3610cac95408f5ee3be1ea34be02cabbbdbab90d0d7299e",
+    "DELIVERY_20260628_ARERT/VALIDATION_PROTOCOL.md": "b456bf550a42dd246d0ba8e473cbae85da49344cd330a5dc3fb68571fbb99911",
+    "DINNER_RESEARCH_ARCHITECTURE.md": "28a685d18e66a1f7125485fa4601269569914513719df2879ebf489d82efab5d",
+    "FEATURE_DICTIONARY.md": "46b594bdc97ff10f5b115e8151cd2c2eefb7b65a513b436550ae77ef330b4a7d",
+    "METHODOLOGY.md": "5950598599d6e921fee55aa743238da7e45dc451f22d0ff2b4b8d0823c4b1309",
+    "MODEL_CARD.md": "828b1622af419e42ff1005538cacf0b97989bad600781f01309ca8b9f13e86cf",
+    "RESEARCH_HYPOTHESES.md": "fa6041e7f7f27a636e6cfc1b8c31ebc5bf3e4f0554da0a55e8f27a3d5e703275",
+    "RESEARCH_LIMITATIONS.md": "37d4acaaf010ff89d978889af767730cb9154e2a7558bb79e7cb6d66b407c213",
+    "THESIS_CHAPTER_OUTLINE.md": "b8c9f73e15aa7b9be3610cac95408f5ee3be1ea34be02cabbbdbab90d0d7299e",
+    "VALIDATION_PROTOCOL.md": "b456bf550a42dd246d0ba8e473cbae85da49344cd330a5dc3fb68571fbb99911",
+    "core/time_safe_frame_20260628.py": "34702395927649f050519e8d7de327682dab352733b729b386912aea9ecd0428",
+    "reports/FULL_PYTEST_20260628.txt": "8c1c5a301165b11e3fb5acb1c571d53e01b63590cb4978fbb5f6c4534d03676f",
+    "reports/PERFORMANCE_BENCHMARK_20260628.json": "f508e829788ae00f6270326c7605751f0edc7ef9bf87539064631dbd3e6743fa",
+    "reports/PERFORMANCE_BENCHMARK_20260628.txt": "947caa09c333a289bf5ad4b0396df8dfd8fc11016724bb5da7fe78047d79a2f2",
+    "reports/SECRET_SCAN_20260628.json": "71a3bed4d2d12743d4f5c3934be09dded61b0ca88bec2f1ae8c5bd82d06ca250",
+    "reports/smoke_20260628/adx_dashpoard.log": "a67e00c78f19cb729eee4df4744542ef3238c5f9cfc47b8dd88dffaf6243711d",
+    "reports/smoke_20260628/adx_dashpoard_health.txt": "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df",
+    "reports/smoke_20260628/app.log": "151a6323e6f71d7aab5ac058ec91b86215f8d84c983aa9ebc13425ffb00558b1",
+    "reports/smoke_20260628/app_health.txt": "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df",
+    "research_quant/arert_lab.py": "2c24fab76e16b0790bd41921657a4ae143b76046b359043c59280363f84bc558",
+    "research_quant/arert_store.py": "81d592202951e927936ef8562a7664909fc505100c88e963f1e5a85642f9e1bb",
+    "research_quant/ui/arert_dinner_lab.py": "0ca60e531e4e6a095f6adfe8aa540326996a1350301e35ef573c192d7373c335",
+    "scripts/benchmark_arert_20260628.py": "fbdc980f8021bdf58b3c87ccf347c98ada48c1b5b01ba302825c08286af840ca",
+    "tests/test_arert_thesis_repair_20260628.py": "f13499b4fd8f1d08998b05096d2dd0233d4b62ac58913d59261468a5f22ec8fa",
+    "ui/lunch_field1_ai_summary_20260628.py": "6bafc09d3a0eb888bfe146cd89d49f8a6b0d1e7a8e2627394714bcd880ed3ae3"
+  }
+}

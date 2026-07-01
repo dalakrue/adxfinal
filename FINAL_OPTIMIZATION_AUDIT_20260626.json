@@ -1,0 +1,89 @@
+{
+  "total_files": 2415,
+  "python_files": 962,
+  "total_bytes": 26134336,
+  "exact_duplicate_python_groups": 13,
+  "exact_duplicate_python_files": 90,
+  "largest_files": [
+    [
+      1740800,
+      "data/canonical_runtime.sqlite3"
+    ],
+    [
+      1031495,
+      "FULL_PROJECT_INSPECTION_20260621.json"
+    ],
+    [
+      326173,
+      "DATABASE_SCHEMA_INVENTORY_20260620.json"
+    ],
+    [
+      278656,
+      "data/reversal_locked_v13.csv"
+    ],
+    [
+      274432,
+      "data/regime_trust_history.duckdb"
+    ],
+    [
+      221184,
+      "data/adx_runtime_store.sqlite3"
+    ],
+    [
+      197167,
+      "__pycache__/_home_joined.cpython-313.pyc"
+    ],
+    [
+      191491,
+      "tabs/__pycache__/ai_assistant_lite.cpython-313.pyc"
+    ],
+    [
+      166441,
+      "tabs/__pycache__/home_patch_20260609.cpython-313.pyc"
+    ],
+    [
+      161151,
+      "tabs/ai_assistant_lite.py"
+    ],
+    [
+      155648,
+      "data/research_v11.sqlite3"
+    ],
+    [
+      152135,
+      "PACKAGE_CONTENTS_20260621_SIX_FIELD.json"
+    ],
+    [
+      149573,
+      "SHA256_RELEASE_20260624.txt"
+    ],
+    [
+      146602,
+      "core/__pycache__/research_grade_system_v17_20260624.cpython-313.pyc"
+    ],
+    [
+      144506,
+      "SHA256SUMS.txt"
+    ],
+    [
+      130878,
+      "_home_joined.py"
+    ],
+    [
+      122787,
+      "V8_REPORTS/CURRENT_SHA256_MANIFEST_20260622.json"
+    ],
+    [
+      113067,
+      "core/__pycache__/decision_product_engine_20260617_standalone.cpython-313.pyc"
+    ],
+    [
+      112325,
+      "tabs/__pycache__/dinner_morning_data_patch_20260614.cpython-313.pyc"
+    ],
+    [
+      111837,
+      "core/research_calibration_20260618.py"
+    ]
+  ]
+}

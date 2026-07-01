@@ -1,0 +1,91 @@
+{
+  "project": "PROJECT_QUANT_V11_EIGHT_FIELD_FIXED_20260624",
+  "generated": "2026-06-24",
+  "files": [
+    {
+      "file": "core/adx_shared_sync_20260615.py",
+      "baseline_sha256": "ce080d35b4f7d38ac62b9aa2d0e18aed59b041ad02dd958359b5182f0627e16d",
+      "size_bytes": 48645
+    },
+    {
+      "file": "core/canonical/snapshot.py",
+      "baseline_sha256": "58cefc4a166dc0c812241f8bbe447b1eb52e7a9f7d446b659a88b221a08aadc4",
+      "size_bytes": 7294
+    },
+    {
+      "file": "core/canonical_runtime_20260617.py",
+      "baseline_sha256": "4cc6f40de479f245a21b293bac0c3a7a7bd8d0d0e27d5f30ae69078372f5bd12",
+      "size_bytes": 47339
+    },
+    {
+      "file": "core/canonical_sync_v9.py",
+      "baseline_sha256": "e470b7292af31d359afb879d0372665b157b37ccfa88769ea285ef42260fda95",
+      "size_bytes": 42042
+    },
+    {
+      "file": "core/decision_policy_20260617.py",
+      "baseline_sha256": "eab139958c687022bc8ae5fc938ba5f56a11cfe3effa0736278d038006c72739",
+      "size_bytes": 3974
+    },
+    {
+      "file": "core/decision_product_engine_20260617.py",
+      "baseline_sha256": "e6577fa0fe8d8bbcc9a388bbd61f2e56b9db0bd83d9b419b3ab1f35a0d2630a7",
+      "size_bytes": 2417
+    },
+    {
+      "file": "core/medium_standard_regime_bias_20260619.py",
+      "baseline_sha256": "f2707d52797467d14c8f361c34db716592b8020e01643b28a57f61853e475214",
+      "size_bytes": 6735
+    },
+    {
+      "file": "core/powerbi_path_calibration_20260617.py",
+      "baseline_sha256": "73e1a4adb3eefa993c6a168eeb19a9a7d394aca10d18c270de35d8c8df8a85c2",
+      "size_bytes": 38655
+    },
+    {
+      "file": "core/prediction_ledger_20260617.py",
+      "baseline_sha256": "02685f33c7718575d0322c24353bd901635bf46c08c81d500fcd96cc2d77e507",
+      "size_bytes": 34752
+    },
+    {
+      "file": "core/settings_run_orchestrator_20260617.py",
+      "baseline_sha256": "be044b7ada9724da8fc3a1b316ccf906e87f26daceba6f4ff23d9445d3c079fc",
+      "size_bytes": 101796
+    },
+    {
+      "file": "lunch/field_01/__init__.py",
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "file": "lunch/field_01/contract.py",
+      "baseline_sha256": "60cb2e3346f610394007a38bf72bd2ebfd842c95b11b41207fd7c0beab4ddfb4",
+      "size_bytes": 165
+    },
+    {
+      "file": "lunch/field_01/renderer.py",
+      "baseline_sha256": "2e26b5af209178860060296b822d39da6627fd7801f9410249dc243e63fd8e25",
+      "size_bytes": 521
+    },
+    {
+      "file": "lunch/field_01/tables.py",
+      "baseline_sha256": "34655607e2ffc9fd6740a8931665f78d59971eba021e557916917625e9043b51",
+      "size_bytes": 379
+    },
+    {
+      "file": "lunch/field_01/tests.py",
+      "baseline_sha256": "d5eb4690e7e54d331840cbe890f0f030b1dd47dc614fb8d42dc51808b12d4054",
+      "size_bytes": 202
+    },
+    {
+      "file": "lunch/field_01/view_model.py",
+      "baseline_sha256": "49da8155f680bdf1a06f376f9a47da4a60ee1c93e985a64d2bf60a38331e8abd",
+      "size_bytes": 193
+    },
+    {
+      "file": "services/position_sizing.py",
+      "baseline_sha256": "63231cb600f05f0f95e90a4259f7279fb3a50d4ba2e47b0cb8b36f0df775de8e",
+      "size_bytes": 12053
+    }
+  ]
+}

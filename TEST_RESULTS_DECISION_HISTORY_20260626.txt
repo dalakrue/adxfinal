@@ -1,0 +1,19 @@
+ADX Quant Pro decision-history architecture verification
+Date: 2026-06-26
+
+Command:
+pytest -q tests/test_upgrade_20260626.py tests/test_requested_acceptance_20260626.py lunch/field_01/tests.py lunch/field_02/tests.py lunch/field_03/tests.py
+
+Result:
+27 passed in 3.09s
+
+Additional validation:
+- python -m compileall -q . : PASS
+- Lunch selector contains exactly Fields 1, 2 and 3.
+- Field 456 and Field 789 are independent top-level registered pages.
+- Field 1 renders Decision History first, then protected overall/ten-factor histories, then direction-confirmation history.
+- Copy Short and Copy Full use central clipboard controls.
+- Field 2 operational prediction path is explicitly labeled and colored green; protected raw central path is retained separately.
+
+Important limitation:
+No live broker/API run was performed in this offline packaging environment. Actual 25-day row population depends on the project's persisted canonical history and a successful Settings Quick/Full Run. No missing history or outcomes were fabricated.

@@ -1,0 +1,47 @@
+QUANT RESEARCH V8 — EXACT MODIFIED FILE LIST
+
+Added: 28
+  + QUANT_RESEARCH_V8_DELIVERY_INDEX.md
+  + V8_BASELINE_SHA256_MANIFEST.json
+  + V8_REPORTS/ARCHITECTURE_REPORT_20260622_QUANT_V8.md
+  + V8_REPORTS/BROKER_TIME_REPORT_20260622_QUANT_V8.md
+  + V8_REPORTS/CPU_RAM_BENCHMARK_REPORT_20260622_QUANT_V8.md
+  + V8_REPORTS/CURRENT_SHA256_MANIFEST_20260622.json
+  + V8_REPORTS/DATABASE_MIGRATION_REPORT_20260622_QUANT_V8.md
+  + V8_REPORTS/FIELD1_CROSS_TABLE_SYNC_EVIDENCE_20260622.md
+  + V8_REPORTS/FULL_TEST_REPORT_20260622_QUANT_V8.md
+  + V8_REPORTS/KNOWN_LIMITATIONS_20260622_QUANT_V8.md
+  + V8_REPORTS/MODIFIED_FILES_20260622_QUANT_V8.json
+  + V8_REPORTS/MODIFIED_FILES_20260622_QUANT_V8.txt
+  + V8_REPORTS/MORNING_HISTORY_DATA_DICTIONARY_20260622.md
+  + V8_REPORTS/PERFORMANCE_BENCHMARK_20260622.json
+  + V8_REPORTS/PROJECTION_CALIBRATION_REPORT_20260622_QUANT_V8.md
+  + V8_REPORTS/PROTECTED_LOGIC_CONFIRMATION_20260622_QUANT_V8.md
+  + V8_REPORTS/TAB_SWITCH_NO_CALC_EVIDENCE_20260622.md
+  + core/adwin_monitor_v8_20260622.py
+  + core/dynamic_ensemble_v8_20260622.py
+  + core/field1_data_quality_v8_20260622.py
+  + core/morning_quant_metrics_20260622.py
+  + core/morning_quant_store_20260622.py
+  + core/quant_production_readiness_v8_20260622.py
+  + core/quant_research_v8_store_20260622.py
+  + core/research_governance_v8_20260622.py
+  + core/transaction_guard_v8_20260622.py
+  + tabs/doo_prime/morning_control_v8_20260622.py
+  + tests/test_quant_research_v8_20260622.py
+
+Modified: 12
+  * core/ai_source_registry.py
+  * core/lunch_broker_sentiment_ai_history_20260622.py
+  * core/navigation_transaction_20260622.py
+  * core/powerbi_path_calibration_20260617.py
+  * core/settings_run_orchestrator_20260617.py
+  * core/shared_broker_time_20260622.py
+  * services/canonical_snapshot_store.py
+  * tabs/antd_page_router_20260615.py
+  * tabs/doo_prime/home_analytics.py
+  * tests/test_canonical_broker_ai_field6_upgrade_20260622.py
+  * tests/test_history_performance_research_20260620.py
+  * ui/full_metric_shared_renderer_20260618.py
+
+Deleted: 0

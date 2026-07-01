@@ -1,0 +1,34 @@
+Inspect and repair the attached ADX Quant Pro Streamlit project without changing protected production calculations, thresholds, stored outcomes, model weights, canonical snapshot semantics, broker-time rules, TP/SL logic, or prediction engines.
+
+FIELD 1 TABLE 1
+Replace only the visible Table 1 renderer. Build Decision History — Last 25 Days by outer-joining all real completed-H1 Table 3 decision histories: Entry Strength, SELL Pressure, BUY Pressure, Net Pressure/Pressure Decision, Pullback Readiness, M1 Confirmation, Master Decision, Hold Safety, TP Quality, and Direction Confirmation. Show Date, Weekday, Hour and decision columns only. Do not show any score column. Keep Decision Name, Final Decision, Outcome Status and Decision Correct when available. Sort newest completed broker candle first and retain partial rows. Never fabricate historical candles.
+
+Do not calculate BUY Evidence, SELL Evidence, Conflict or Coverage from unavailable scores. Display decision counts and decision-column coverage, or N/A when there is no published decision evidence. Never convert unavailable evidence to 0.0.
+
+FIELD 1 TABLE 4
+Render Next-Hour Technical + Sentiment + Session + Regime + Data Mining Bias — Last 25 Days. Use a completed-H1 outer join and preserve any row where at least one source exists.
+- Technical Bias for Next H1: Field 1 Table 3 Entry Strength Decision/history. Reuse the Field 1 decision collection when necessary; do not say missing when Entry Strength exists.
+- Regime Bias for Next H1: Field 3 Three-Standard Summary, Lower Standard Less Risky Bias.
+- Session Bias for Next H1: published session history; when absent, use the existing bounded completed-OHLC display-only session adapter without changing production decisions.
+- Data Mining Bias for Next H1: Research Data Mining Random Forest + KNN Priority table, using Historical Next 1 Hour Direction and Prescriptive Label.
+- Sentiment Bias for Next H1: Research NLP 25-Day Regime Prediction History + NLP hourly ranked rows, using Regime Direction and retaining the affecting headline when published.
+- Keep partial rows. Mark a genuinely unavailable source MISSING. Do not silently rewrite missing as WAIT.
+- Compute a display-only combined direction and source coverage; never overwrite production weights or decisions.
+
+FIELD 1 TABLE 5
+Always display Table 5 — Combined Available Decision/Bias Evidence — Last 25 Days below Table 4. It is a normal independent table, not a fallback. Recursively collect real timestamped decision, bias, direction, label, action and priority columns from Fields 4–9 and Research, align them to completed broker H1, retain partial rows, sort newest first and limit to 25 broker days. Never invent rows.
+
+CANONICAL IDENTITY AND SYNC
+After Quick Run, publish and expose one valid run_id, generation_id, symbol, timeframe, completed broker candle, source snapshot hash and source signature. Every Field 1 table must read the same frozen canonical generation. Opening or switching pages must not recalculate Field 1. If identity publication fails, surface the publisher error instead of permanently rendering Unavailable.
+
+NET PRESSURE AND DIRECTION CONFIRMATION
+Repair publisher/read aliases so Table 3 Net Pressure and Direction Confirmation histories populate whenever their real result objects exist. Support legacy/current timestamp and column names. Do not synthesize values.
+
+FIELD 4 TO 9 PAGE
+Use one authoritative visible page named Field 4 to 9. Route Field 456, Field 789, Field 456+789, Field 567 and Field 4 to 9 aliases directly to it, never Settings or Session. At the top show the 25-day Fields 4–9 decision/bias collection table. Then display original Fields 4, 5, 6, 7, 8 and 9 together while preserving their independent engines, caches, persistence stores and calculations.
+
+AIR-LLM
+Keep AIR-LLM only in the independent AI Assistant tab. Provide one Open/Closed control. The visible AirLLM Mode metric must immediately show OPEN when the switch is Open and CLOSED when it is Closed. Display server enablement, package availability and model configuration separately. Closed mode must never load the model. Open mode may lazy-load only after question submission and only when ADX_ENABLE_AIRLLM=1, ADX_AIRLLM_MODEL_ID is valid and the optional package is installed. On failure, use the deterministic canonical assistant and state the exact reason.
+
+VALIDATION
+Run python compileall and focused pytest tests for Table 1 no-score display, decision-only diagnostics, Net Pressure and Direction Confirmation source recovery, Table 4 technical/regime/data-mining/NLP source reads, partial-source retention, Table 5 always-visible behavior, 25-day completed-H1 cutoff, canonical identity consistency, every Field 4–9 navigation alias, and AIR-LLM mode-state synchronization. Package one deployable ZIP with app.py as entry point, implementation report, test report and this command.

@@ -1,0 +1,21 @@
+Field 10 + Ten-Paper Research Acceptance Results
+================================================
+
+Final full pytest result: 196 passed in 17.90 seconds.
+
+Validated locally:
+- Field 10 is in the authoritative Lunch selector: PASS
+- Standalone bottom render removed: PASS
+- All Lunch fields closed after Settings run: PASS
+- Lazy first calculation and cached reopen: PASS
+- One and multiple saved symbols: PASS
+- Broker wall-clock hour preservation: PASS
+- Daily Higher-standard lock before 23:00 and review at 23:00: PASS
+- Basic rank order and blocked-symbol rank-pool exclusion: PASS
+- A/B/C/D data-quality boundaries: PASS
+- Research model and experiment registries: PASS
+- Shadow production action unchanged: PASS
+- Hamilton, break, drift, Kalman, DM and covariance unit tests: PASS
+- Streamlit local HTTP startup smoke test: PASS
+- Live MT5/Twelve Data/Finnhub execution: NOT TESTED (credentials/network session unavailable)
+- Live Streamlit Community Cloud deployment: NOT TESTED

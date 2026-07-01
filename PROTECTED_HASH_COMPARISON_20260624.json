@@ -1,0 +1,47 @@
+{
+  "all_field1_unchanged": true,
+  "files": [
+    {
+      "file": "core/field1_data_quality_v8_20260622.py",
+      "before": "524cffa84b7dd50feed86e26d9c77c36789d916cffc371854ba32d3e06b6fc68",
+      "after": "524cffa84b7dd50feed86e26d9c77c36789d916cffc371854ba32d3e06b6fc68",
+      "unchanged": true
+    },
+    {
+      "file": "lunch/field_01/__init__.py",
+      "before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "file": "lunch/field_01/contract.py",
+      "before": "60cb2e3346f610394007a38bf72bd2ebfd842c95b11b41207fd7c0beab4ddfb4",
+      "after": "60cb2e3346f610394007a38bf72bd2ebfd842c95b11b41207fd7c0beab4ddfb4",
+      "unchanged": true
+    },
+    {
+      "file": "lunch/field_01/renderer.py",
+      "before": "2e26b5af209178860060296b822d39da6627fd7801f9410249dc243e63fd8e25",
+      "after": "2e26b5af209178860060296b822d39da6627fd7801f9410249dc243e63fd8e25",
+      "unchanged": true
+    },
+    {
+      "file": "lunch/field_01/tables.py",
+      "before": "34655607e2ffc9fd6740a8931665f78d59971eba021e557916917625e9043b51",
+      "after": "34655607e2ffc9fd6740a8931665f78d59971eba021e557916917625e9043b51",
+      "unchanged": true
+    },
+    {
+      "file": "lunch/field_01/tests.py",
+      "before": "d5eb4690e7e54d331840cbe890f0f030b1dd47dc614fb8d42dc51808b12d4054",
+      "after": "d5eb4690e7e54d331840cbe890f0f030b1dd47dc614fb8d42dc51808b12d4054",
+      "unchanged": true
+    },
+    {
+      "file": "lunch/field_01/view_model.py",
+      "before": "49da8155f680bdf1a06f376f9a47da4a60ee1c93e985a64d2bf60a38331e8abd",
+      "after": "49da8155f680bdf1a06f376f9a47da4a60ee1c93e985a64d2bf60a38331e8abd",
+      "unchanged": true
+    }
+  ]
+}

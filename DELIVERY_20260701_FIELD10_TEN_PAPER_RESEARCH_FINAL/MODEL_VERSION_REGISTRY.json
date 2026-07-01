@@ -1,0 +1,37 @@
+{
+  "registry_version": "field10-model-registry-export-20260701-v1",
+  "models": [
+    {
+      "model_version": "TEN-PAPER-SHADOW-20260701-v2",
+      "calculation_version": "field10-research-validation-20260701-v2",
+      "status": "SHADOW_VALIDATION",
+      "production_authority": "existing canonical production calculation",
+      "promotion": "disabled unless later walk-forward/OOS evidence and explicit configuration change",
+      "feature_flags": {
+        "research_shadow_mode": true,
+        "enable_markov_validation": true,
+        "enable_structural_break_validation": true,
+        "enable_adwin_drift": true,
+        "enable_kalman_smoothing": true,
+        "enable_proper_scoring": true,
+        "enable_conformal_intervals": true,
+        "enable_dm_testing": true,
+        "enable_spa_testing": true,
+        "enable_ledoit_wolf": true,
+        "enable_cvar": true
+      },
+      "methods": [
+        "Hamilton empirical Markov validation",
+        "Bai-Perron-style dynamic-programming break detection",
+        "vectorized ADWIN-style drift detection",
+        "Kalman local-trend state filter",
+        "proper Brier/log scoring",
+        "conformal residual intervals",
+        "Diebold-Mariano HAC comparison",
+        "Hansen SPA moving-block bootstrap",
+        "Ledoit-Wolf covariance shrinkage",
+        "CVaR tail-risk"
+      ]
+    }
+  ]
+}

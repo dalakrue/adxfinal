@@ -1,0 +1,72 @@
+{
+  "measurement_date": "2026-06-26",
+  "environment": {
+    "python": "3.13.5",
+    "platform": "Linux-4.4.0-x86_64-with-glibc2.41",
+    "workload_note": "Same container and installed dependencies; three cold subprocess runs per import/copy measurement. Streamlit health startup is one run per build."
+  },
+  "app_import": {
+    "unit": "seconds",
+    "uploaded_runs": [
+      4.43,
+      4.39,
+      4.43
+    ],
+    "repaired_runs": [
+      4.25,
+      4.26,
+      4.64
+    ],
+    "uploaded_median": 4.43,
+    "repaired_median": 4.26,
+    "delta_seconds": -0.17,
+    "delta_percent": -3.84
+  },
+  "app_import_peak_rss": {
+    "unit": "KiB",
+    "uploaded_runs": [
+      387732,
+      381980,
+      388340
+    ],
+    "repaired_runs": [
+      387332,
+      357988,
+      388264
+    ],
+    "uploaded_median": 387732,
+    "repaired_median": 387332,
+    "delta_kib": -400,
+    "delta_percent": -0.1
+  },
+  "copy_serializer_20_short_full_pairs": {
+    "unit": "seconds",
+    "uploaded_runs": [
+      0.217056802,
+      0.22604248,
+      0.213462259
+    ],
+    "repaired_runs": [
+      0.235400856,
+      0.225259605,
+      0.21787806
+    ],
+    "uploaded_median": 0.217056802,
+    "repaired_median": 0.225259605,
+    "delta_seconds": 0.008202803,
+    "delta_percent": 3.78,
+    "note": "Direct serializer microbenchmark only. The repaired UI caches payloads by canonical identity, so normal reruns do not repeat this builder workload; that call-avoidance was verified by code/tests but not assigned an unmeasured speedup."
+  },
+  "streamlit_health_start": {
+    "unit": "seconds",
+    "uploaded_single_run": 6.807044601,
+    "repaired_single_run": 6.682006327,
+    "delta_seconds": -0.125038274,
+    "delta_percent": -1.84,
+    "note": "Single-run smoke timing; insufficient for a broad performance claim."
+  },
+  "claims": {
+    "30_to_50_percent_improvement_claimed": false,
+    "interpretation": "Measurements are close and noisy. No material percentage improvement is claimed. The changes primarily reduce avoidable work through lazy routing, optional dependency isolation, and generation-keyed payload reuse."
+  }
+}

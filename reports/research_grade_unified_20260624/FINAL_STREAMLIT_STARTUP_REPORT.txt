@@ -1,0 +1,4 @@
+PASS: Streamlit startup smoke test
+Entry point: app.py
+Health endpoint: ok
+Port used for test: 8766

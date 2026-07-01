@@ -1,0 +1,52 @@
+[
+  {
+    "file": "core/field10_ten_paper_research_20260701.py",
+    "sha256": "2911ce5b70277e37de68bf06b70da69416311334f7f22f00e6987274b88990f1",
+    "bytes": 25554
+  },
+  {
+    "file": "core/multi_symbol_field10_20260701.py",
+    "sha256": "c566a68b9601698c8812fafc546a578c4740b192eadbe97e65e51e108f766582",
+    "bytes": 75698
+  },
+  {
+    "file": "research_quant/ten_paper_validation_20260701.py",
+    "sha256": "62181586bc086ce738241503251a1f252d680fa7f680218dd20ad50b6a896a7b",
+    "bytes": 59038
+  },
+  {
+    "file": "tabs/antd_page_router_20260615.py",
+    "sha256": "b72d6aa86e7b150700b74bd2479fac8b53e49a83bc7f279185efd76bea948d6c",
+    "bytes": 63267
+  },
+  {
+    "file": "tabs/final_lunch_upgrade_20260617.py",
+    "sha256": "83b036af617b1f87e785df4b6779758de111c5adc28877ae8efe1123e8a9c657",
+    "bytes": 5895
+  },
+  {
+    "file": "tests/test_field10_multi_symbol_20260701.py",
+    "sha256": "b9f830859763b1720b428602c21ea7ff84a9531a636e88ed0413fefcf82a0194",
+    "bytes": 14565
+  },
+  {
+    "file": "tests/test_field10_ten_paper_research_20260701.py",
+    "sha256": "9355aaffcd0b1199edfac72bdf5d2f481539ff5b92aee3441d00a4c0abcc4631",
+    "bytes": 6371
+  },
+  {
+    "file": "tests/test_requested_acceptance_20260626.py",
+    "sha256": "c88b0243fd1ce720b2fc2026b32c78e48fae8c315ecf522fa2581921bdeb0538",
+    "bytes": 6543
+  },
+  {
+    "file": "ui/lunch_field10_multi_symbol_20260701.py",
+    "sha256": "f79203ee2daddb2f3b0209c238aaad3e6d004f6093e1b2be4f34cd064d538655",
+    "bytes": 22527
+  },
+  {
+    "file": "ui/lunch_four_core_fields_20260619.py",
+    "sha256": "13928971e4cde9216101ec449b826585a1eec8a988064cc14320ffe7e602691f",
+    "bytes": 96343
+  }
+]

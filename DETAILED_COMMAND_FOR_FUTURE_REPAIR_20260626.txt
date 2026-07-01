@@ -1,0 +1,11 @@
+Inspect and repair the attached ADX Quant Pro Streamlit project. Preserve every protected production calculation, threshold, decision rule, historical outcome, database record, broker-time rule, Power BI central path, regime formula, TP/SL formula, and canonical snapshot. Do not fabricate history, accuracy, news, reliability, model evidence, or performance.
+
+Required behavior:
+1. Keep app.py as deployment entry point and Python 3.12 runtime.
+2. Settings Quick Run must refresh EURUSD H1 once, use the latest completed broker H1 candle, calculate Fields 1–3 and required dependencies, publish one immutable canonical generation, publish complete identity, publish current one-hour confirmation, and open Lunch Field 1.
+3. Field 1 Table 1 is a read-only 25-day summary of existing Table 3 decision-factor histories. Join by completed broker candle; never recalculate or invent prior days. Display current genuine published row immediately as PENDING if no archive exists.
+4. Field 1 Table 4 must use existing Research/NLP/Finnhub ranked-news or article publications, Table 3 technical evidence, Field 3 regime evidence, and session evidence. Show each component independently. Use local completed H1 evidence only as an explicitly labeled fallback.
+5. Field 789 and Field 456 menu choices must route to the combined Field 4-to-9 workspace, never Settings. Combine display only; keep all engines and caches independent.
+6. AI Assistant must use the frozen canonical evidence contract. AirLLM must be optional, lazy-loaded, server-side, bounded, and deterministic-fallback safe. Never download/load a model during ordinary navigation.
+7. Verify 375×812 mobile layout, API-key paste, two copy buttons, refresh, menu, chat input, and all buttons. Bound rendered tables and lazy-load heavy fields.
+8. Run compile and targeted tests, document limitations honestly, and package one deployable ZIP.

@@ -1,0 +1,4 @@
+python -m compileall -q .
+python -m pytest -q tests/test_shadow_intelligence_governance_20260624.py tests/test_research_grade_shadow_20260624.py tests/test_advanced_causal_forecast_20260624.py --disable-warnings
+python -m pytest -q tests/test_streamlit_cloud_preflight_20260619.py tests/test_no_heavy_render_calculation.py tests/test_broker_time.py tests/test_canonical_sync.py tests/test_field_contracts.py tests/test_field_registry.py tests/test_shadow_intelligence_governance_20260624.py --disable-warnings
+python -m pytest -q --disable-warnings --maxfail=20

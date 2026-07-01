@@ -1,0 +1,9 @@
+COMPILE: PASS — python -m compileall completed for project sources.
+PURE IMPORT SMOKE: PASS — advanced causal evaluator and store imported.
+FOCUSED REGRESSION: PASS — 54 passed in 1.75s.
+NEW + RELATED CORE TESTS: PASS — 27 passed in 1.15s before warning cleanup.
+FIELD 1 HASH: PASS — all baseline SHA-256 values unchanged.
+MIGRATION IDEMPOTENCY: PASS — repeated in-memory migration and save.
+FULL SUITE: PARTIAL — 486 tests collected; more than 100 consecutive tests passed, but the available execution window expired before completion.
+STREAMLIT LIVE STARTUP: ENVIRONMENT-BLOCKED — Streamlit executable/module is not installed in the test container. Static Streamlit Cloud preflight tests passed in the focused regression set.
+PYTHON RUNTIME CONFIG: PASS — `.python-version` is 3.12 and `runtime.txt` is python-3.12.

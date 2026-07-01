@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-06-24",
+  "all_unchanged": true,
+  "all_match_supplied_baseline": true,
+  "files": [
+    {
+      "file": "core/adx_shared_sync_20260615.py",
+      "before_sha256": "ce080d35b4f7d38ac62b9aa2d0e18aed59b041ad02dd958359b5182f0627e16d",
+      "after_sha256": "ce080d35b4f7d38ac62b9aa2d0e18aed59b041ad02dd958359b5182f0627e16d",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "core/canonical/snapshot.py",
+      "before_sha256": "58cefc4a166dc0c812241f8bbe447b1eb52e7a9f7d446b659a88b221a08aadc4",
+      "after_sha256": "58cefc4a166dc0c812241f8bbe447b1eb52e7a9f7d446b659a88b221a08aadc4",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "core/canonical_runtime_20260617.py",
+      "before_sha256": "4cc6f40de479f245a21b293bac0c3a7a7bd8d0d0e27d5f30ae69078372f5bd12",
+      "after_sha256": "4cc6f40de479f245a21b293bac0c3a7a7bd8d0d0e27d5f30ae69078372f5bd12",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "core/canonical_sync_v9.py",
+      "before_sha256": "e470b7292af31d359afb879d0372665b157b37ccfa88769ea285ef42260fda95",
+      "after_sha256": "e470b7292af31d359afb879d0372665b157b37ccfa88769ea285ef42260fda95",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "core/decision_policy_20260617.py",
+      "before_sha256": "eab139958c687022bc8ae5fc938ba5f56a11cfe3effa0736278d038006c72739",
+      "after_sha256": "eab139958c687022bc8ae5fc938ba5f56a11cfe3effa0736278d038006c72739",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "core/decision_product_engine_20260617.py",
+      "before_sha256": "e6577fa0fe8d8bbcc9a388bbd61f2e56b9db0bd83d9b419b3ab1f35a0d2630a7",
+      "after_sha256": "e6577fa0fe8d8bbcc9a388bbd61f2e56b9db0bd83d9b419b3ab1f35a0d2630a7",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "core/medium_standard_regime_bias_20260619.py",
+      "before_sha256": "f2707d52797467d14c8f361c34db716592b8020e01643b28a57f61853e475214",
+      "after_sha256": "f2707d52797467d14c8f361c34db716592b8020e01643b28a57f61853e475214",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "core/powerbi_path_calibration_20260617.py",
+      "before_sha256": "73e1a4adb3eefa993c6a168eeb19a9a7d394aca10d18c270de35d8c8df8a85c2",
+      "after_sha256": "73e1a4adb3eefa993c6a168eeb19a9a7d394aca10d18c270de35d8c8df8a85c2",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "core/prediction_ledger_20260617.py",
+      "before_sha256": "02685f33c7718575d0322c24353bd901635bf46c08c81d500fcd96cc2d77e507",
+      "after_sha256": "02685f33c7718575d0322c24353bd901635bf46c08c81d500fcd96cc2d77e507",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "core/settings_run_orchestrator_20260617.py",
+      "before_sha256": "1b1605553e6b2cf55953b8ea357510b48baffb354f21a8f946e8b73bcc39cd6e",
+      "after_sha256": "1b1605553e6b2cf55953b8ea357510b48baffb354f21a8f946e8b73bcc39cd6e",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "lunch/field_01/__init__.py",
+      "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "lunch/field_01/contract.py",
+      "before_sha256": "60cb2e3346f610394007a38bf72bd2ebfd842c95b11b41207fd7c0beab4ddfb4",
+      "after_sha256": "60cb2e3346f610394007a38bf72bd2ebfd842c95b11b41207fd7c0beab4ddfb4",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "lunch/field_01/renderer.py",
+      "before_sha256": "2e26b5af209178860060296b822d39da6627fd7801f9410249dc243e63fd8e25",
+      "after_sha256": "2e26b5af209178860060296b822d39da6627fd7801f9410249dc243e63fd8e25",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "lunch/field_01/tables.py",
+      "before_sha256": "34655607e2ffc9fd6740a8931665f78d59971eba021e557916917625e9043b51",
+      "after_sha256": "34655607e2ffc9fd6740a8931665f78d59971eba021e557916917625e9043b51",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "lunch/field_01/tests.py",
+      "before_sha256": "d5eb4690e7e54d331840cbe890f0f030b1dd47dc614fb8d42dc51808b12d4054",
+      "after_sha256": "d5eb4690e7e54d331840cbe890f0f030b1dd47dc614fb8d42dc51808b12d4054",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "lunch/field_01/view_model.py",
+      "before_sha256": "49da8155f680bdf1a06f376f9a47da4a60ee1c93e985a64d2bf60a38331e8abd",
+      "after_sha256": "49da8155f680bdf1a06f376f9a47da4a60ee1c93e985a64d2bf60a38331e8abd",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    },
+    {
+      "file": "services/position_sizing.py",
+      "before_sha256": "63231cb600f05f0f95e90a4259f7279fb3a50d4ba2e47b0cb8b36f0df775de8e",
+      "after_sha256": "63231cb600f05f0f95e90a4259f7279fb3a50d4ba2e47b0cb8b36f0df775de8e",
+      "unchanged": true,
+      "matches_supplied_baseline": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "rows": 1200,
+  "runtime_seconds": 0.15992539399996986,
+  "peak_python_tracemalloc_mb": 0.911381721496582,
+  "snapshot_json_bytes": 13883,
+  "monte_carlo_samples": 256,
+  "ok": true
+}

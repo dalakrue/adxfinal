@@ -1,0 +1,9 @@
+start Settings exceptions 0
+after-run-page Lunch
+after-run-exceptions 0
+status-keys ['arcef_sv', 'built_at', 'calculation_scope', 'calibration', 'canonical', 'crcef_sv_research_20260627', 'data_quality', 'drift', 'elapsed_seconds', 'errors', 'field1_publication_bridge_20260626', 'field8_quant_research_v15_20260624', 'field9_eurusd_h1_decision_impact', 'field_07_research_v11', 'field_08_integrated_history_20260624', 'ledger', 'metric', 'ok', 'one_hour_direction_confirmation_20260626', 'post_run_consistency_20260626', 'powerbi', 'quant_20260624', 'quick_scope_contract', 'refresh_before_run', 'research_adaptation_v18', 'research_data_validation', 'research_grade_system_v17', 'research_validation_rejection', 'session_ai_field6_9_20260625', 'unified_shadow_pipeline_v19']
+lunch-selectboxes [('Choose the Lunch field to open', 'All Lunch fields closed')]
+buttons-after-run ['⚙️ Settings', '🍱 Lunch ✓', '🌙 Dinner', '🤖 AI Assistant', '🌅 Morning', '🎓 Research', '📂 Other', '📱 Phone', '🖥 Laptop ✓', '🔄 Refresh Data Only', 'Search']
+after-dinner-page Dinner
+after-dinner-exceptions 0
+dinner-expanders ['Field 4 — Dinner Combined Intelligence', 'Field 6 — Future Strategy, Sentiment and Technical History', 'Field 7 — Scientific Research Intelligence', 'Field 8 — Integrated 25-Day Accuracy History', 'Field 9 — Decision Impact, Regret and Stability', 'CRCEF-SV research-only diagnostics']

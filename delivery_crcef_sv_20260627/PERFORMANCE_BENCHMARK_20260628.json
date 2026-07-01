@@ -1,0 +1,15 @@
+{
+  "benchmark": "synthetic Dinner aggregation, 5 fields x 600 H1 rows x 20 decision/bias columns",
+  "cold_seconds": 0.481531,
+  "warm_cache_seconds": 0.00011,
+  "compaction_seconds": 0.218412,
+  "cold_peak_mib": 6.714,
+  "warm_peak_mib": 0.005,
+  "compaction_peak_mib": 1.08,
+  "full_rows": 600,
+  "full_columns": 145,
+  "display_rows": 600,
+  "display_columns": 28,
+  "display_column_reduction_pct": 80.69,
+  "note": "Synthetic presentation-layer benchmark; not a guarantee for a first full live calculation. Exact-source warm reuse avoids repeated protected calculation when the completed candle is unchanged."
+}

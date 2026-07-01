@@ -1,0 +1,45 @@
+Inspect, repair, test and package the attached ADX Quant Pro project as one deployable ZIP.
+
+PROTECTION
+- Preserve every protected production calculation, Field 1 source-of-truth value, BUY/SELL/WAIT/HOLD/NO-TRADE rule, existing threshold, Power BI central path, regime formula, canonical identity, database record and historical outcome.
+- Never merge calculation logic because fields share a display.
+- Never fabricate history, scores, reliability, accuracy or outcomes.
+
+APP ARCHITECTURE
+- app.py remains the Streamlit Cloud entry point.
+- Lunch must expose exactly three selectable core fields: Field 1, Field 2 and Field 3.
+- Field 456 must be an independent top-level page combining only the display of original Fields 4+5+6.
+- Field 789 must be an independent top-level page combining only the display of original Fields 7+8+9.
+- Keep all original engines, caches, functions, tables, persistence stores and calculations independent.
+- Render only the selected field or nested display.
+
+FIELD 1
+- Put “Decision History — Last 25 Days” at the top of Field 1.
+- Use completed EURUSD H1 broker candles, newest first.
+- Include Date, Weekday, Hour, Entry Strength Score/Decision, SELL Pressure Score/Decision, BUY Pressure Score/Decision, Net Pressure Score/Decision, Pullback Readiness Score/Decision, M1 Confirmation Score/Decision, Master Score/Decision, Hold Safety Score/Decision, TP Quality Score/Decision, Direction Confirmation Score/Decision, Final Decision, confidence, reliability, uncertainty, error and settled outcome fields when genuinely available.
+- Show three history groups after Quick Run: Decision History; Overall Full Metric History; Direction Confirmation History. Preserve all ten factor histories beneath them.
+- Scores must be 0–10 only when the publisher declares the source scale. Unknown scales display N/A.
+
+DECISION RESEARCH
+- Add research-only consensus/actionability diagnostics based on Field 1 history.
+- Do not automatically lower protected HOLD/NO-TRADE thresholds.
+- A candidate designed to cut HOLD/NO-TRADE frequency by at least half must pass session-stratified walk-forward testing, probability calibration, conformal uncertainty, spread/slippage expected value, drift checks, minimum sample size and drawdown/utility promotion gates.
+
+FIELD 2
+- Preserve the protected raw central path.
+- Display the operational prediction path explicitly as a green line and label it “Prediction path (green)”.
+- Keep historical, present and future projection evidence synchronized to the same canonical generation.
+
+COPY AND RUN
+- Keep exactly two clickable copy controls: Copy Short and Copy Full.
+- Build payloads from current Fields 1–3 only; exclude historical frames and unavailable placeholders.
+- Quick Run/Run Calculation must publish one canonical generation used by all pages and then open Lunch without a second calculation click.
+
+TESTS
+- Compile all Python files.
+- Run targeted tests for Lunch architecture, decision table, copy controls, Field 456/789 routes, canonical identity, broker time and Field 2 projection.
+- Verify Lunch reports exactly three core fields.
+- Verify Field 456 and Field 789 are top-level registered pages.
+- Verify the first Field 1 data table is Decision History and three Field 1 history groups are reachable after Quick Run.
+- Verify the green operational prediction path is present.
+- Package the complete project as one deployable ZIP and include test results, modified-file list, limitations, deployment commands and rollback instructions.

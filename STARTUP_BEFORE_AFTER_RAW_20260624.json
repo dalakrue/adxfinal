@@ -1,0 +1,22 @@
+{
+  "before_baseline": {
+    "health_ok": true,
+    "health_status": 200,
+    "root_status": 200,
+    "health_seconds": 9.172808968000027,
+    "peak_rss_bytes": 413601792,
+    "returncode_before_stop": null,
+    "error": "",
+    "project_bytes_excluding_caches": 16074346
+  },
+  "after_upgrade": {
+    "health_ok": true,
+    "health_status": 200,
+    "root_status": 200,
+    "health_seconds": 8.884427367999933,
+    "peak_rss_bytes": 412012544,
+    "returncode_before_stop": null,
+    "error": "",
+    "project_bytes_excluding_caches": 16186340
+  }
+}

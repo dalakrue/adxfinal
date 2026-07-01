@@ -1,0 +1,33 @@
+ADX QUANT PRO REPAIR — FINAL TEST RESULTS — 2026-06-28
+
+COMPILE
+PASS: python -m compileall -q app.py adx_dashpoard.py core tabs ui services pages research_quant lunch
+
+PYTEST
+PASS: 117 passed, 0 failed
+Command: PYTHONPATH=. pytest -q
+
+TARGETED REGRESSION TESTS
+PASS: 7 passed
+- Dinner blank/single-row column pruning and width cap
+- Medium/Higher change-interval compression
+- Current-hour-only Copy Short/Full and 100-line cap
+- Secret-free warm cache and restore
+- Refresh+Sync does not call Settings calculation
+- Power BI canonical OHLC precedence
+- Narrow sklearn warning filter
+
+STREAMLIT SMOKE
+PASS: app.py — health OK, root HTTP 200
+PASS: adx_dashpoard.py — health OK, root HTTP 200
+
+PERFORMANCE (SYNTHETIC DINNER PRESENTATION)
+Cold: 0.481531 s
+Warm exact-generation cache: 0.000110 s
+Compaction: 0.218412 s
+Columns: 145 full -> 28 display (80.69% reduction)
+
+LIVE API
+NOT VERIFIED — NETWORK/DNS UNAVAILABLE IN TEST SANDBOX
+No provider response was reached, therefore no key-validity conclusion was made.
+Credentials are redacted and absent from the project/package.

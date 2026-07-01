@@ -1,0 +1,17 @@
+{
+  "core/__pycache__/field1_data_quality_v8_20260622.cpython-313.pyc": "f9d4e51ca5974b0c587b809fcc88c0f1d4424be67914f61917b7baedb8fc9345",
+  "core/contracts/lunch_field_contract.py": "a1a354eca0008f56acb5cb406ecc39ce13bda47216ba559551065cf31dfbf309",
+  "core/field1_data_quality_v8_20260622.py": "524cffa84b7dd50feed86e26d9c77c36789d916cffc371854ba32d3e06b6fc68",
+  "lunch/field_01/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "lunch/field_01/__pycache__/__init__.cpython-313.pyc": "a247eb33a11f6da35cf69c75a937b84962066dd471edffb4c17c39bda22c58b5",
+  "lunch/field_01/__pycache__/contract.cpython-313.pyc": "f39037959398fed47998a7ac40caadd71f1570c36b5978fc955967d4e7d951e1",
+  "lunch/field_01/__pycache__/renderer.cpython-313.pyc": "a3fdc40d13325875014159de8abd8ce6c01f0307ace63b1dcfcf1c443ba7e149",
+  "lunch/field_01/__pycache__/tables.cpython-313.pyc": "952f39590ae03c0cd06518d4ee895450b8aeddb18fdfa5b171e3ba71df7f47d2",
+  "lunch/field_01/__pycache__/tests.cpython-313.pyc": "abaffb9ca3bd00e8016a69b39781d4662cf95b684d8215cc0dbaffa0513f5591",
+  "lunch/field_01/__pycache__/view_model.cpython-313.pyc": "03915ee289f363a17afde409a0299ac89cdf1f6cad3f7efdfbd6ea822dc0e2fc",
+  "lunch/field_01/contract.py": "60cb2e3346f610394007a38bf72bd2ebfd842c95b11b41207fd7c0beab4ddfb4",
+  "lunch/field_01/renderer.py": "2e26b5af209178860060296b822d39da6627fd7801f9410249dc243e63fd8e25",
+  "lunch/field_01/tables.py": "34655607e2ffc9fd6740a8931665f78d59971eba021e557916917625e9043b51",
+  "lunch/field_01/tests.py": "d5eb4690e7e54d331840cbe890f0f030b1dd47dc614fb8d42dc51808b12d4054",
+  "lunch/field_01/view_model.py": "49da8155f680bdf1a06f376f9a47da4a60ee1c93e985a64d2bf60a38331e8abd"
+}

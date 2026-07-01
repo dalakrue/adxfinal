@@ -1,0 +1,8 @@
+Python compileall: PASS
+Focused tests:
+- test_field1_publication_bridge_20260626.py
+- test_field1_table1_factor_merge_20260627.py
+- test_five_surface_navigation_20260626.py
+- test_combined_display_consistency_20260626.py
+Result: 11 passed
+Note: full UI pytest collection requires Streamlit installed in the test environment. Base project requirements include Streamlit for deployment.

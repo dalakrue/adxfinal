@@ -1,0 +1,4 @@
+# Changed-file manifest
+
+- `core/session_projection_store_20260625.py` — Suppress empty/all-NaN slice warnings while preserving NaN evidence — SHA-256 `51c956d348d7dbd1bb1f8e4eac855c6836c3901bf6556b95871913954a7fe94b`
+- `tests/test_session_projection_store_warning_20260626.py` — Regression test for reported all-NaN warning — SHA-256 `1b61ccb45ccbe884e6b7adefba54e7369c4569f70d8337a81d73627606a23b7f`

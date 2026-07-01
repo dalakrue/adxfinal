@@ -1,0 +1,48 @@
+Inspect, repair, test, optimize, and package this ADX Quant Pro Streamlit project as one deployable ZIP.
+
+NON-NEGOTIABLE PROTECTION
+Preserve every protected production calculation, threshold, BUY/SELL/WAIT/HOLD/NO-TRADE rule, Field 1 source-of-truth value, Power BI central path, regime formula, canonical snapshot identity, outcome, TP/SL calculation, database record, model weight, and broker-time rule. Do not fabricate missing history, news, reliability, accuracy, uncertainty, sample sizes, model evidence, or performance improvements. Keep app.py as the deployment entry point.
+
+CANONICAL PUBLICATION REPAIR
+1. After every Quick or Full run, resolve the one published canonical generation and bind these aliases to the exact same immutable object: canonical_decision_result_20260617, last_valid_canonical_decision_result_20260617, canonical_run_snapshot_v9, canonical_run_snapshot_20260619, canonical_sync_snapshot, canonical_decision_result, canonical_result_20260617, canonical_result.
+2. Require and publish run_id, generation_id, symbol, timeframe, completed broker candle, source_snapshot_hash, and source_signature.
+3. Run post-run consistency only after direction confirmation, Field 1–3 publication, Power BI publication, regime publication, and connected-news publication finish.
+4. Opening or switching a page must never calculate or republish Field 1.
+
+FIELD 1 TABLE 1
+1. Table 1 is a display-only collection and join of Table 3's ten already-calculated decision histories. It must perform no trading calculation.
+2. Read from lunch_metric_result_cache, full_metric_result_cache_20260618, published_metric_result, and compatible Field 1 aliases.
+3. Join by the exact completed broker H1 candle, newest first, limited to the last 25 broker days.
+4. Show Date, Weekday, Hour, Entry Strength Score/Decision, SELL Pressure Score/Decision, BUY Pressure Score/Decision, Net Pressure Score/Decision, Pullback Readiness Score/Decision, M1 Confirmation Score/Decision, Master Decision Score/Decision, Hold Safety Score/Decision, TP Quality Score/Decision, Direction Confirmation Score/Decision, Decision Name, Final Decision, confidence, reliability, uncertainty, error, outcome status, and correctness when genuinely published.
+5. If canonical identity is temporarily unbound but Table 3 cache exists, show the existing Table 3-derived rows with an explicit UNBOUND identity diagnostic. Do not hide genuine rows and do not fabricate identity.
+6. Quick Run must show the current completed-candle row immediately and accumulate historical rows only from genuine completed candles.
+
+FIELD 1 TABLE 4
+1. On each explicit run, when Finnhub is connected, fetch genuine forex/general news once through the existing connector and retain the 25-day deduplicated cache.
+2. Feed those genuine rows into the existing Research Lab NLP ranking/event-response path. Reuse existing NLP, regime, session, Field 3, and Table 3 outputs; do not create a second production model.
+3. Resolve published news from canonical.nlp.ranked_news, canonical.sentiment.ranked_news, finnhub_ranked_news_20260626, finnhub_news_rows_20260626, finnhub_news_cache, nlp_ranked_news_df, regime_nlp_today_table, nlp_market_intelligence_result, news_nlp_knn_greedy_pack_20260612, research_pack_20260612, and Field 6 sentiment history.
+4. Display News Time, headline, NLP sentiment bias, technical bias, session bias, regime bias, combined next-hour direction, confirmation strength, and agreement contribution.
+5. If no genuine news exists, label local OHLC fallback rows LOCAL_TECHNICAL. Never display local rows as Finnhub/NLP news.
+
+NAVIGATION
+Keep separate top-level routes named Field 456 and Field 789. Field 456 renders original Fields 4+5+6 together for display only. Field 789 renders original Fields 7+8+9 together for display only. Preserve all independent engines, caches, functions, persistence, and calculation logic. Every menu button must navigate through the single navigation authority and must not fall back to Settings.
+
+AI ASSISTANT / AIRLLM
+1. The independent AI Assistant page owns AirLLM.
+2. AirLLM must remain lazy, server-side, and read-only over a compact canonical evidence contract.
+3. Enable only when ADX_ENABLE_AIRLLM=1, ADX_AIRLLM_MODEL_ID is configured, the optional airllm package is installed, and sufficient server disk/RAM is available.
+4. Do not download a model unless ADX_AIRLLM_ALLOW_DOWNLOAD=1 was explicitly configured.
+5. Cap input/output tokens, serialize requests with a lock, never pass API keys/secrets into prompts, and always retain the deterministic canonical assistant as fallback.
+6. State unavailable facts as unavailable and never let AirLLM change production decisions.
+
+IPHONE 11 PRO / MOBILE
+1. Validate 375x812 viewport behavior.
+2. Make all primary buttons at least 44 CSS pixels high with full-width phone layout and safe spacing.
+3. Keep exactly two Lunch copy controls, both tappable and backed by a textarea/download fallback when browser clipboard APIs fail.
+4. API-key entry must support long-press paste, must never autofill stored secrets, and Connect must work in one click.
+5. Render only the selected heavy field. Keep large tables paginated/bounded and charts lazy.
+6. Do not run MT5/network/heavy models during navigation reruns.
+7. Verify Refresh, Quick Run, Full Run, Field 456, Field 789, AI Assistant, Copy Short, Copy Full, API paste/connect, expanders, and table scrolling on phone mode.
+
+TESTS
+Run python compilation, full pytest, canonical identity tests, Quick/Full transaction tests, Table 1 collection tests, Table 4 empty/populated-news tests, five-surface navigation tests, exactly-two-copy-button tests, app import/startup tests, and mobile static acceptance. Package only after all tests pass.

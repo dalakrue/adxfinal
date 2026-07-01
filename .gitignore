@@ -1,0 +1,42 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.sqlite3-wal
+*.sqlite3-shm
+*.log
+# Recreated runtime cache; canonical user history remains in data/quant_app.sqlite3.
+data/adx_runtime_store.sqlite3
+
+# Streamlit secrets (never commit real credentials)
+.streamlit/secrets.toml
+# Recreated multi-symbol Field 10 runtime artifacts.
+data/multi_symbol_field10_20260701.sqlite3
+data/multi_symbol_runtime_20260701/
+
+# Local secrets
+.streamlit/secrets.toml
+secrets.toml
+.env
+.env.*
+
+# Python temporary files
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Runtime files
+*.log

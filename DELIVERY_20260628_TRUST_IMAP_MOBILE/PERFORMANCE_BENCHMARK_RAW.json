@@ -1,0 +1,122 @@
+{
+  "environment": {
+    "dataset_rows": 840,
+    "table2_rows": 600,
+    "table2_columns": 126,
+    "broker_days": 25,
+    "mobile_page_rows": 10,
+    "mobile_page_columns": 13,
+    "note": "Synthetic deterministic completed-candle benchmark; browser CPU and physical phone temperature are not available in this container."
+  },
+  "table2_build_cold": {
+    "sample_count": 7,
+    "median_seconds": 1.1845287870000902,
+    "minimum_seconds": 1.1612023820000559,
+    "maximum_seconds": 1.2589171349999333,
+    "mean_seconds": 1.1932585354285916,
+    "stdev_seconds": 0.029137763097977477,
+    "median_peak_python_bytes": 5427861
+  },
+  "table2_same_candle_cache": {
+    "sample_count": 15,
+    "median_seconds": 0.42318000700015546,
+    "minimum_seconds": 0.3852482179997878,
+    "maximum_seconds": 0.4711085409999214,
+    "mean_seconds": 0.4230888777999856,
+    "stdev_seconds": 0.031141197661149853
+  },
+  "table2_cache_time_reduction_percent": 64.27440078751559,
+  "imap_rv_build_cold": {
+    "sample_count": 5,
+    "median_seconds": 0.5919393460001174,
+    "minimum_seconds": 0.5746584510000048,
+    "maximum_seconds": 2.7745674369998596,
+    "mean_seconds": 1.022544472000027,
+    "stdev_seconds": 0.8760462455064866,
+    "median_peak_python_bytes": 2465469
+  },
+  "imap_rv_same_candle_cache": {
+    "sample_count": 15,
+    "median_seconds": 4.705000037574791e-06,
+    "minimum_seconds": 4.348999937064946e-06,
+    "maximum_seconds": 0.00010629300004438846,
+    "mean_seconds": 1.2022999999317108e-05,
+    "stdev_seconds": 2.5262045244475074e-05,
+    "cache_status": "REUSED_SAME_COMPLETED_CANDLE"
+  },
+  "imap_rv_cache_time_reduction_percent": 99.99920515504344,
+  "payload_memory": {
+    "full_600x_all_columns_bytes": 2421342,
+    "desktop_50x_all_columns_bytes": 201708,
+    "mobile_10x_selected_columns_bytes": 3680,
+    "mobile_vs_full_reduction_percent": 99.84801816513323,
+    "mobile_vs_desktop_page_reduction_percent": 98.17558054216987
+  },
+  "serialized_payload": {
+    "full_json_bytes": 2267129,
+    "desktop_page_json_bytes": 188489,
+    "mobile_json_bytes": 3720,
+    "mobile_vs_full_bytes_reduction_percent": 99.83591582128763,
+    "mobile_vs_desktop_page_bytes_reduction_percent": 98.02641002923248,
+    "full_serialization": {
+      "sample_count": 7,
+      "median_seconds": 0.01190035300010095,
+      "minimum_seconds": 0.01053034699998534,
+      "maximum_seconds": 0.014768045999971946,
+      "mean_seconds": 0.012290063142862502,
+      "stdev_seconds": 0.0015273614274517707
+    },
+    "desktop_page_serialization": {
+      "sample_count": 15,
+      "median_seconds": 0.001056359999893175,
+      "minimum_seconds": 0.0010182130001794576,
+      "maximum_seconds": 0.0016696620000402618,
+      "mean_seconds": 0.0010997491333152236,
+      "stdev_seconds": 0.000156841168485654
+    },
+    "mobile_serialization": {
+      "sample_count": 30,
+      "median_seconds": 0.0001135515000214582,
+      "minimum_seconds": 0.00010818400005518924,
+      "maximum_seconds": 0.00017385700016347982,
+      "mean_seconds": 0.00011997063334092672,
+      "stdev_seconds": 1.4840175953105595e-05
+    },
+    "mobile_vs_full_serialization_time_reduction_percent": 99.04581401895814
+  },
+  "mobile_interactions": {
+    "page_change": {
+      "sample_count": 30,
+      "median_seconds": 0.0003273129999570301,
+      "minimum_seconds": 0.00029484500009857584,
+      "maximum_seconds": 0.0006724630000007892,
+      "mean_seconds": 0.00034544303336285037,
+      "stdev_seconds": 6.859785422668507e-05
+    },
+    "column_group_change": {
+      "sample_count": 30,
+      "median_seconds": 0.0002925409997942552,
+      "minimum_seconds": 0.0002534810000724974,
+      "maximum_seconds": 0.0007345469998654153,
+      "mean_seconds": 0.0003169061333286057,
+      "stdev_seconds": 8.853706694785475e-05
+    },
+    "heavy_calculation_calls": 0
+  },
+  "parity": {
+    "mobile_first_10_values_equal_full_first_10": true,
+    "calculation_result_modified": false,
+    "mobile_meta": {
+      "page": 1,
+      "page_size": 10,
+      "total_rows": 600,
+      "total_pages": 60
+    },
+    "desktop_meta": {
+      "page": 1,
+      "page_size": 50,
+      "total_rows": 600,
+      "total_pages": 12
+    }
+  }
+}

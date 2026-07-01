@@ -1,0 +1,60 @@
+{
+  "measured_at_utc": "2026-06-25T13:58:25.916671+00:00",
+  "environment": {
+    "python": "3.13.5",
+    "streamlit_installed_in_container": false
+  },
+  "metrics": {
+    "compileall_seconds": {
+      "before": 6.736432,
+      "after": 2.933505
+    },
+    "stubbed_app_import": {
+      "before": {
+        "ok": true,
+        "stdout": "{'ok': True, 'seconds': 0.003636}",
+        "stderr_tail": []
+      },
+      "after": {
+        "ok": true,
+        "stdout": "{'ok': True, 'seconds': 0.002981}",
+        "stderr_tail": []
+      }
+    },
+    "package_directory_size_bytes": {
+      "before": 28449891,
+      "after": 30467936
+    },
+    "zip_input_size_bytes": 4313398,
+    "session_state_serialized_size_bytes": {
+      "before": null,
+      "after": null,
+      "note": "Not measured end-to-end because a real Streamlit runtime and live state hydration were unavailable in the container."
+    },
+    "database_query_time_seconds": {
+      "before": null,
+      "after": null,
+      "note": "Not measured end-to-end; no stable live DB workload was replayed in the container."
+    },
+    "repeated_render_duration_seconds": {
+      "before": null,
+      "after": null,
+      "note": "Not measured end-to-end; render timing requires a live Streamlit UI session."
+    },
+    "full_calculation_duration_seconds": {
+      "before": null,
+      "after": null,
+      "note": "Not measured end-to-end because external connectors/live data were not exercised in the container."
+    },
+    "peak_rss_bytes": {
+      "before": null,
+      "after": null,
+      "note": "Not measured reliably across full Streamlit runs in this container."
+    }
+  },
+  "notes": [
+    "Compileall was measured directly on the uploaded baseline extraction and on the final packaged project.",
+    "App startup was measured as a stubbed import smoke test because streamlit is not installed in the container.",
+    "Claims about full runtime improvements are intentionally omitted where no trustworthy before/after measurement was available."
+  ]
+}

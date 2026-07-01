@@ -1,0 +1,25 @@
+# Changed Existing Module Catalog — CRCEF-SV Repair 2026-06-27
+
+- `adx_dashpoard.py` — Backward-compatible entry now calls the same shell directly.
+- `app.py` — Primary deployment entry now calls core.app_shell.run_app directly.
+- `core/app/runner.py` — Commits queued navigation before rendering and keeps the shell authoritative.
+- `core/canonical_lookup_20260626.py` — Recovers one existing published canonical identity without recalculation.
+- `core/config/defaults.py` — Keeps direct Dinner as the runtime route while retaining inert legacy equality compatibility.
+- `core/decision_table_20260626.py` — Read-only Table 1 adapter now joins exact Table 3 labels and provenance; it does not modify Table 3 calculations.
+- `core/less_risky_projection_20260625.py` — Requires exact six-field identity for the optional green shadow path.
+- `core/navigation_authority_20260625.py` — Delegates all route changes to the central navigation state machine.
+- `core/navigation_transaction_20260622.py` — Routes legacy navigation transactions through the central shell state.
+- `core/post_run_consistency_20260626.py` — Binds the complete exact-run identity after the protected run.
+- `core/settings_one_click_controller_20260624.py` — Keeps one-click full-run routing and closes fields after publication.
+- `core/settings_run_orchestrator_20260617.py` — Runs protected publishers first, then post-run consistency and CRCEF-SV shadow publication.
+- `core/tab_state_stability_20260615.py` — Prevents page-local state from resetting direct Dinner; legacy shim is shell-inert.
+- `tabs/antd_page_router_20260615.py` — Adds direct Dinner routing and one full Settings run without a second Quick Sync.
+- `tabs/field456789_page_20260626.py` — Renders Dinner history first, metrics second, then lazy Fields 4/6/7/8/9.
+- `ui/antd_navigation_20260615.py` — Adds direct Dinner to navigation callbacks.
+- `ui/field4to9_collection_history_20260627.py` — Builds a read-only 25-broker-day Dinner decision/bias collection from real published rows.
+- `ui/home_master_control_bar_20260615.py` — Stops the legacy top control bar from remapping Dinner to Settings.
+- `ui/liquid_menu_popup_20260615.py` — Makes the floating menu use direct shell transactions including Dinner.
+- `ui/lunch_decision_table_20260626.py` — Renders Table 1 exact labels, provenance, final decision, and display-only HOLD & PROTECT.
+- `ui/lunch_four_core_fields_20260619.py` — Starts Lunch fields closed, removes heavy Quick Sync behavior, and adds research sections.
+- `ui/lunch_next_hour_bias_history_20260626.py` — Audits Table 4 and rebuilds Table 5 as a selected Table 1 + Table 4 identity join.
+- `ui/powerbi_cached_renderer_20260619.py` — Uses a single explicit projection state and strict exact-run integrity validation.

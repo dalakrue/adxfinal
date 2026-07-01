@@ -1,0 +1,25 @@
+2026-06-27 16:37:13.928 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+initial_guest_exceptions 0
+dinner_active_first_load Dinner
+dinner_exceptions_first_load 0
+dinner_markdown ['<div class="qx-v6-strip">\n  <div class="qx-v6-cell"><b>Tab</b><span>Dinner</span></div>\n  <div class="qx-v6-cell"><b>Source</b><span>DISCONNECTED</span></div>\n  <div class="qx-v6-cell"><b>Market</b><span>EURUSD · H1</span></div>\n  <div class="qx-v6-cell"><b>Rows</b><span>0</span></div>\n  <div class="qx-v6-cell"><b>Reversal</b><span>0/10 · LOW</span></div>\n</div>', '<div class="qx-live-hud">\n  <div class="qx-hud-left">\n    <span class="qx-hud-dot qx-wait"></span>\n    <b>Dinner</b>\n    <span>EURUSD</span><span>H1</span><span>DISCONNECTED</span>\n  </div>\n  <div class="qx-hud-right">\n    <span>WAITING FOR CONNECTOR</span><span>0 rows</span><span>age not refreshed</span><span>data v1</span><span>Laptop</span>\n  </div>\n</div>', '<div class="qx-command-bar">\n  <div class="qx-command-left">\n    <span class="qx-pill-blue">Dinner</span>\n    <span><b>EURUSD</b> / H1</span>\n    <span>DISCONNECTED</span>\n    <span>0 rows</span>\n  </div>\n  <div class="qx-command-right">\n    <span>Data v1</span>\n    <span>selected section</span>\n  </div>\n</div>', '### 🌙 Dinner — Fields 4–9 Integrated Workspace', '## 🌙 Dinner — Fields 4, 6, 7, 8 and 9', '##### Canonical Snapshot Identity — Dinner', '### Dinner Combined History — Last 25 Broker Days', '<div class="qx-relation-footer">\n  <b>Relationship check:</b> Sidebar connector → shared session dataframe → Dinner tab → selected inner section. \n  Current status: <span>waiting for sidebar connection</span>.\n</div>']
+dinner_expanders ['Field 4 — Dinner Combined Intelligence', 'Field 6 — Future Strategy, Sentiment and Technical History', 'Field 7 — Scientific Research Intelligence', 'Field 8 — Integrated 25-Day Accuracy History', 'Field 9 — Decision Impact, Regret and Stability', 'CRCEF-SV research-only diagnostics']
+dinner_dataframe_count 0
+after_run_active Lunch
+after_run_exceptions 0
+crcef_status {'ok': True, 'status': 'RESEARCH_ONLY', 'run_id': 'calc-7', 'generation_id': '7', 'production_decision_unchanged': True}
+lunch_selector_default [('Choose the Lunch field to open', 'All Lunch fields closed')]
+field_options ['All Lunch fields closed', '1. Open / Close — Full Metric 25-Day History + Decision Tables', '2. Open / Close — Power BI Price Prediction Path', '3. Open / Close — 25-Day Regime History + Lower / Medium / Higher Standards']
+field1_selected 1. Open / Close — Full Metric 25-Day History + Decision Tables
+field1_exceptions 0
+field1_headings ['##### Canonical Snapshot Identity — Field 1', '#### Table 1 — Decision History — Last 25 Days', '#### Field 1 Synchronization Status', '#### Table 4 — Self-Contained Next-Hour Technical + Sentiment + Session + Regime + Data Mining Bias — Last 25 Days', '#### Table 5 — Integrated Decision Collection — Last 25 Days']
+field1_dataframe_count 12
+field1_expanders_closed ['CRCEF-SV — Research-Only Selective Evidence Fusion']
+field3_selected 3. Open / Close — 25-Day Regime History + Lower / Medium / Higher Standards
+field3_exceptions 0
+field3_headings ['#### Regime lifecycle, reliability and transition trust', '##### Canonical Snapshot Identity — Field 3', '#### Broker-Day Locked Middle/Higher Regime — 00:00 Review', '#### Overall Regime History — Last 25 Days', '#### Lower Standard Regime History — Last 25 Days (1-Day Standard)', '#### Medium Standard Regime History — Last 25 Days (5-Day Standard)', '#### Higher Standard Regime History — Last 25 Days (25-Day Standard)', '#### Completed-H1 Regime Evidence Matrix — Last 25 Days']
+field3_expanders ['Research Markov Regime Lifecycle']
+dinner_active_after_run Dinner
+dinner_exceptions_after_run 0
+dinner_history_heading_after_run ['### Dinner Combined History — Last 25 Broker Days']
+dinner_expanders_after_run ['Field 4 — Dinner Combined Intelligence', 'Field 6 — Future Strategy, Sentiment and Technical History', 'Field 7 — Scientific Research Intelligence', 'Field 8 — Integrated 25-Day Accuracy History', 'Field 9 — Decision Impact, Regret and Stability', 'CRCEF-SV research-only diagnostics']

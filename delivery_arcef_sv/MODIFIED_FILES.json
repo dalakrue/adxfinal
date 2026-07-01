@@ -1,0 +1,132 @@
+[
+  {
+    "file": "core/settings_run_orchestrator_20260617.py",
+    "sha256": "151d2b012e1bdced50027ea3cbf855e4fc50967029ddb7adfd6674af7e9c4b27",
+    "bytes": 5770
+  },
+  {
+    "file": "tabs/dinner_unified_center_20260617.py",
+    "sha256": "788561a89c7038416615d323bcf283bda59fc01f275fb44c9867d0950b43b98f",
+    "bytes": 6833
+  },
+  {
+    "file": "lunch/registry.py",
+    "sha256": "bbe4f448aba775b25dc530a58a2c322e24fad6b55db4823f3124dd1ceba94bcd",
+    "bytes": 2287
+  },
+  {
+    "file": "core/thesis_engine/__init__.py",
+    "sha256": "3506413b3cc690b03aa732b7c0c7509c0b957a7a9e2eaad940e218957f7d4eb5",
+    "bytes": 238
+  },
+  {
+    "file": "core/thesis_engine/ablation.py",
+    "sha256": "fd74ea95bcc44914ed9bcdc8f2deabbd51db259daa3eecd073621b2876c9d12d",
+    "bytes": 656
+  },
+  {
+    "file": "core/thesis_engine/calibration.py",
+    "sha256": "3687560ea39b16207ae547e9a45add3672d2c18ca9894645d7a509def816987e",
+    "bytes": 576
+  },
+  {
+    "file": "core/thesis_engine/changepoint.py",
+    "sha256": "d33f5ea344904d6f58843c04f663023891872e5e93da2eb924d96ebb8e072a05",
+    "bytes": 352
+  },
+  {
+    "file": "core/thesis_engine/conditional_reliability.py",
+    "sha256": "54177ad8350670ea1e74262cb6f144ab71916ea81d5b42569367c9b2eb6e01f7",
+    "bytes": 558
+  },
+  {
+    "file": "core/thesis_engine/correlation_penalty.py",
+    "sha256": "2eaa55c225a5519cb4426d2af57281fb602c2b5a24337557452693a90e26abc0",
+    "bytes": 340
+  },
+  {
+    "file": "core/thesis_engine/decision_mapping.py",
+    "sha256": "a811f60d1fe86c03a197cc3aa4885484e4d4090617e1e9d9ffcd2c402e608938",
+    "bytes": 1371
+  },
+  {
+    "file": "core/thesis_engine/diagnostics.py",
+    "sha256": "31068d618ddd97b4c548c7df1e89a873d015082af976430575443fdef291f1c1",
+    "bytes": 501
+  },
+  {
+    "file": "core/thesis_engine/dynamic_model_averaging.py",
+    "sha256": "d2b7578f2c6d967c11f1ed72cad26c21031dc6919a5a73fa7dcf1a8e097ff553",
+    "bytes": 469
+  },
+  {
+    "file": "core/thesis_engine/evidence_fusion.py",
+    "sha256": "a64d825d98625c53d937418828395988ec9248876c84718626c47abbb7462ff4",
+    "bytes": 868
+  },
+  {
+    "file": "core/thesis_engine/history_store.py",
+    "sha256": "bc5b23b3c29899d96f785bbf581fbe47a79ab2961db78bda706d005b0f0a0df9",
+    "bytes": 874
+  },
+  {
+    "file": "core/thesis_engine/master_policy.py",
+    "sha256": "5dd08ea13946176f0600ccbfcaddcbb0f0e3216abe78adbdb09582a1c919b1c9",
+    "bytes": 661
+  },
+  {
+    "file": "core/thesis_engine/orchestrator.py",
+    "sha256": "9d9ca966a047859942758d0098a4601ecd6154006ed4e24c77eb3210ee74d1fc",
+    "bytes": 7385
+  },
+  {
+    "file": "core/thesis_engine/proper_scoring.py",
+    "sha256": "3f0aa177cdf1a0ffa814b74fa68cb6eaf098218de1c48e14d4303cc49e384ca0",
+    "bytes": 682
+  },
+  {
+    "file": "core/thesis_engine/regime_model.py",
+    "sha256": "29c33ad43e99d10003e80a671ffce467f7e9f92a7a107e560b8e4d08c9153401",
+    "bytes": 688
+  },
+  {
+    "file": "core/thesis_engine/schemas.py",
+    "sha256": "bef1521a3a20521e1e2186ad0efded6bfa731be323745d05b46c4774d487fb32",
+    "bytes": 861
+  },
+  {
+    "file": "core/thesis_engine/settled_outcomes.py",
+    "sha256": "780ff7f4fe11b4551ff6cd086fbf6dab8925aa6caf747bcf89170c35d724ff9e",
+    "bytes": 389
+  },
+  {
+    "file": "core/thesis_engine/validation_gates.py",
+    "sha256": "bf7055172cbc08619aa90192dc890c1be6fcfa08c5cbd4cdd0d1b11451c48972",
+    "bytes": 299
+  },
+  {
+    "file": "lunch/field_arcef/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "file": "lunch/field_arcef/contract.py",
+    "sha256": "344ac0a4282b994b17924a856c72e79d5bf12ce0b5072269c0e73786c471ce90",
+    "bytes": 112
+  },
+  {
+    "file": "lunch/field_arcef/renderer.py",
+    "sha256": "fad32ec6d076c601d353c47989cb99376bfad8f47cf578a2e7864f00963eb4b7",
+    "bytes": 1369
+  },
+  {
+    "file": "lunch/field_arcef/view_model.py",
+    "sha256": "d9d3070d8743a3055a210f8188c41da60ab0d4445ca37696d0ef374ac8959f41",
+    "bytes": 172
+  },
+  {
+    "file": "tests/test_arcef_sv.py",
+    "sha256": "226366ee52eefd30352bf0ee93081e3f37ccd214af4f137244f33d900892f687",
+    "bytes": 2900
+  }
+]

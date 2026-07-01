@@ -1,0 +1,13 @@
+{
+  "date": "2026-06-26",
+  "declared_runtime": "Python 3.12",
+  "inspection_runtime": "3.13.5",
+  "pytest": "24 passed",
+  "ast_compile": "971 Python files; 0 errors",
+  "streamlit_health": "ok",
+  "notes": [
+    "Runtime declarations preserved in .python-version and runtime.txt.",
+    "No protected calculation module was edited in this repair.",
+    "Score conversion now requires explicit scale metadata for values outside 0\u201310."
+  ]
+}
